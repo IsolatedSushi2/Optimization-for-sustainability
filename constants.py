@@ -1,0 +1,1 @@
+CAR_AMOUNT = 750
