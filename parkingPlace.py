@@ -17,7 +17,7 @@ class ParkingPlace():
     def isFull(self):
         return self.maxNumberCharginStations == self.amountCurrentlyParked
 
-
+#Creates the parking places, using strings for the IDS
 def createParkingPlaces():
     chargingStationAmounts = [60, 80, 60, 70, 60, 60, 50]
     parkingPlaces = {}

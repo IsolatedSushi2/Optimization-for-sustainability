@@ -1,6 +1,7 @@
 
 import parkingPlace
 
+#Create the initial state with some variables
 def createInitialState():
     state = {}
 
@@ -11,6 +12,7 @@ def createInitialState():
 
     return state
 
+#Print the results after the simulation
 def printResults(currState):
     print(currState["carsCharged"], "cars were charged")
     print(currState["carsUnableCharged"], "cars were unable to be charged")
