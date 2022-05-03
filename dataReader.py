@@ -2,7 +2,7 @@ import csv
 # import numpy as np
 
 def readCSVs():
-    root_path = 'D:/University - Utrecht/Q4 Optimization for Sustainability/Optimization-for-sustainability'
+    root_path = "." #'D:/University - Utrecht/Q4 Optimization for Sustainability/Optimization-for-sustainability'
     path_arrival_hours = '/data/arrival_hours.csv'
     path_charging_volume = '/data/charging_volume.csv'
     path_connection_time = '/data/connection_time.csv'

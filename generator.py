@@ -20,7 +20,7 @@ def generateCar(charging_volume_distributions, connection_time_distributions):
     chargingVolume = np.random.choice(charging_volumes, p=(charging_probabilities/sum(charging_probabilities)))
     min_connection_time_hours = int(np.ceil(chargingVolume/(6*0.7))) #minimum connection time in hours
     connectionTime = np.random.choice(connection_times[min_connection_time_hours:], p=(connection_probabilities[min_connection_time_hours:]/sum(connection_probabilities[min_connection_time_hours:])))
-    print(f'generated car with charging volume: {chargingVolume}, connection time: {connectionTime}')
+    #print(f'generated car with charging volume: {chargingVolume}, connection time: {connectionTime}')
     return Car(chargingVolume=chargingVolume, connectionTime=connectionTime)
 
 def generateSolarValue(timeOfDay, solar_availability_distributions, season='summer'):
@@ -31,7 +31,7 @@ def generateSolarValue(timeOfDay, solar_availability_distributions, season='summ
     else:
         solar_power = solar_availability_distributions[timeOfDay][1] * 200
     value = np.random.normal(solar_power, 0.15*solar_power)
-    print(f'generated solar power, value: {value}')
+    #print(f'generated solar power, value: {value}')
     return value 
 
 def generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, average_daily_cars=750, timeLength = 24, season='summer'):
@@ -44,7 +44,7 @@ def generateAllEvents(arrival_fractions, charging_volume_distributions, connecti
         allMoments = np.random.poisson(average_daily_cars*arrival_fractions[t%24][1]/3600, size=3600)
         newCarsIndices = np.where(allMoments>0)[0] #use this to find the indices in the array where the value is nonzero (i.e. one or more cars arrive)
         for time in newCarsIndices:
-            print(f'Generating car at time {t*3600+time}')
+            #print(f'Generating car at time {t*3600+time}')
             for i in range(allMoments[time]):
                 # Loop is needed in case two cars arrive the very same second.
                 generatedEvents.put(event.Event(time=t*3600+time,data=("carArrives", (generateCar(charging_volume_distributions, connection_time_distributions) ) ) ) )
@@ -55,6 +55,7 @@ def generateAllEvents(arrival_fractions, charging_volume_distributions, connecti
         generatedEvents.put(event.Event(time=t*3600, data=("solarUpdate", (generateSolarValue(t%24, solar_availability_distributions, season) ) ) ) )
 
     return generatedEvents
+
 
 if __name__ == "__main__":
     arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions = dr.readCSVs()
