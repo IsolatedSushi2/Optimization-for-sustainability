@@ -1,20 +1,21 @@
 import csv
-import numpy as np
+# import numpy as np
 
 def readCSVs():
-    path_arrival_hours = './data/arrival_hours.csv'
-    path_charging_volume = './data/charging_volume.csv'
-    path_connection_time = './data/connection_time.csv'
-    path_solar = './data/solar.csv'
+    root_path = 'D:/University - Utrecht/Q4 Optimization for Sustainability/Optimization-for-sustainability'
+    path_arrival_hours = '/data/arrival_hours.csv'
+    path_charging_volume = '/data/charging_volume.csv'
+    path_connection_time = '/data/connection_time.csv'
+    path_solar = '/data/solar.csv'
     
-    def readPath(path):
-        with open(path) as csv_file:
+    def readPath(root, path):
+        with open(root + path) as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
 
             return [castToValue(row) for row in csv_reader]
 
 
-    return readPath(path_arrival_hours), readPath(path_charging_volume), readPath(path_connection_time), readPath(path_solar)
+    return readPath(root_path, path_arrival_hours), readPath(root_path, path_charging_volume), readPath(root_path, path_connection_time), readPath(root_path, path_solar)
 
 def castToValue(row):
     if len(row) == 2:
@@ -24,4 +25,8 @@ def castToValue(row):
 
 
 if __name__ == "__main__":
-    print(readCSVs())
+    arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions = readCSVs()
+    sum = 0
+    for i in charging_volume_distributions:
+        sum += i[1]
+    print(sum)

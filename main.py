@@ -3,9 +3,8 @@ from dataReader import readCSVs
 from generator import generateCarArrivals
 from queue import PriorityQueue
 from enum import Enum
-import events
+import eventHandler
 
-# TODO, ask if allowed
 class Car():
     parkingPlacesVisited = []
 
