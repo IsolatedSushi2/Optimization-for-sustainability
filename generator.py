@@ -10,13 +10,18 @@ class Car():
     timeStartCharging = None
     parkingPlaceID = None
     
-    def __init__(self, chargingVolume, connectionTime, parkingPlaceID):
+    def __init__(self, chargingVolume, connectionTime, parkingPlaceID, carID):
         self.chargingVolume = chargingVolume
         self.connectionTime = connectionTime
         self.parkingPlaceID = parkingPlaceID
         self.carParksVisited = []
+        self.amountCharged = 0
+        self.carID = carID
 
-def generateCar(charging_volume_distributions, connection_time_distributions):
+    def __repr__(self):
+        return f'Car ID: {self.carID}, chargingVolume: {self.chargingVolume}, connectionTime: {self.connectionTime} parkingPlace: {self.parkingPlaceID}, amountCharged: {self.amountCharged}, carParksVisited: {self.carParksVisited}'
+
+def generateCar(charging_volume_distributions, connection_time_distributions, carID):
     charging_volumes, charging_probabilities = zip(*charging_volume_distributions)
     connection_times, connection_probabilities = zip(*connection_time_distributions)
     charging_volumes, charging_probabilities, connection_times, connection_probabilities = np.array(charging_volumes), np.array(charging_probabilities), np.array(connection_times), np.array(connection_probabilities)
@@ -27,7 +32,7 @@ def generateCar(charging_volume_distributions, connection_time_distributions):
     randomParkingPlaceID = generateParkingPlace()
 
     #print(f'generated car with charging volume: {chargingVolume}, connection time: {connectionTime}')
-    return Car(chargingVolume=chargingVolume, connectionTime=connectionTime, parkingPlaceID=randomParkingPlaceID)
+    return Car(chargingVolume=chargingVolume, connectionTime=connectionTime, parkingPlaceID=randomParkingPlaceID, carID=carID)
 
 def generateSolarValue(timeOfDay, solar_availability_distributions, season='summer'):
     # returns a randomly generated value for available power from a solar panel array at the specified time of day in the specified season (summer/winter)
@@ -58,6 +63,7 @@ def generateAllEvents(arrival_fractions, charging_volume_distributions, connecti
 
     generatedEvents = PriorityQueue()
 
+    carID = 0
     # Generate car arrivals
     for t in range(timeLength):
         allMoments = np.random.poisson(average_daily_cars*arrival_fractions[t%24][1]/3600, size=3600)
@@ -66,7 +72,8 @@ def generateAllEvents(arrival_fractions, charging_volume_distributions, connecti
             #print(f'Generating car at time {t*3600+time}')
             for i in range(allMoments[time]):
                 # Loop is needed in case two cars arrive the very same second.
-                generatedEvents.put(event.Event(time=t*3600+time, eventType="carArrives", data=((generateCar(charging_volume_distributions, connection_time_distributions) ) ) ) )
+                generatedEvents.put(event.Event(time=t*3600+time, eventType="carArrives", data=((generateCar(charging_volume_distributions, connection_time_distributions, carID) ) ) ) )
+                carID += 1
                     
 
     # Generate solar events

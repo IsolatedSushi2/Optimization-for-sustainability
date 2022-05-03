@@ -5,8 +5,8 @@ def clearLog():
     file.close()
 
 def logEvent(currEvent):
-    logging = "Event: {eventType} at time {eventTime}"
-    message = logging.format(eventType=currEvent.eventType, eventTime=currEvent.time)
+    logging = "Event: {eventType} at time {eventTime} with data {data}"
+    message = logging.format(eventType=currEvent.eventType, eventTime=currEvent.time, data=currEvent.data)
     logMessage(message)
     
 def logMessage(message):
