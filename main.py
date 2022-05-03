@@ -1,25 +1,34 @@
 from constants import CAR_AMOUNT
 from dataReader import readCSVs
-from generator import generateCarArrivals
+import generator
 from queue import PriorityQueue
 from enum import Enum
 import events
 
-# TODO, ask if allowed
 class Car():
     parkingPlacesVisited = []
 
 def main():
-    eventQueue = PriorityQueue()
-    state = {"time" = 0,
-             "parkingPlacesVisited" = 0, # 
-             ""}
-
-    while not eventQueue.empty():
-        events.eventHandler(eventQueue)
-
     arrival_data, charging_volume_data, connection_time_data = readCSVs()
-    #generateCarArrivals(arrival_data, CAR_AMOUNT)
+
+    eventQueue = PriorityQueue()
+    events = generator.generateCarArrivalEvents(None, None, None, None, CAR_AMOUNT)
+
+    for currEvent in events:
+        eventQueue.put(currEvent)  
+
+
+
+    nextTime, eventData = eventQueue.get()
+    print(eventData)
+    # for event in zip(eventTimes, randomArrivalEvents):
+    #     eventQueue.put((randomTime, randomEvent)
+
+    state = {"time": 0}
+
+    # while not eventQueue.empty():
+    #     events.eventHandler(eventQueue)
+
 
 
 if __name__ == "__main__":
