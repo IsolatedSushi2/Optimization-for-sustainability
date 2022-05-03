@@ -3,7 +3,7 @@ from dataReader import readCSVs
 import generator
 from queue import PriorityQueue
 from enum import Enum
-import events
+import eventHandler
 
 class Car():
     parkingPlacesVisited = []

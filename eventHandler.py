@@ -1,15 +1,3 @@
-from enum import Enum
-
-
-class Events(Enum):
-    CarArrives = 0 
-    CarPlannedLeave = 1
-    CarCharge = 2
-    CarLeave = 3
-    SolarPowerUpdate = 4   
-
-
-# Event of the form: (EventID, (EventData))
 def eventHandler(eventQueue):
     next_item = eventQueue.get()
 
