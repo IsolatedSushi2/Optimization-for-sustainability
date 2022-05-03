@@ -29,17 +29,25 @@ def handleCarArrivalEvent(currEvent, currState):
     currCar.carParksVisited.append(currCar.parkingPlaceID)
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
-    
     if currParkingPlace.isFull():
-        #TODO normal distributed travel time to other parkingPlace
-        timeToTravel = 10 * 60
-        currCar.parkingPlaceID = generator.generateParkingPlace(currCar.carParksVisited)
-        logger.logMessage("Car Place full, moving to another")
-        return event.Event(time=currEvent.time + timeToTravel, eventType="carArrives", data=currCar)
+        return handleCarPlaceFull(currEvent, currState)
+        
 
     currParkingPlace.arriveAtCharger()
-
     return event.Event(time=currEvent.time + currCar.connectionTime, eventType="carLeaves", data=currCar)
+
+def handleCarPlaceFull(currEvent, currState):
+    currCar = currEvent.data
+
+    if len(currCar.carParksVisited) == 3:
+        logger.logMessage("Too many Car Places (3) full in a row")
+        return None
+
+    #TODO normal distributed travel time to other parkingPlace
+    timeToTravel = 10 * 60
+    currCar.parkingPlaceID = generator.generateParkingPlace(currCar.carParksVisited)
+    logger.logMessage("Car Place full, moving to another")
+    return event.Event(time=currEvent.time + timeToTravel, eventType="carArrives", data=currCar)
 
 def handleCarLeavesEvent(currEvent, currState):
     currCar = currEvent.data

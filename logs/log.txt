@@ -1,1398 +1,2174 @@
 Event: solarUpdate at time 0
-Event: carArrives at time 132
-Event: carLeaves at time 195
-Event: carArrives at time 582
-Event: carLeaves at time 590
-Event: carArrives at time 685
-Event: carLeaves at time 695
-Event: carArrives at time 1668
-Event: carLeaves at time 1671
-Event: carArrives at time 1808
-Event: carLeaves at time 1810
-Event: carArrives at time 2377
-Event: carLeaves at time 2403
-Event: carArrives at time 2952
-Event: carLeaves at time 2965
+Event: carArrives at time 926
+Event: carArrives at time 1271
+Event: carArrives at time 1665
+Event: carArrives at time 2183
+Event: carArrives at time 2213
+Event: carArrives at time 2992
 Event: solarUpdate at time 3600
-Event: carArrives at time 4061
-Event: carLeaves at time 4077
+Event: carArrives at time 5669
+Event: carArrives at time 6644
+Event: carArrives at time 6976
 Event: solarUpdate at time 7200
-Event: carArrives at time 7562
-Event: carLeaves at time 7609
+Event: carArrives at time 7506
+Event: carLeaves at time 9413
 Event: solarUpdate at time 10800
 Event: solarUpdate at time 14400
 Event: solarUpdate at time 18000
+Event: carLeaves at time 18306
 Event: solarUpdate at time 21600
-Event: carArrives at time 22992
-Event: carLeaves at time 23002
-Event: carArrives at time 24401
-Event: carLeaves at time 24411
-Event: carArrives at time 24563
-Event: carLeaves at time 24579
+Event: carArrives at time 23432
+Event: carArrives at time 24271
 Event: solarUpdate at time 25200
-Event: carArrives at time 25743
-Event: carLeaves at time 25764
-Event: carArrives at time 25823
-Event: carLeaves at time 25831
-Event: carArrives at time 25995
-Event: carLeaves at time 26014
-Event: carArrives at time 26121
-Event: carLeaves at time 26155
-Event: carArrives at time 26159
-Event: carLeaves at time 26164
-Event: carArrives at time 26327
-Event: carLeaves at time 26343
-Event: carArrives at time 26379
-Event: carArrives at time 26383
-Event: carLeaves at time 26391
-Event: carLeaves at time 26396
-Event: carArrives at time 26535
-Event: carLeaves at time 26538
-Event: carArrives at time 26639
-Event: carLeaves at time 26656
-Event: carArrives at time 26841
-Event: carLeaves at time 26860
-Event: carArrives at time 27773
-Event: carLeaves at time 27791
-Event: carArrives at time 27920
-Event: carLeaves at time 27928
-Event: carArrives at time 28244
-Event: carLeaves at time 28260
-Event: carArrives at time 28281
-Event: carLeaves at time 28293
-Event: carArrives at time 28347
-Event: carLeaves at time 28359
-Event: carArrives at time 28663
-Event: carLeaves at time 28674
+Event: carArrives at time 25274
+Event: carArrives at time 25555
+Event: carArrives at time 25777
+Event: carArrives at time 26029
+Event: carArrives at time 26052
+Event: carArrives at time 26148
+Event: carArrives at time 26186
+Event: carArrives at time 26198
+Event: carArrives at time 26743
+Event: carArrives at time 26858
+Event: carArrives at time 26873
+Event: carArrives at time 27266
+Event: carLeaves at time 27269
+Event: carArrives at time 27399
+Event: carArrives at time 27418
+Event: carArrives at time 27518
+Event: carArrives at time 27552
+Event: carArrives at time 27856
+Event: carArrives at time 27922
+Event: carArrives at time 28012
+Event: carArrives at time 28019
+Event: carArrives at time 28130
+Event: carArrives at time 28259
+Event: carArrives at time 28497
 Event: solarUpdate at time 28800
-Event: carArrives at time 28845
-Event: carLeaves at time 28856
-Event: carArrives at time 28858
-Event: carLeaves at time 28903
-Event: carArrives at time 28962
-Event: carLeaves at time 28967
-Event: carArrives at time 29071
-Event: carLeaves at time 29083
-Event: carArrives at time 29164
-Event: carLeaves at time 29186
-Event: carArrives at time 29259
-Event: carLeaves at time 29272
-Event: carArrives at time 29319
-Event: carLeaves at time 29331
-Event: carArrives at time 29439
-Event: carLeaves at time 29445
-Event: carArrives at time 29451
-Event: carLeaves at time 29462
-Event: carArrives at time 29514
-Event: carLeaves at time 29529
-Event: carArrives at time 29687
-Event: carArrives at time 29712
-Event: carLeaves at time 29729
-Event: carLeaves at time 29732
-Event: carArrives at time 29890
-Event: carLeaves at time 29913
-Event: carArrives at time 29965
-Event: carLeaves at time 29975
-Event: carArrives at time 30126
-Event: carArrives at time 30129
-Event: carLeaves at time 30132
-Event: carLeaves at time 30140
-Event: carArrives at time 30182
-Event: carLeaves at time 30193
-Event: carArrives at time 30450
-Event: carArrives at time 30463
-Event: carLeaves at time 30463
-Event: carLeaves at time 30471
-Event: carArrives at time 30522
-Event: carLeaves at time 30529
-Event: carArrives at time 30690
-Event: carLeaves at time 30691
-Event: carArrives at time 30754
-Event: carLeaves at time 30756
-Event: carArrives at time 30761
-Event: carLeaves at time 30782
-Event: carArrives at time 30862
-Event: carArrives at time 30868
-Event: carLeaves at time 30876
-Event: carLeaves at time 30878
-Event: carArrives at time 30953
-Event: carLeaves at time 30963
-Event: carArrives at time 31022
-Event: carLeaves at time 31041
-Event: carArrives at time 31116
-Event: carLeaves at time 31139
-Event: carArrives at time 31150
-Event: carLeaves at time 31166
-Event: carArrives at time 31189
-Event: carArrives at time 31191
-Event: carLeaves at time 31194
-Event: carLeaves at time 31202
-Event: carArrives at time 31460
-Event: carLeaves at time 31475
-Event: carArrives at time 31607
-Event: carLeaves at time 31612
-Event: carArrives at time 31650
-Event: carArrives at time 31655
-Event: carLeaves at time 31655
-Event: carArrives at time 31681
-Event: carLeaves at time 31690
-Event: carLeaves at time 31701
-Event: carArrives at time 31802
-Event: carLeaves at time 31816
-Event: carArrives at time 31830
-Event: carLeaves at time 31842
-Event: carArrives at time 31933
-Event: carLeaves at time 31955
-Event: carArrives at time 31976
-Event: carLeaves at time 31980
-Event: carArrives at time 32164
-Event: carLeaves at time 32179
+Event: carArrives at time 28903
+Event: carArrives at time 29166
+Event: carArrives at time 29288
+Event: carArrives at time 29430
+Event: carArrives at time 29476
+Event: carArrives at time 29510
+Event: carArrives at time 29518
+Event: carArrives at time 29538
+Event: carArrives at time 29664
+Event: carArrives at time 29705
+Event: carArrives at time 29769
+Event: carArrives at time 29775
+Event: carArrives at time 29786
+Event: carArrives at time 29886
+Event: carArrives at time 29945
+Event: carArrives at time 30020
+Event: carArrives at time 30239
+Event: carArrives at time 30301
+Event: carArrives at time 30469
+Event: carArrives at time 30539
+Event: carArrives at time 30706
+Event: carArrives at time 30726
+Event: carArrives at time 30928
+Event: carLeaves at time 30983
+Event: carArrives at time 30997
+Event: carArrives at time 31017
+Event: carArrives at time 31040
+Event: carArrives at time 31069
+Event: carArrives at time 31138
+Event: carArrives at time 31162
+Event: carArrives at time 31165
+Event: carArrives at time 31183
+Event: carArrives at time 31291
+Event: carArrives at time 31291
+Event: carArrives at time 31322
+Event: carArrives at time 31327
+Event: carArrives at time 31437
+Event: carArrives at time 31456
+Event: carArrives at time 31749
+Event: carArrives at time 31786
+Event: carArrives at time 31820
+Event: carArrives at time 31839
+Event: carArrives at time 31843
+Event: carArrives at time 31939
+Event: carArrives at time 32024
+Event: carArrives at time 32057
+Event: carArrives at time 32152
+Event: carArrives at time 32202
+Event: carArrives at time 32242
+Event: carArrives at time 32336
+Event: carArrives at time 32383
 Event: solarUpdate at time 32400
-Event: carArrives at time 32428
-Event: carArrives at time 32440
-Event: carArrives at time 32442
-Event: carLeaves at time 32442
-Event: carLeaves at time 32463
-Event: carLeaves at time 32465
-Event: carArrives at time 32631
-Event: carLeaves at time 32648
-Event: carArrives at time 32704
-Event: carLeaves at time 32719
-Event: carArrives at time 32783
-Event: carLeaves at time 32785
-Event: carArrives at time 33018
-Event: carArrives at time 33023
-Event: carLeaves at time 33030
-Event: carLeaves at time 33049
-Event: carArrives at time 33290
-Event: carLeaves at time 33306
+Event: carArrives at time 32409
+Event: carArrives at time 32470
+Event: carArrives at time 32472
+Event: carArrives at time 32541
+Event: carArrives at time 32603
+Event: carArrives at time 32749
+Event: carArrives at time 32842
+Event: carArrives at time 32879
+Event: carArrives at time 32914
+Event: carArrives at time 33061
+Event: carArrives at time 33093
 Event: carArrives at time 33316
-Event: carLeaves at time 33320
-Event: carArrives at time 33332
-Event: carLeaves at time 33346
-Event: carArrives at time 33398
-Event: carLeaves at time 33399
-Event: carArrives at time 33469
-Event: carLeaves at time 33506
-Event: carArrives at time 33507
-Event: carLeaves at time 33509
-Event: carArrives at time 33545
-Event: carLeaves at time 33554
-Event: carArrives at time 33864
-Event: carLeaves at time 33881
-Event: carArrives at time 34134
-Event: carLeaves at time 34148
-Event: carArrives at time 34186
-Event: carLeaves at time 34200
-Event: carArrives at time 34330
-Event: carLeaves at time 34347
-Event: carArrives at time 34378
-Event: carLeaves at time 34408
-Event: carArrives at time 34419
-Event: carLeaves at time 34429
-Event: carArrives at time 34487
-Event: carLeaves at time 34508
-Event: carArrives at time 34521
-Event: carArrives at time 34580
-Event: carLeaves at time 34591
-Event: carLeaves at time 34593
-Event: carArrives at time 34738
-Event: carLeaves at time 34780
-Event: carArrives at time 34805
-Event: carLeaves at time 34843
-Event: carArrives at time 35137
-Event: carLeaves at time 35144
-Event: carArrives at time 35715
-Event: carLeaves at time 35721
-Event: carArrives at time 35814
-Event: carLeaves at time 35833
+Event: carArrives at time 33321
+Event: carLeaves at time 33326
+Event: carArrives at time 33385
+Event: carArrives at time 33461
+Event: carArrives at time 33503
+Event: carArrives at time 33640
+Event: carArrives at time 33749
+Event: carLeaves at time 33901
+Event: carArrives at time 33903
+Event: carArrives at time 34042
+Event: carArrives at time 34124
+Event: carArrives at time 34181
+Event: carArrives at time 34268
+Event: carLeaves at time 34326
+Event: carArrives at time 34582
+Event: carArrives at time 34588
+Event: carArrives at time 34631
+Event: carArrives at time 34669
+Event: carArrives at time 35095
+Event: carArrives at time 35232
+Event: carArrives at time 35443
+Event: carArrives at time 35472
+Event: carArrives at time 35542
+Event: carArrives at time 35607
+Event: carArrives at time 35618
+Event: carArrives at time 35678
+Event: carArrives at time 35925
+Event: carArrives at time 35979
 Event: solarUpdate at time 36000
-Event: carArrives at time 36151
-Event: carLeaves at time 36171
-Event: carArrives at time 36228
-Event: carLeaves at time 36244
-Event: carArrives at time 36249
-Event: carLeaves at time 36261
-Event: carArrives at time 36494
-Event: carLeaves at time 36514
-Event: carArrives at time 36877
-Event: carArrives at time 36879
-Event: carLeaves at time 36891
-Event: carArrives at time 36906
-Event: carLeaves at time 36914
-Event: carLeaves at time 36915
-Event: carArrives at time 36998
-Event: carArrives at time 37001
-Event: carLeaves at time 37011
-Event: carLeaves at time 37016
-Event: carArrives at time 37078
-Event: carLeaves at time 37095
-Event: carArrives at time 37433
-Event: carLeaves at time 37453
-Event: carArrives at time 37685
-Event: carLeaves at time 37695
-Event: carArrives at time 37859
-Event: carLeaves at time 37860
-Event: carArrives at time 37935
-Event: carArrives at time 37937
-Event: carLeaves at time 37949
-Event: carLeaves at time 37956
-Event: carArrives at time 37990
+Event: carArrives at time 36023
+Event: carArrives at time 36175
+Event: carArrives at time 36485
+Event: carArrives at time 36499
+Event: carArrives at time 36546
+Event: carArrives at time 36792
+Event: carArrives at time 36806
+Event: carArrives at time 36994
+Event: carArrives at time 37087
+Event: carArrives at time 37094
+Event: carLeaves at time 37145
+Event: carArrives at time 37450
+Event: carArrives at time 37453
+Event: carArrives at time 37455
+Event: carArrives at time 37456
+Event: carLeaves at time 37543
+Event: carArrives at time 37557
+Event: carArrives at time 37647
 Event: carArrives at time 37997
-Event: carLeaves at time 38002
-Event: carLeaves at time 38009
-Event: carArrives at time 38182
-Event: carArrives at time 38198
-Event: carLeaves at time 38199
-Event: carArrives at time 38204
-Event: carLeaves at time 38204
-Event: carLeaves at time 38208
-Event: carArrives at time 38450
-Event: carLeaves at time 38456
-Event: carArrives at time 38486
-Event: carLeaves at time 38502
-Event: carArrives at time 38858
-Event: carLeaves at time 38876
-Event: carArrives at time 38896
-Event: carLeaves at time 38933
-Event: carArrives at time 39218
-Event: carLeaves at time 39235
-Event: carArrives at time 39407
-Event: carLeaves at time 39411
-Event: carArrives at time 39494
-Event: carLeaves at time 39494
+Event: carArrives at time 38022
+Event: carArrives at time 38242
+Event: carArrives at time 38266
+Event: carArrives at time 38341
+Event: carLeaves at time 38362
+Event: carArrives at time 38426
+Event: carArrives at time 38537
+Event: carArrives at time 38559
+Event: carArrives at time 38859
+Event: carArrives at time 38932
+Event: carArrives at time 38933
+Event: carArrives at time 38963
+Event: carArrives at time 39035
+Event: carLeaves at time 39044
+Event: carArrives at time 39064
+Event: carArrives at time 39115
+Event: carArrives at time 39125
+Event: carArrives at time 39310
+Event: carArrives at time 39337
+Event: carArrives at time 39410
+Event: carArrives at time 39463
 Event: solarUpdate at time 39600
-Event: carArrives at time 39686
-Event: carLeaves at time 39694
-Event: carArrives at time 39772
-Event: carLeaves at time 39792
-Event: carArrives at time 40013
-Event: carLeaves at time 40029
-Event: carArrives at time 40043
-Event: carArrives at time 40057
-Event: carLeaves at time 40057
-Event: carLeaves at time 40073
-Event: carArrives at time 40181
-Event: carLeaves at time 40186
-Event: carArrives at time 40307
-Event: carLeaves at time 40316
-Event: carArrives at time 40327
-Event: carLeaves at time 40340
-Event: carArrives at time 40390
-Event: carLeaves at time 40408
-Event: carArrives at time 40468
-Event: carLeaves at time 40473
-Event: carArrives at time 40496
-Event: carArrives at time 40518
-Event: carLeaves at time 40533
-Event: carLeaves at time 40555
-Event: carArrives at time 40664
-Event: carLeaves at time 40672
-Event: carArrives at time 40687
-Event: carLeaves at time 40696
-Event: carArrives at time 40866
-Event: carLeaves at time 40879
-Event: carArrives at time 41061
-Event: carLeaves at time 41074
-Event: carArrives at time 41146
-Event: carLeaves at time 41185
-Event: carArrives at time 41211
-Event: carArrives at time 41231
-Event: carLeaves at time 41245
-Event: carLeaves at time 41258
-Event: carArrives at time 41332
-Event: carLeaves at time 41332
-Event: carArrives at time 41464
-Event: carLeaves at time 41476
-Event: carArrives at time 41558
-Event: carLeaves at time 41566
-Event: carArrives at time 41978
-Event: carLeaves at time 41986
-Event: carArrives at time 42088
-Event: carLeaves at time 42095
-Event: carArrives at time 42236
-Event: carLeaves at time 42241
-Event: carArrives at time 42351
-Event: carLeaves at time 42371
-Event: carArrives at time 42471
-Event: carLeaves at time 42473
-Event: carArrives at time 42623
-Event: carLeaves at time 42638
-Event: carArrives at time 42642
-Event: carLeaves at time 42658
-Event: carArrives at time 42970
-Event: carLeaves at time 42972
-Event: carArrives at time 43049
-Event: carLeaves at time 43059
+Event: carArrives at time 39608
+Event: carLeaves at time 39609
+Event: carArrives at time 39705
+Event: carArrives at time 39739
+Event: carLeaves at time 39741
+Event: carArrives at time 39775
+Event: carArrives at time 40369
+Event: carArrives at time 40545
+Event: carArrives at time 40556
+Event: carArrives at time 40586
+Event: carArrives at time 40698
+Event: carLeaves at time 40703
+Event: carArrives at time 40829
+Event: carArrives at time 40830
+Event: carArrives at time 40886
+Event: carArrives at time 40964
+Event: carArrives at time 41128
+Event: carLeaves at time 41273
+Event: carArrives at time 41311
+Event: carArrives at time 41808
+Event: carLeaves at time 41818
+Event: carArrives at time 42277
+Event: carArrives at time 42433
+Event: carArrives at time 42530
+Event: carLeaves at time 42549
+Event: carArrives at time 42600
+Event: carArrives at time 42718
+Event: carLeaves at time 42739
+Event: carArrives at time 42840
+Event: carArrives at time 43065
+Event: carLeaves at time 43179
 Event: solarUpdate at time 43200
-Event: carArrives at time 43283
-Event: carLeaves at time 43296
-Event: carArrives at time 43346
-Event: carLeaves at time 43355
-Event: carArrives at time 43521
-Event: carLeaves at time 43526
-Event: carArrives at time 43561
-Event: carLeaves at time 43584
-Event: carArrives at time 43599
-Event: carLeaves at time 43607
-Event: carArrives at time 43681
-Event: carLeaves at time 43682
-Event: carArrives at time 43792
-Event: carLeaves at time 43804
-Event: carArrives at time 43924
-Event: carLeaves at time 43936
-Event: carArrives at time 43963
-Event: carLeaves at time 43968
-Event: carArrives at time 43994
-Event: carLeaves at time 44003
-Event: carArrives at time 44156
-Event: carLeaves at time 44195
-Event: carArrives at time 44290
-Event: carLeaves at time 44314
-Event: carArrives at time 44349
-Event: carLeaves at time 44353
-Event: carArrives at time 44426
-Event: carLeaves at time 44435
-Event: carArrives at time 44514
-Event: carLeaves at time 44526
-Event: carArrives at time 45194
-Event: carLeaves at time 45208
-Event: carArrives at time 45365
-Event: carLeaves at time 45372
-Event: carArrives at time 45391
-Event: carLeaves at time 45393
-Event: carArrives at time 45583
-Event: carLeaves at time 45621
-Event: carArrives at time 45895
-Event: carArrives at time 45900
-Event: carArrives at time 45922
-Event: carLeaves at time 45935
-Event: carLeaves at time 45954
-Event: carLeaves at time 45955
-Event: carArrives at time 46023
-Event: carLeaves at time 46038
-Event: carArrives at time 46121
-Event: carLeaves at time 46137
-Event: carArrives at time 46149
-Event: carLeaves at time 46164
-Event: carArrives at time 46191
-Event: carLeaves at time 46207
-Event: carArrives at time 46229
-Event: carLeaves at time 46234
-Event: carArrives at time 46323
-Event: carLeaves at time 46338
-Event: carArrives at time 46404
-Event: carLeaves at time 46414
-Event: carArrives at time 46729
-Event: carLeaves at time 46744
+Event: carArrives at time 43219
+Event: carArrives at time 43257
+Event: carArrives at time 43328
+Event: carArrives at time 43367
+Event: carLeaves at time 43403
+Event: carArrives at time 43404
+Event: carLeaves at time 43549
+Event: carArrives at time 43578
+Event: carArrives at time 43616
+Event: carArrives at time 43786
+Event: carLeaves at time 43918
+Event: carArrives at time 43955
+Event: carArrives at time 44000
+Event: carLeaves at time 44052
+Event: carArrives at time 44129
+Event: carArrives at time 44190
+Event: carArrives at time 44212
+Event: carLeaves at time 44420
+Event: carArrives at time 44576
+Event: carArrives at time 44636
+Event: carArrives at time 44803
+Event: carArrives at time 45147
+Event: carArrives at time 45227
+Event: carArrives at time 45297
+Event: carArrives at time 45340
+Event: carArrives at time 45410
+Event: carArrives at time 45532
+Event: carArrives at time 45547
+Event: carArrives at time 45566
+Event: carArrives at time 45700
+Event: carArrives at time 45714
+Event: carArrives at time 45754
+Event: carArrives at time 45799
+Event: carLeaves at time 45895
+Event: carArrives at time 46009
+Event: carLeaves at time 46130
+Event: carArrives at time 46165
+Event: carArrives at time 46226
+Event: carArrives at time 46300
+Event: carArrives at time 46660
+Event: carArrives at time 46757
 Event: solarUpdate at time 46800
-Event: carArrives at time 46829
-Event: carLeaves at time 46841
-Event: carArrives at time 47080
-Event: carLeaves at time 47138
-Event: carArrives at time 47218
-Event: carLeaves at time 47230
-Event: carArrives at time 47266
-Event: carLeaves at time 47280
-Event: carArrives at time 47691
-Event: carLeaves at time 47703
-Event: carArrives at time 47895
-Event: carLeaves at time 47907
-Event: carArrives at time 47925
-Event: carLeaves at time 47930
-Event: carArrives at time 47959
-Event: carLeaves at time 47977
-Event: carArrives at time 48009
-Event: carLeaves at time 48023
-Event: carArrives at time 48090
-Event: carLeaves at time 48109
-Event: carArrives at time 48273
-Event: carLeaves at time 48282
-Event: carArrives at time 48292
-Event: carLeaves at time 48295
-Event: carArrives at time 48305
-Event: carLeaves at time 48318
-Event: carArrives at time 48477
-Event: carLeaves at time 48489
-Event: carArrives at time 48509
-Event: carArrives at time 48519
-Event: carLeaves at time 48524
-Event: carLeaves at time 48533
-Event: carArrives at time 48557
-Event: carArrives at time 48562
-Event: carLeaves at time 48566
-Event: carLeaves at time 48574
-Event: carArrives at time 48677
-Event: carLeaves at time 48682
-Event: carArrives at time 48941
-Event: carLeaves at time 48952
-Event: carArrives at time 48953
-Event: carLeaves at time 48955
-Event: carArrives at time 49017
-Event: carLeaves at time 49030
-Event: carArrives at time 49121
-Event: carLeaves at time 49142
-Event: carArrives at time 49317
-Event: carLeaves at time 49322
-Event: carArrives at time 49325
-Event: carLeaves at time 49345
+Event: carArrives at time 46979
+Event: carArrives at time 47129
+Event: carLeaves at time 47178
+Event: carArrives at time 47352
+Event: carArrives at time 47362
+Event: carArrives at time 47436
+Event: carArrives at time 47474
+Event: carArrives at time 47593
+Event: carArrives at time 47753
+Event: carLeaves at time 47785
+Event: carArrives at time 47804
+Event: carArrives at time 47807
+Event: carArrives at time 47832
+Event: carArrives at time 47835
+Event: carArrives at time 47892
+Event: carArrives at time 47935
+Event: carArrives at time 47939
+Event: carArrives at time 48089
+Event: carArrives at time 48186
+Event: carArrives at time 48267
+Event: carArrives at time 48417
+Event: carArrives at time 48452
+Event: carArrives at time 48480
+Event: carLeaves at time 48539
+Event: carArrives at time 48559
+Event: carArrives at time 48568
+Event: carArrives at time 48672
+Event: carArrives at time 48899
+Event: carLeaves at time 49031
+Event: carArrives at time 49118
+Event: carArrives at time 49124
+Event: carArrives at time 49130
+Event: carArrives at time 49306
 Event: carArrives at time 49369
-Event: carLeaves at time 49385
-Event: carArrives at time 49387
-Event: carLeaves at time 49399
-Event: carArrives at time 49587
-Event: carLeaves at time 49589
-Event: carArrives at time 49616
-Event: carLeaves at time 49618
-Event: carArrives at time 49676
-Event: carLeaves at time 49695
-Event: carArrives at time 49846
-Event: carArrives at time 49865
-Event: carLeaves at time 49869
-Event: carLeaves at time 49871
-Event: carArrives at time 49906
-Event: carLeaves at time 49912
-Event: carArrives at time 50070
-Event: carLeaves at time 50087
-Event: carArrives at time 50127
-Event: carLeaves at time 50135
-Event: carArrives at time 50189
-Event: carLeaves at time 50190
-Event: carArrives at time 50378
-Event: carLeaves at time 50387
+Event: carArrives at time 49402
+Event: carArrives at time 49515
+Event: carArrives at time 49758
+Event: carArrives at time 49770
+Event: carArrives at time 49784
+Event: carArrives at time 49998
+Event: carLeaves at time 50024
+Event: carArrives at time 50025
+Event: carArrives at time 50039
+Event: carLeaves at time 50039
+Event: carArrives at time 50109
+Event: carArrives at time 50111
+Event: carArrives at time 50376
 Event: solarUpdate at time 50400
-Event: carArrives at time 50416
-Event: carArrives at time 50417
-Event: carLeaves at time 50425
-Event: carLeaves at time 50431
-Event: carArrives at time 50938
-Event: carLeaves at time 50946
-Event: carArrives at time 51010
-Event: carLeaves at time 51025
-Event: carArrives at time 51175
-Event: carArrives at time 51192
-Event: carLeaves at time 51210
-Event: carArrives at time 51212
-Event: carLeaves at time 51222
-Event: carLeaves at time 51225
-Event: carArrives at time 51254
-Event: carLeaves at time 51273
-Event: carArrives at time 51402
-Event: carLeaves at time 51403
-Event: carArrives at time 51581
-Event: carLeaves at time 51621
-Event: carArrives at time 51669
-Event: carLeaves at time 51678
-Event: carArrives at time 51726
-Event: carLeaves at time 51728
-Event: carArrives at time 51814
-Event: carArrives at time 51816
-Event: carLeaves at time 51824
-Event: carLeaves at time 51827
-Event: carArrives at time 51832
-Event: carLeaves at time 51843
-Event: carArrives at time 52009
-Event: carLeaves at time 52018
-Event: carArrives at time 52131
-Event: carLeaves at time 52144
-Event: carArrives at time 52151
-Event: carLeaves at time 52166
-Event: carArrives at time 52217
-Event: carLeaves at time 52220
-Event: carArrives at time 52285
-Event: carLeaves at time 52301
-Event: carArrives at time 52358
-Event: carLeaves at time 52366
-Event: carArrives at time 52375
-Event: carLeaves at time 52378
-Event: carArrives at time 52501
-Event: carLeaves at time 52516
-Event: carArrives at time 52802
-Event: carLeaves at time 52812
-Event: carArrives at time 52921
-Event: carArrives at time 52928
-Event: carLeaves at time 52935
-Event: carLeaves at time 52940
+Event: carArrives at time 50407
+Event: carArrives at time 50458
+Event: carArrives at time 50476
+Event: carArrives at time 50549
+Event: carArrives at time 50736
+Event: carArrives at time 50838
+Event: carArrives at time 50902
+Event: carLeaves at time 50986
+Event: carLeaves at time 51030
+Event: carArrives at time 51043
+Event: carArrives at time 51106
+Event: carArrives at time 51125
+Event: carArrives at time 51203
+Event: carArrives at time 51232
+Event: carArrives at time 51298
+Event: carLeaves at time 51394
+Event: carArrives at time 51430
+Event: carArrives at time 51802
+Event: carArrives at time 51807
+Event: carArrives at time 51891
+Event: carArrives at time 51895
+Event: carArrives at time 51920
+Event: carArrives at time 51990
+Event: carArrives at time 52043
+Event: carLeaves at time 52111
+Event: carLeaves at time 52168
+Event: carArrives at time 52211
+Event: carArrives at time 52212
+Event: carArrives at time 52282
+Event: carArrives at time 52320
+Event: carArrives at time 52373
+Event: carArrives at time 52381
+Event: carArrives at time 52491
+Event: carLeaves at time 52608
+Event: carArrives at time 52625
+Event: carArrives at time 52712
+Event: carArrives at time 52761
+Event: carArrives at time 52848
+Event: carArrives at time 52918
+Event: carArrives at time 52923
 Event: carArrives at time 52944
-Event: carLeaves at time 52957
-Event: carArrives at time 53008
-Event: carLeaves at time 53029
-Event: carArrives at time 53118
-Event: carLeaves at time 53131
-Event: carArrives at time 53240
-Event: carLeaves at time 53249
-Event: carArrives at time 53400
-Event: carArrives at time 53402
-Event: carLeaves at time 53412
-Event: carLeaves at time 53414
-Event: carArrives at time 53454
-Event: carLeaves at time 53463
-Event: carArrives at time 53523
-Event: carLeaves at time 53528
-Event: carArrives at time 53559
-Event: carLeaves at time 53567
-Event: carArrives at time 53578
-Event: carLeaves at time 53605
-Event: carArrives at time 53646
-Event: carLeaves at time 53685
-Event: carArrives at time 53904
-Event: carLeaves at time 53922
+Event: carArrives at time 52992
+Event: carArrives at time 53066
+Event: carArrives at time 53077
+Event: carLeaves at time 53330
+Event: carLeaves at time 53333
+Event: carArrives at time 53410
+Event: carArrives at time 53590
+Event: carArrives at time 53604
+Event: carArrives at time 53694
+Event: carArrives at time 53775
+Event: carLeaves at time 53776
+Event: carArrives at time 53810
 Event: solarUpdate at time 54000
-Event: carArrives at time 54109
-Event: carLeaves at time 54179
-Event: carArrives at time 54337
-Event: carLeaves at time 54398
-Event: carArrives at time 54421
-Event: carLeaves at time 54434
-Event: carArrives at time 54494
-Event: carArrives at time 54494
-Event: carLeaves at time 54496
-Event: carLeaves at time 54505
-Event: carArrives at time 54540
-Event: carLeaves at time 54548
-Event: carArrives at time 54671
-Event: carLeaves at time 54684
-Event: carArrives at time 54776
-Event: carLeaves at time 54800
-Event: carArrives at time 54909
-Event: carLeaves at time 54925
-Event: carArrives at time 54930
-Event: carLeaves at time 54940
-Event: carArrives at time 55037
-Event: carLeaves at time 55042
-Event: carArrives at time 55059
-Event: carLeaves at time 55074
-Event: carArrives at time 55215
-Event: carLeaves at time 55226
-Event: carArrives at time 55425
-Event: carLeaves at time 55436
-Event: carArrives at time 55670
-Event: carArrives at time 55682
-Event: carLeaves at time 55686
-Event: carLeaves at time 55690
-Event: carArrives at time 55793
-Event: carLeaves at time 55813
-Event: carArrives at time 55893
-Event: carLeaves at time 55933
-Event: carArrives at time 56003
-Event: carLeaves at time 56046
-Event: carArrives at time 56136
-Event: carLeaves at time 56151
-Event: carArrives at time 56161
-Event: carLeaves at time 56175
-Event: carArrives at time 56285
-Event: carLeaves at time 56295
-Event: carArrives at time 56564
-Event: carLeaves at time 56578
-Event: carArrives at time 56592
-Event: carLeaves at time 56609
-Event: carArrives at time 56743
-Event: carLeaves at time 56757
-Event: carArrives at time 56761
-Event: carArrives at time 56765
-Event: carLeaves at time 56772
-Event: carLeaves at time 56776
-Event: carArrives at time 56872
-Event: carLeaves at time 56890
-Event: carArrives at time 57188
-Event: carLeaves at time 57197
-Event: carArrives at time 57384
-Event: carArrives at time 57385
-Event: carLeaves at time 57393
-Event: carLeaves at time 57397
-Event: carArrives at time 57413
-Event: carLeaves at time 57434
-Event: carArrives at time 57554
-Event: carLeaves at time 57555
+Event: carArrives at time 54017
+Event: carArrives at time 54224
+Event: carLeaves at time 54329
+Event: carArrives at time 54380
+Event: carArrives at time 54423
+Event: carArrives at time 54486
+Event: carArrives at time 54762
+Event: carLeaves at time 54792
+Event: carArrives at time 54884
+Event: carLeaves at time 54921
+Event: carLeaves at time 55004
+Event: carArrives at time 55039
+Event: carLeaves at time 55139
+Event: carLeaves at time 55229
+Event: carArrives at time 55286
+Event: carLeaves at time 55386
+Event: carArrives at time 55417
+Event: carArrives at time 55684
+Event: carArrives at time 55738
+Event: carArrives at time 55908
+Event: carArrives at time 56101
+Event: carArrives at time 56162
+Event: carArrives at time 56203
+Event: carArrives at time 56280
+Event: carArrives at time 56283
+Event: carLeaves at time 56324
+Event: carArrives at time 56481
+Event: carArrives at time 56568
+Event: carArrives at time 56856
+Event: carArrives at time 57048
+Event: carLeaves at time 57125
+Event: carArrives at time 57140
+Event: carLeaves at time 57204
+Event: carLeaves at time 57218
+Event: carArrives at time 57247
+Event: carArrives at time 57328
+Event: carArrives at time 57518
 Event: solarUpdate at time 57600
-Event: carArrives at time 57628
-Event: carLeaves at time 57631
-Event: carArrives at time 57680
-Event: carLeaves at time 57689
-Event: carArrives at time 57769
-Event: carLeaves at time 57778
-Event: carArrives at time 57961
-Event: carLeaves at time 57963
+Event: carArrives at time 57682
+Event: carArrives at time 57756
+Event: carArrives at time 57797
+Event: carArrives at time 57872
+Event: carArrives at time 57880
 Event: carArrives at time 57979
-Event: carLeaves at time 57997
-Event: carArrives at time 58027
-Event: carLeaves at time 58042
-Event: carArrives at time 58289
-Event: carArrives at time 58302
-Event: carLeaves at time 58305
-Event: carLeaves at time 58348
-Event: carArrives at time 58351
-Event: carArrives at time 58367
-Event: carLeaves at time 58379
-Event: carArrives at time 58391
-Event: carLeaves at time 58402
-Event: carLeaves at time 58407
-Event: carArrives at time 58464
-Event: carLeaves at time 58477
-Event: carArrives at time 58635
-Event: carArrives at time 58647
-Event: carLeaves at time 58667
-Event: carLeaves at time 58673
-Event: carArrives at time 58701
-Event: carArrives at time 58704
-Event: carLeaves at time 58705
-Event: carLeaves at time 58743
-Event: carArrives at time 58849
-Event: carLeaves at time 58857
+Event: carArrives at time 58018
+Event: carArrives at time 58084
+Event: carArrives at time 58100
+Event: carArrives at time 58207
+Event: carArrives at time 58276
+Event: carArrives at time 58276
+Event: carArrives at time 58298
+Event: carArrives at time 58364
+Event: carArrives at time 58401
+Event: carArrives at time 58494
+Event: carArrives at time 58608
+Event: carArrives at time 58675
+Event: carArrives at time 58747
+Event: carArrives at time 58801
+Event: carArrives at time 58827
+Event: carArrives at time 58878
+Event: carArrives at time 58905
 Event: carArrives at time 58912
-Event: carLeaves at time 58925
-Event: carArrives at time 58966
-Event: carLeaves at time 58976
-Event: carArrives at time 58981
-Event: carLeaves at time 58985
-Event: carArrives at time 59008
-Event: carLeaves at time 59017
-Event: carArrives at time 59030
-Event: carLeaves at time 59038
-Event: carArrives at time 59041
-Event: carArrives at time 59061
-Event: carLeaves at time 59061
-Event: carLeaves at time 59075
-Event: carArrives at time 59148
-Event: carArrives at time 59152
-Event: carLeaves at time 59162
-Event: carLeaves at time 59173
-Event: carArrives at time 59188
-Event: carLeaves at time 59202
-Event: carArrives at time 59321
-Event: carLeaves at time 59325
-Event: carArrives at time 59342
-Event: carLeaves at time 59356
-Event: carArrives at time 59360
-Event: carArrives at time 59391
-Event: carLeaves at time 59395
-Event: carLeaves at time 59405
-Event: carArrives at time 59490
-Event: carLeaves at time 59497
-Event: carArrives at time 59525
-Event: carLeaves at time 59567
-Event: carArrives at time 59635
-Event: carLeaves at time 59648
-Event: carArrives at time 59761
-Event: carLeaves at time 59772
-Event: carArrives at time 59797
-Event: carLeaves at time 59809
-Event: carArrives at time 59834
-Event: carLeaves at time 59847
-Event: carArrives at time 59873
+Event: carArrives at time 58951
+Event: carArrives at time 59022
+Event: carArrives at time 59050
+Event: carArrives at time 59090
+Event: carArrives at time 59163
+Event: carLeaves at time 59217
+Event: carArrives at time 59218
+Event: carArrives at time 59218
+Event: carLeaves at time 59247
+Event: carArrives at time 59268
+Event: carArrives at time 59328
+Event: carArrives at time 59395
+Event: carArrives at time 59504
+Event: carArrives at time 59526
+Event: carArrives at time 59554
+Event: carArrives at time 59567
+Event: carArrives at time 59722
+Event: carArrives at time 59744
+Event: carArrives at time 59766
+Event: carLeaves at time 59825
+Event: carArrives at time 59856
 Event: carArrives at time 59888
-Event: carLeaves at time 59901
-Event: carArrives at time 59915
-Event: carLeaves at time 59920
-Event: carLeaves at time 59942
-Event: carArrives at time 59978
-Event: carLeaves at time 59979
-Event: carArrives at time 59983
-Event: carArrives at time 59994
-Event: carLeaves at time 59994
-Event: carLeaves at time 59995
-Event: carArrives at time 59998
-Event: carLeaves at time 60017
-Event: carArrives at time 60047
-Event: carLeaves at time 60060
-Event: carArrives at time 60230
-Event: carLeaves at time 60271
-Event: carArrives at time 60314
-Event: carLeaves at time 60317
-Event: carArrives at time 60350
-Event: carLeaves at time 60388
-Event: carArrives at time 60413
-Event: carLeaves at time 60434
-Event: carArrives at time 60443
-Event: carLeaves at time 60452
-Event: carArrives at time 60530
-Event: carLeaves at time 60534
-Event: carArrives at time 60538
-Event: carLeaves at time 60552
-Event: carArrives at time 60601
-Event: carArrives at time 60603
-Event: carLeaves at time 60607
-Event: carLeaves at time 60624
-Event: carArrives at time 60809
-Event: carLeaves at time 60820
-Event: carArrives at time 60868
-Event: carLeaves at time 60870
-Event: carArrives at time 61014
-Event: carLeaves at time 61027
-Event: carArrives at time 61029
-Event: carLeaves at time 61063
-Event: carArrives at time 61197
+Event: carLeaves at time 59932
+Event: carArrives at time 60056
+Event: carArrives at time 60069
+Event: carLeaves at time 60114
+Event: carArrives at time 60184
+Event: carLeaves at time 60237
+Event: carLeaves at time 60256
+Event: carArrives at time 60263
+Event: carArrives at time 60279
+Car Place full, moving to another
+Event: carArrives at time 60290
+Event: carArrives at time 60300
+Event: carArrives at time 60337
+Event: carArrives at time 60349
+Event: carLeaves at time 60558
+Event: carLeaves at time 60586
+Event: carArrives at time 60617
+Event: carArrives at time 60730
+Event: carArrives at time 60856
+Event: carLeaves at time 60857
+Event: carArrives at time 60879
+Event: carArrives at time 60939
+Event: carArrives at time 60969
+Event: carLeaves at time 60975
+Event: carArrives at time 61003
+Event: carLeaves at time 61010
+Event: carArrives at time 61057
+Event: carLeaves at time 61136
 Event: solarUpdate at time 61200
-Event: carArrives at time 61207
-Event: carLeaves at time 61211
-Event: carLeaves at time 61213
-Event: carArrives at time 61258
-Event: carLeaves at time 61291
-Event: carArrives at time 61312
-Event: carLeaves at time 61317
-Event: carArrives at time 61331
-Event: carArrives at time 61336
-Event: carLeaves at time 61338
-Event: carLeaves at time 61343
-Event: carArrives at time 61378
-Event: carArrives at time 61387
-Event: carLeaves at time 61390
-Event: carLeaves at time 61412
-Event: carArrives at time 61414
-Event: carLeaves at time 61428
-Event: carArrives at time 61459
-Event: carLeaves at time 61476
-Event: carArrives at time 61561
-Event: carLeaves at time 61567
-Event: carArrives at time 61589
-Event: carLeaves at time 61602
-Event: carArrives at time 61608
-Event: carLeaves at time 61624
-Event: carArrives at time 61648
-Event: carArrives at time 61662
-Event: carLeaves at time 61666
-Event: carLeaves at time 61674
-Event: carArrives at time 61717
-Event: carLeaves at time 61732
-Event: carArrives at time 61815
-Event: carLeaves at time 61827
-Event: carArrives at time 61881
-Event: carLeaves at time 61883
-Event: carArrives at time 61891
-Event: carArrives at time 61936
-Event: carLeaves at time 61951
-Event: carLeaves at time 61958
-Event: carArrives at time 62004
-Event: carLeaves at time 62014
-Event: carArrives at time 62044
-Event: carArrives at time 62050
-Event: carLeaves at time 62058
-Event: carLeaves at time 62061
-Event: carArrives at time 62107
-Event: carArrives at time 62151
-Event: carLeaves at time 62151
-Event: carLeaves at time 62170
-Event: carArrives at time 62216
-Event: carLeaves at time 62217
-Event: carArrives at time 62330
-Event: carArrives at time 62338
-Event: carLeaves at time 62338
-Event: carArrives at time 62343
-Event: carArrives at time 62345
-Event: carLeaves at time 62348
-Event: carLeaves at time 62366
-Event: carLeaves at time 62375
-Event: carArrives at time 62564
-Event: carLeaves at time 62576
-Event: carArrives at time 62599
-Event: carLeaves at time 62607
-Event: carArrives at time 62714
-Event: carLeaves at time 62719
-Event: carArrives at time 62881
-Event: carLeaves at time 62898
-Event: carArrives at time 62979
-Event: carLeaves at time 63002
+Event: carArrives at time 61205
+Car Place full, moving to another
+Event: carArrives at time 61221
+Event: carArrives at time 61318
+Event: carArrives at time 61323
+Event: carLeaves at time 61404
+Event: carArrives at time 61474
+Event: carArrives at time 61554
+Event: carLeaves at time 61566
+Event: carArrives at time 61572
+Event: carArrives at time 61629
+Car Place full, moving to another
+Event: carArrives at time 61638
+Event: carArrives at time 61661
+Event: carArrives at time 61743
+Event: carArrives at time 61777
+Event: carArrives at time 61805
+Event: carArrives at time 61839
+Event: carArrives at time 61912
+Car Place full, moving to another
+Event: carArrives at time 61979
+Car Place full, moving to another
+Event: carArrives at time 61997
+Car Place full, moving to another
+Event: carArrives at time 62009
+Car Place full, moving to another
+Event: carLeaves at time 62029
+Event: carArrives at time 62083
+Event: carLeaves at time 62098
+Event: carArrives at time 62158
+Event: carArrives at time 62208
+Car Place full, moving to another
+Event: carArrives at time 62215
+Car Place full, moving to another
+Event: carArrives at time 62229
+Event: carLeaves at time 62230
+Event: carArrives at time 62237
+Event: carArrives at time 62272
+Event: carArrives at time 62313
+Event: carArrives at time 62405
+Event: carArrives at time 62512
+Car Place full, moving to another
+Event: carArrives at time 62553
+Car Place full, moving to another
+Event: carArrives at time 62567
+Event: carArrives at time 62579
+Event: carArrives at time 62597
+Event: carArrives at time 62609
+Event: carLeaves at time 62622
+Event: carLeaves at time 62650
+Event: carArrives at time 62711
+Car Place full, moving to another
+Event: carArrives at time 62808
+Event: carArrives at time 62815
+Event: carArrives at time 62839
+Event: carArrives at time 62923
+Event: carArrives at time 62990
 Event: carArrives at time 63012
-Event: carLeaves at time 63014
-Event: carArrives at time 63040
-Event: carLeaves at time 63045
-Event: carArrives at time 63059
-Event: carLeaves at time 63094
-Event: carArrives at time 63150
-Event: carLeaves at time 63162
-Event: carArrives at time 63170
-Event: carLeaves at time 63174
-Event: carArrives at time 63191
-Event: carLeaves at time 63205
-Event: carArrives at time 63237
-Event: carArrives at time 63245
-Event: carLeaves at time 63245
-Event: carArrives at time 63251
-Event: carLeaves at time 63251
-Event: carLeaves at time 63260
-Event: carArrives at time 63286
-Event: carArrives at time 63300
-Event: carLeaves at time 63324
-Event: carLeaves at time 63324
-Event: carArrives at time 63403
-Event: carLeaves at time 63417
-Event: carArrives at time 63457
-Event: carLeaves at time 63475
-Event: carArrives at time 63490
-Event: carLeaves at time 63492
-Event: carArrives at time 63494
-Event: carLeaves at time 63506
-Event: carArrives at time 63515
-Event: carLeaves at time 63516
-Event: carArrives at time 63569
-Event: carLeaves at time 63586
-Event: carArrives at time 63602
-Event: carLeaves at time 63615
-Event: carArrives at time 63661
-Event: carLeaves at time 63672
-Event: carArrives at time 63800
-Event: carLeaves at time 63815
-Event: carArrives at time 64044
-Event: carLeaves at time 64059
-Event: carArrives at time 64103
-Event: carLeaves at time 64115
-Event: carArrives at time 64158
+Car Place full, moving to another
+Event: carArrives at time 63091
+Event: carArrives at time 63112
+Event: carArrives at time 63133
+Event: carArrives at time 63137
+Car Place full, moving to another
+Event: carArrives at time 63153
+Event: carArrives at time 63183
+Event: carArrives at time 63234
+Car Place full, moving to another
+Event: carArrives at time 63234
+Car Place full, moving to another
+Event: carArrives at time 63240
+Event: carArrives at time 63311
+Event: carArrives at time 63358
+Event: carArrives at time 63361
+Event: carArrives at time 63372
+Event: carArrives at time 63390
+Event: carArrives at time 63436
+Car Place full, moving to another
+Event: carArrives at time 63501
+Event: carArrives at time 63568
+Event: carArrives at time 63603
+Event: carArrives at time 63612
+Event: carArrives at time 63663
+Car Place full, moving to another
+Event: carArrives at time 63693
+Event: carArrives at time 63737
+Car Place full, moving to another
+Event: carLeaves at time 63769
+Event: carArrives at time 63787
+Event: carArrives at time 63805
+Event: carArrives at time 63817
+Event: carArrives at time 63820
+Event: carArrives at time 63821
+Event: carArrives at time 63834
+Event: carArrives at time 63834
+Event: carArrives at time 63845
+Event: carArrives at time 63889
+Event: carArrives at time 63976
+Car Place full, moving to another
+Event: carLeaves at time 64019
+Event: carArrives at time 64036
+Car Place full, moving to another
+Event: carArrives at time 64040
+Car Place full, moving to another
+Event: carArrives at time 64073
+Event: carArrives at time 64099
+Car Place full, moving to another
+Event: carArrives at time 64125
 Event: carArrives at time 64165
-Event: carLeaves at time 64166
-Event: carLeaves at time 64177
-Event: carArrives at time 64182
-Event: carArrives at time 64184
-Event: carLeaves at time 64187
-Event: carLeaves at time 64200
-Event: carArrives at time 64224
-Event: carLeaves at time 64227
-Event: carArrives at time 64252
-Event: carLeaves at time 64293
-Event: carArrives at time 64383
-Event: carLeaves at time 64403
-Event: carArrives at time 64420
-Event: carArrives at time 64426
-Event: carLeaves at time 64431
-Event: carLeaves at time 64437
-Event: carArrives at time 64531
-Event: carLeaves at time 64532
-Event: carArrives at time 64568
-Event: carArrives at time 64603
-Event: carLeaves at time 64607
-Event: carLeaves at time 64636
-Event: carArrives at time 64652
-Event: carLeaves at time 64653
-Event: carArrives at time 64708
-Event: carLeaves at time 64712
-Event: carArrives at time 64742
-Event: carArrives at time 64747
-Event: carLeaves at time 64752
-Event: carLeaves at time 64756
+Event: carArrives at time 64203
+Car Place full, moving to another
+Event: carLeaves at time 64243
+Event: carArrives at time 64251
+Car Place full, moving to another
+Event: carArrives at time 64259
+Car Place full, moving to another
+Event: carLeaves at time 64259
+Event: carArrives at time 64263
+Event: carArrives at time 64298
+Car Place full, moving to another
+Event: carArrives at time 64299
+Car Place full, moving to another
+Event: carArrives at time 64337
+Event: carArrives at time 64338
+Car Place full, moving to another
+Event: carArrives at time 64355
+Event: carArrives at time 64376
+Event: carArrives at time 64378
+Event: carArrives at time 64390
+Event: carLeaves at time 64407
+Event: carArrives at time 64457
+Event: carArrives at time 64461
+Car Place full, moving to another
+Event: carArrives at time 64512
+Event: carArrives at time 64529
+Car Place full, moving to another
+Event: carArrives at time 64576
+Car Place full, moving to another
+Event: carArrives at time 64623
+Car Place full, moving to another
+Event: carArrives at time 64636
+Event: carArrives at time 64640
+Car Place full, moving to another
+Event: carArrives at time 64699
+Event: carArrives at time 64720
+Event: carArrives at time 64723
 Event: solarUpdate at time 64800
+Event: carArrives at time 64803
+Event: carLeaves at time 64807
+Event: carLeaves at time 64808
 Event: carArrives at time 64817
-Event: carLeaves at time 64830
-Event: carArrives at time 64870
-Event: carArrives at time 64871
-Event: carArrives at time 64886
-Event: carLeaves at time 64886
-Event: carLeaves at time 64900
-Event: carLeaves at time 64900
-Event: carArrives at time 64952
-Event: carLeaves at time 64960
-Event: carArrives at time 64984
-Event: carLeaves at time 64989
-Event: carArrives at time 64998
-Event: carLeaves at time 65017
-Event: carArrives at time 65034
-Event: carArrives at time 65048
-Event: carLeaves at time 65050
-Event: carLeaves at time 65060
-Event: carArrives at time 65161
-Event: carLeaves at time 65174
-Event: carArrives at time 65188
-Event: carLeaves at time 65207
-Event: carArrives at time 65214
-Event: carLeaves at time 65221
-Event: carArrives at time 65289
+Car Place full, moving to another
+Event: carArrives at time 64847
+Event: carArrives at time 64851
+Event: carArrives at time 64859
+Event: carLeaves at time 64872
+Event: carArrives at time 64898
+Event: carArrives at time 64899
+Event: carArrives at time 64909
+Event: carArrives at time 64918
+Event: carArrives at time 64923
+Car Place full, moving to another
+Event: carArrives at time 64931
+Event: carArrives at time 64938
+Event: carArrives at time 64946
+Car Place full, moving to another
+Event: carLeaves at time 65024
+Event: carArrives at time 65026
+Car Place full, moving to another
+Event: carArrives at time 65061
+Car Place full, moving to another
+Event: carArrives at time 65129
+Event: carArrives at time 65176
+Event: carArrives at time 65189
+Car Place full, moving to another
+Event: carArrives at time 65223
+Event: carArrives at time 65240
+Event: carArrives at time 65258
+Event: carLeaves at time 65261
+Event: carArrives at time 65281
 Event: carLeaves at time 65300
-Event: carArrives at time 65372
-Event: carLeaves at time 65385
-Event: carArrives at time 65400
-Event: carArrives at time 65401
-Event: carArrives at time 65404
-Event: carLeaves at time 65415
-Event: carLeaves at time 65418
-Event: carLeaves at time 65442
-Event: carArrives at time 65448
-Event: carArrives at time 65468
-Event: carLeaves at time 65480
-Event: carArrives at time 65482
-Event: carLeaves at time 65485
-Event: carLeaves at time 65488
-Event: carArrives at time 65500
-Event: carLeaves at time 65502
-Event: carArrives at time 65529
-Event: carLeaves at time 65544
-Event: carArrives at time 65549
-Event: carArrives at time 65559
-Event: carLeaves at time 65561
-Event: carLeaves at time 65577
-Event: carArrives at time 65586
-Event: carLeaves at time 65597
-Event: carArrives at time 65650
-Event: carLeaves at time 65661
-Event: carArrives at time 65798
-Event: carLeaves at time 65809
-Event: carArrives at time 65966
-Event: carArrives at time 65972
-Event: carLeaves at time 65980
-Event: carLeaves at time 65984
-Event: carArrives at time 66002
-Event: carArrives at time 66016
-Event: carLeaves at time 66019
-Event: carLeaves at time 66020
-Event: carArrives at time 66034
-Event: carLeaves at time 66041
-Event: carArrives at time 66087
-Event: carArrives at time 66091
-Event: carLeaves at time 66097
-Event: carArrives at time 66108
-Event: carArrives at time 66109
-Event: carLeaves at time 66114
-Event: carArrives at time 66115
-Event: carLeaves at time 66121
-Event: carLeaves at time 66132
-Event: carLeaves at time 66133
-Event: carArrives at time 66137
-Event: carLeaves at time 66148
-Event: carArrives at time 66163
-Event: carLeaves at time 66177
-Event: carArrives at time 66199
-Event: carArrives at time 66200
-Event: carLeaves at time 66210
-Event: carLeaves at time 66218
-Event: carArrives at time 66324
-Event: carLeaves at time 66337
-Event: carArrives at time 66364
+Event: carArrives at time 65301
+Event: carArrives at time 65365
+Car Place full, moving to another
+Event: carArrives at time 65373
+Car Place full, moving to another
+Event: carArrives at time 65417
+Car Place full, moving to another
+Event: carArrives at time 65465
+Event: carArrives at time 65523
+Event: carArrives at time 65546
+Event: carArrives at time 65553
+Car Place full, moving to another
+Event: carArrives at time 65554
+Car Place full, moving to another
+Event: carArrives at time 65626
+Car Place full, moving to another
+Event: carArrives at time 65661
+Too many Car Places (3) full in a row
+Event: carArrives at time 65713
+Car Place full, moving to another
+Event: carArrives at time 65789
+Event: carLeaves at time 65808
+Event: carArrives at time 65871
+Car Place full, moving to another
+Event: carArrives at time 65942
+Car Place full, moving to another
+Event: carArrives at time 65944
+Event: carArrives at time 65965
+Event: carArrives at time 65973
+Car Place full, moving to another
+Event: carArrives at time 66017
+Event: carLeaves at time 66030
+Event: carArrives at time 66044
+Event: carArrives at time 66084
+Event: carLeaves at time 66086
+Event: carArrives at time 66107
+Event: carArrives at time 66149
+Event: carArrives at time 66153
+Event: carArrives at time 66154
+Event: carArrives at time 66156
+Event: carArrives at time 66173
+Event: carArrives at time 66212
+Event: carArrives at time 66226
+Event: carArrives at time 66246
+Event: carArrives at time 66275
+Car Place full, moving to another
+Event: carArrives at time 66277
+Event: carArrives at time 66296
+Car Place full, moving to another
+Event: carArrives at time 66313
+Event: carArrives at time 66320
+Event: carArrives at time 66333
 Event: carArrives at time 66369
-Event: carLeaves at time 66379
-Event: carLeaves at time 66383
-Event: carArrives at time 66394
-Event: carArrives at time 66398
-Event: carLeaves at time 66398
-Event: carLeaves at time 66401
-Event: carArrives at time 66449
-Event: carArrives at time 66454
-Event: carLeaves at time 66457
-Event: carArrives at time 66461
-Event: carLeaves at time 66465
-Event: carLeaves at time 66469
-Event: carArrives at time 66480
-Event: carLeaves at time 66492
-Event: carArrives at time 66493
-Event: carLeaves at time 66495
+Car Place full, moving to another
+Event: carLeaves at time 66458
+Event: carArrives at time 66471
+Event: carArrives at time 66497
+Car Place full, moving to another
+Event: carArrives at time 66501
+Event: carArrives at time 66525
+Car Place full, moving to another
 Event: carArrives at time 66538
-Event: carLeaves at time 66541
-Event: carArrives at time 66569
-Event: carLeaves at time 66579
-Event: carArrives at time 66666
-Event: carLeaves at time 66681
-Event: carArrives at time 66689
-Event: carArrives at time 66724
-Event: carLeaves at time 66736
-Event: carLeaves at time 66759
-Event: carArrives at time 66777
-Event: carLeaves at time 66799
-Event: carArrives at time 66981
-Event: carLeaves at time 66983
-Event: carArrives at time 67014
-Event: carArrives at time 67063
-Event: carLeaves at time 67080
-Event: carLeaves at time 67084
-Event: carArrives at time 67171
-Event: carLeaves at time 67181
-Event: carArrives at time 67201
-Event: carLeaves at time 67210
-Event: carArrives at time 67214
-Event: carLeaves at time 67217
-Event: carArrives at time 67227
-Event: carArrives at time 67228
-Event: carLeaves at time 67236
-Event: carLeaves at time 67242
-Event: carArrives at time 67243
-Event: carLeaves at time 67248
-Event: carArrives at time 67264
-Event: carArrives at time 67266
-Event: carLeaves at time 67266
-Event: carLeaves at time 67283
-Event: carArrives at time 67370
-Event: carLeaves at time 67378
-Event: carArrives at time 67402
-Event: carLeaves at time 67412
-Event: carArrives at time 67494
-Event: carArrives at time 67506
-Event: carLeaves at time 67510
-Event: carLeaves at time 67521
-Event: carArrives at time 67532
-Event: carLeaves at time 67549
-Event: carArrives at time 67550
-Event: carLeaves at time 67572
-Event: carArrives at time 67596
-Event: carArrives at time 67602
-Event: carLeaves at time 67613
-Event: carLeaves at time 67615
-Event: carArrives at time 67636
-Event: carLeaves at time 67647
-Event: carArrives at time 67692
-Event: carLeaves at time 67704
+Car Place full, moving to another
+Event: carArrives at time 66542
+Car Place full, moving to another
+Event: carArrives at time 66544
+Car Place full, moving to another
+Event: carArrives at time 66571
+Event: carArrives at time 66573
+Too many Car Places (3) full in a row
+Event: carArrives at time 66584
+Event: carArrives at time 66587
+Car Place full, moving to another
+Event: carArrives at time 66591
+Car Place full, moving to another
+Event: carArrives at time 66593
+Car Place full, moving to another
+Event: carArrives at time 66606
+Car Place full, moving to another
+Event: carArrives at time 66667
+Car Place full, moving to another
+Event: carArrives at time 66680
+Car Place full, moving to another
+Event: carArrives at time 66706
+Event: carArrives at time 66709
+Car Place full, moving to another
+Event: carArrives at time 66729
+Event: carArrives at time 66746
+Car Place full, moving to another
+Event: carArrives at time 66868
+Car Place full, moving to another
+Event: carArrives at time 66875
+Car Place full, moving to another
+Event: carArrives at time 66888
+Car Place full, moving to another
+Event: carArrives at time 66896
+Event: carArrives at time 66916
+Car Place full, moving to another
+Event: carArrives at time 66934
+Event: carArrives at time 66969
+Car Place full, moving to another
+Event: carArrives at time 67020
+Car Place full, moving to another
+Event: carArrives at time 67089
+Car Place full, moving to another
+Event: carArrives at time 67097
+Event: carLeaves at time 67118
+Event: carArrives at time 67125
+Car Place full, moving to another
+Event: carArrives at time 67132
+Event: carArrives at time 67138
+Car Place full, moving to another
+Event: carArrives at time 67142
+Too many Car Places (3) full in a row
+Event: carArrives at time 67144
+Car Place full, moving to another
+Event: carArrives at time 67165
+Car Place full, moving to another
+Event: carArrives at time 67187
+Event: carArrives at time 67191
+Car Place full, moving to another
+Event: carArrives at time 67193
+Car Place full, moving to another
+Event: carArrives at time 67206
+Car Place full, moving to another
+Event: carArrives at time 67267
+Car Place full, moving to another
+Event: carArrives at time 67280
+Car Place full, moving to another
+Event: carArrives at time 67309
+Car Place full, moving to another
+Event: carArrives at time 67346
+Car Place full, moving to another
+Event: carArrives at time 67349
+Car Place full, moving to another
+Event: carArrives at time 67359
+Event: carArrives at time 67443
+Car Place full, moving to another
+Event: carArrives at time 67465
+Event: carArrives at time 67468
+Event: carArrives at time 67475
+Too many Car Places (3) full in a row
+Event: carArrives at time 67486
+Car Place full, moving to another
+Event: carArrives at time 67488
+Car Place full, moving to another
+Event: carArrives at time 67516
+Car Place full, moving to another
+Event: carArrives at time 67533
+Car Place full, moving to another
+Event: carArrives at time 67569
+Too many Car Places (3) full in a row
+Event: carArrives at time 67601
+Car Place full, moving to another
+Event: carArrives at time 67620
+Car Place full, moving to another
+Event: carArrives at time 67625
+Event: carArrives at time 67674
+Event: carArrives at time 67689
+Car Place full, moving to another
+Event: carArrives at time 67725
+Event: carArrives at time 67738
+Too many Car Places (3) full in a row
+Event: carArrives at time 67744
+Too many Car Places (3) full in a row
+Event: carArrives at time 67765
+Car Place full, moving to another
+Event: carArrives at time 67769
+Event: carArrives at time 67791
+Event: carArrives at time 67793
+Too many Car Places (3) full in a row
 Event: carArrives at time 67806
-Event: carLeaves at time 67824
-Event: carArrives at time 67856
-Event: carArrives at time 67875
-Event: carLeaves at time 67875
-Event: carLeaves at time 67915
-Event: carArrives at time 67980
-Event: carLeaves at time 67997
-Event: carArrives at time 68028
-Event: carLeaves at time 68049
-Event: carArrives at time 68083
-Event: carLeaves at time 68084
-Event: carArrives at time 68178
-Event: carLeaves at time 68200
-Event: carArrives at time 68254
-Event: carLeaves at time 68274
-Event: carArrives at time 68298
-Event: carLeaves at time 68312
-Event: carArrives at time 68354
-Event: carLeaves at time 68369
-Event: carArrives at time 68374
-Event: carArrives at time 68375
-Event: carLeaves at time 68382
-Event: carArrives at time 68383
-Event: carLeaves at time 68384
-Event: carLeaves at time 68398
+Event: carArrives at time 67863
+Event: carArrives at time 67867
+Too many Car Places (3) full in a row
+Event: carArrives at time 67880
+Too many Car Places (3) full in a row
+Event: carArrives at time 67909
+Too many Car Places (3) full in a row
+Event: carArrives at time 67946
+Too many Car Places (3) full in a row
+Event: carArrives at time 67949
+Event: carArrives at time 67958
+Car Place full, moving to another
+Event: carArrives at time 68030
+Car Place full, moving to another
+Event: carArrives at time 68041
+Event: carArrives at time 68043
+Car Place full, moving to another
+Event: carArrives at time 68057
+Car Place full, moving to another
+Event: carArrives at time 68072
+Event: carArrives at time 68086
+Car Place full, moving to another
+Event: carArrives at time 68088
+Too many Car Places (3) full in a row
+Event: carArrives at time 68090
+Car Place full, moving to another
+Event: carLeaves at time 68110
+Event: carArrives at time 68116
+Too many Car Places (3) full in a row
+Event: carArrives at time 68133
+Car Place full, moving to another
+Event: carLeaves at time 68169
+Event: carArrives at time 68171
+Car Place full, moving to another
+Event: carArrives at time 68175
+Car Place full, moving to another
+Event: carArrives at time 68201
+Car Place full, moving to another
+Event: carArrives at time 68220
+Too many Car Places (3) full in a row
+Event: carArrives at time 68241
+Car Place full, moving to another
+Event: carArrives at time 68262
+Car Place full, moving to another
+Event: carArrives at time 68289
+Event: carArrives at time 68365
+Too many Car Places (3) full in a row
 Event: solarUpdate at time 68400
-Event: carArrives at time 68620
-Event: carLeaves at time 68628
-Event: carArrives at time 68745
-Event: carArrives at time 68755
-Event: carLeaves at time 68758
-Event: carLeaves at time 68762
-Event: carArrives at time 68773
-Event: carLeaves at time 68777
-Event: carArrives at time 68820
-Event: carLeaves at time 68839
-Event: carArrives at time 68989
-Event: carLeaves at time 69001
-Event: carArrives at time 69016
-Event: carLeaves at time 69034
-Event: carArrives at time 69090
-Event: carLeaves at time 69103
-Event: carArrives at time 69192
-Event: carLeaves at time 69195
-Event: carArrives at time 69212
-Event: carArrives at time 69218
-Event: carLeaves at time 69233
-Event: carLeaves at time 69254
-Event: carArrives at time 69272
-Event: carLeaves at time 69283
-Event: carArrives at time 69471
-Event: carLeaves at time 69481
-Event: carArrives at time 69524
-Event: carLeaves at time 69538
-Event: carArrives at time 69657
-Event: carLeaves at time 69659
-Event: carArrives at time 69777
-Event: carLeaves at time 69796
-Event: carArrives at time 69981
-Event: carLeaves at time 69987
-Event: carArrives at time 70172
+Event: carLeaves at time 68503
+Event: carArrives at time 68558
+Event: carArrives at time 68587
+Event: carArrives at time 68624
+Event: carArrives at time 68630
+Car Place full, moving to another
+Event: carArrives at time 68643
+Too many Car Places (3) full in a row
+Event: carArrives at time 68657
+Car Place full, moving to another
+Event: carArrives at time 68686
+Too many Car Places (3) full in a row
+Event: carArrives at time 68690
+Car Place full, moving to another
+Event: carArrives at time 68733
+Too many Car Places (3) full in a row
+Event: carArrives at time 68754
+Event: carArrives at time 68768
+Car Place full, moving to another
+Event: carArrives at time 68771
+Event: carArrives at time 68775
+Event: carArrives at time 68801
+Event: carArrives at time 68804
+Car Place full, moving to another
+Event: carArrives at time 68817
+Car Place full, moving to another
+Event: carArrives at time 68819
+Car Place full, moving to another
+Event: carArrives at time 68841
+Event: carArrives at time 68862
+Event: carArrives at time 68869
+Car Place full, moving to another
+Event: carArrives at time 68896
+Car Place full, moving to another
+Event: carArrives at time 68958
+Car Place full, moving to another
+Event: carArrives at time 68964
+Car Place full, moving to another
+Event: carArrives at time 68980
+Car Place full, moving to another
+Event: carArrives at time 69053
+Car Place full, moving to another
+Event: carArrives at time 69101
+Car Place full, moving to another
+Event: carArrives at time 69138
+Car Place full, moving to another
+Event: carArrives at time 69140
+Car Place full, moving to another
+Event: carArrives at time 69230
+Too many Car Places (3) full in a row
+Event: carArrives at time 69257
+Too many Car Places (3) full in a row
+Event: carArrives at time 69284
+Car Place full, moving to another
+Event: carArrives at time 69290
+Event: carArrives at time 69322
+Car Place full, moving to another
+Event: carArrives at time 69335
+Car Place full, moving to another
+Event: carArrives at time 69364
+Car Place full, moving to another
+Event: carArrives at time 69368
+Car Place full, moving to another
+Event: carLeaves at time 69386
+Event: carArrives at time 69404
+Car Place full, moving to another
+Event: carArrives at time 69410
+Event: carArrives at time 69417
+Event: carArrives at time 69419
+Car Place full, moving to another
+Event: carArrives at time 69469
+Car Place full, moving to another
+Event: carArrives at time 69496
+Event: carArrives at time 69558
+Car Place full, moving to another
+Event: carArrives at time 69564
+Car Place full, moving to another
+Event: carArrives at time 69580
+Event: carArrives at time 69589
+Car Place full, moving to another
+Event: carArrives at time 69597
+Car Place full, moving to another
+Event: carArrives at time 69653
+Car Place full, moving to another
+Event: carArrives at time 69701
+Event: carLeaves at time 69707
+Event: carArrives at time 69738
+Event: carArrives at time 69740
+Car Place full, moving to another
+Event: carArrives at time 69740
+Car Place full, moving to another
+Event: carArrives at time 69743
+Car Place full, moving to another
+Event: carArrives at time 69884
+Car Place full, moving to another
+Event: carLeaves at time 69890
+Event: carArrives at time 69891
+Event: carArrives at time 69922
+Car Place full, moving to another
+Event: carArrives at time 69935
+Car Place full, moving to another
+Event: carArrives at time 69937
+Car Place full, moving to another
+Event: carArrives at time 69964
+Car Place full, moving to another
+Event: carArrives at time 69968
+Too many Car Places (3) full in a row
+Event: carArrives at time 69988
+Car Place full, moving to another
+Event: carArrives at time 70004
+Too many Car Places (3) full in a row
+Event: carArrives at time 70019
+Too many Car Places (3) full in a row
+Event: carArrives at time 70057
+Car Place full, moving to another
+Event: carArrives at time 70069
+Too many Car Places (3) full in a row
+Event: carLeaves at time 70123
+Event: carArrives at time 70158
+Event: carArrives at time 70164
+Too many Car Places (3) full in a row
+Event: carArrives at time 70189
+Car Place full, moving to another
 Event: carLeaves at time 70195
-Event: carArrives at time 70198
-Event: carLeaves at time 70215
-Event: carArrives at time 70315
-Event: carLeaves at time 70333
-Event: carArrives at time 70360
-Event: carLeaves at time 70373
-Event: carArrives at time 70391
-Event: carLeaves at time 70404
-Event: carArrives at time 70424
-Event: carLeaves at time 70432
-Event: carArrives at time 70465
-Event: carLeaves at time 70473
-Event: carArrives at time 70490
-Event: carArrives at time 70492
-Event: carLeaves at time 70492
-Event: carLeaves at time 70508
-Event: carArrives at time 70572
-Event: carLeaves at time 70583
-Event: carArrives at time 70589
-Event: carLeaves at time 70606
-Event: carArrives at time 70611
-Event: carLeaves at time 70632
-Event: carArrives at time 70703
-Event: carLeaves at time 70719
-Event: carArrives at time 70792
-Event: carArrives at time 70811
-Event: carLeaves at time 70811
+Event: carArrives at time 70197
+Event: carArrives at time 70253
+Too many Car Places (3) full in a row
+Event: carArrives at time 70267
+Car Place full, moving to another
+Event: carArrives at time 70302
+Car Place full, moving to another
+Event: carArrives at time 70340
+Too many Car Places (3) full in a row
+Event: carArrives at time 70340
+Car Place full, moving to another
+Event: carArrives at time 70343
+Car Place full, moving to another
+Event: carArrives at time 70344
+Car Place full, moving to another
+Event: carLeaves at time 70354
+Event: carArrives at time 70365
+Event: carArrives at time 70383
+Car Place full, moving to another
+Event: carArrives at time 70484
+Too many Car Places (3) full in a row
+Event: carArrives at time 70505
+Car Place full, moving to another
+Event: carArrives at time 70522
+Too many Car Places (3) full in a row
+Event: carArrives at time 70535
+Too many Car Places (3) full in a row
+Event: carArrives at time 70537
+Car Place full, moving to another
+Event: carArrives at time 70564
+Too many Car Places (3) full in a row
+Event: carArrives at time 70588
+Car Place full, moving to another
+Event: carLeaves at time 70603
+Event: carArrives at time 70606
+Event: carArrives at time 70653
+Car Place full, moving to another
+Event: carArrives at time 70657
+Car Place full, moving to another
+Event: carLeaves at time 70718
+Event: carLeaves at time 70766
+Event: carArrives at time 70789
+Too many Car Places (3) full in a row
+Event: carArrives at time 70805
+Car Place full, moving to another
+Event: carLeaves at time 70812
 Event: carLeaves at time 70826
-Event: carArrives at time 70925
-Event: carLeaves at time 70936
-Event: carArrives at time 70955
-Event: carLeaves at time 70974
-Event: carArrives at time 71008
-Event: carLeaves at time 71022
-Event: carArrives at time 71031
-Event: carLeaves at time 71035
+Event: carArrives at time 70867
+Event: carLeaves at time 70891
+Event: carArrives at time 70902
+Event: carArrives at time 70940
+Too many Car Places (3) full in a row
+Event: carArrives at time 70943
+Too many Car Places (3) full in a row
+Event: carArrives at time 70944
+Car Place full, moving to another
+Event: carArrives at time 70983
+Car Place full, moving to another
+Event: carArrives at time 71042
+Car Place full, moving to another
+Event: carLeaves at time 71056
+Event: carLeaves at time 71066
+Event: carArrives at time 71068
+Car Place full, moving to another
 Event: carArrives at time 71105
+Car Place full, moving to another
 Event: carArrives at time 71106
-Event: carLeaves at time 71107
-Event: carArrives at time 71126
-Event: carLeaves at time 71135
-Event: carLeaves at time 71151
-Event: carArrives at time 71231
-Event: carLeaves at time 71245
-Event: carArrives at time 71369
-Event: carLeaves at time 71380
-Event: carArrives at time 71402
-Event: carLeaves at time 71410
-Event: carArrives at time 71454
-Event: carArrives at time 71468
-Event: carLeaves at time 71468
-Event: carLeaves at time 71481
-Event: carArrives at time 71561
-Event: carLeaves at time 71574
-Event: carArrives at time 71584
-Event: carLeaves at time 71587
-Event: carArrives at time 71717
-Event: carArrives at time 71741
-Event: carLeaves at time 71741
-Event: carLeaves at time 71755
-Event: carArrives at time 71848
-Event: carLeaves at time 71862
-Event: carArrives at time 71884
-Event: carLeaves at time 71889
-Event: carArrives at time 71956
-Event: carLeaves at time 71980
+Car Place full, moving to another
+Event: carArrives at time 71137
+Event: carArrives at time 71184
+Car Place full, moving to another
+Event: carArrives at time 71188
+Too many Car Places (3) full in a row
+Event: carArrives at time 71253
+Car Place full, moving to another
+Event: carArrives at time 71257
+Too many Car Places (3) full in a row
+Event: carLeaves at time 71392
+Event: carArrives at time 71394
+Event: carArrives at time 71405
+Car Place full, moving to another
+Event: carLeaves at time 71406
+Event: carArrives at time 71412
+Event: carArrives at time 71419
+Event: carLeaves at time 71540
+Event: carArrives at time 71544
+Event: carArrives at time 71556
+Event: carLeaves at time 71578
+Event: carArrives at time 71583
+Too many Car Places (3) full in a row
+Event: carArrives at time 71591
+Event: carArrives at time 71615
+Car Place full, moving to another
+Event: carArrives at time 71642
+Car Place full, moving to another
+Event: carArrives at time 71668
+Car Place full, moving to another
+Event: carArrives at time 71705
+Too many Car Places (3) full in a row
+Event: carArrives at time 71706
+Car Place full, moving to another
+Event: carArrives at time 71714
+Event: carArrives at time 71740
+Car Place full, moving to another
+Event: carArrives at time 71752
+Event: carArrives at time 71784
+Car Place full, moving to another
+Event: carLeaves at time 71802
+Event: carArrives at time 71844
+Car Place full, moving to another
+Event: carArrives at time 71853
+Event: carArrives at time 71869
+Car Place full, moving to another
+Event: carArrives at time 71931
+Car Place full, moving to another
+Event: carArrives at time 71950
+Car Place full, moving to another
+Event: carArrives at time 71968
+Car Place full, moving to another
+Event: carArrives at time 71974
+Car Place full, moving to another
+Event: carLeaves at time 71983
 Event: solarUpdate at time 72000
-Event: carArrives at time 72026
-Event: carArrives at time 72041
-Event: carLeaves at time 72041
-Event: carLeaves at time 72058
-Event: carArrives at time 72084
-Event: carLeaves at time 72097
+Event: carArrives at time 72005
+Too many Car Places (3) full in a row
+Event: carArrives at time 72013
+Car Place full, moving to another
+Event: carArrives at time 72017
+Car Place full, moving to another
+Event: carArrives at time 72095
+Car Place full, moving to another
 Event: carArrives at time 72118
-Event: carArrives at time 72130
-Event: carLeaves at time 72130
-Event: carLeaves at time 72166
-Event: carArrives at time 72167
-Event: carLeaves at time 72176
-Event: carArrives at time 72207
-Event: carLeaves at time 72213
-Event: carArrives at time 72381
-Event: carLeaves at time 72413
-Event: carArrives at time 72507
-Event: carLeaves at time 72517
-Event: carArrives at time 72740
-Event: carLeaves at time 72784
-Event: carArrives at time 72785
-Event: carLeaves at time 72798
-Event: carArrives at time 72825
-Event: carLeaves at time 72838
-Event: carArrives at time 72916
-Event: carLeaves at time 72952
-Event: carArrives at time 72963
-Event: carLeaves at time 72975
-Event: carArrives at time 73086
-Event: carLeaves at time 73099
-Event: carArrives at time 73138
-Event: carLeaves at time 73151
-Event: carArrives at time 73216
-Event: carArrives at time 73237
-Event: carLeaves at time 73239
-Event: carLeaves at time 73242
-Event: carArrives at time 73370
-Event: carArrives at time 73373
-Event: carLeaves at time 73385
-Event: carLeaves at time 73395
-Event: carArrives at time 73470
-Event: carArrives at time 73491
-Event: carLeaves at time 73496
-Event: carLeaves at time 73515
-Event: carArrives at time 73617
-Event: carArrives at time 73621
-Event: carLeaves at time 73635
-Event: carLeaves at time 73640
-Event: carArrives at time 73757
-Event: carLeaves at time 73770
-Event: carArrives at time 73948
-Event: carLeaves at time 73960
-Event: carArrives at time 74209
-Event: carLeaves at time 74221
-Event: carArrives at time 74672
-Event: carLeaves at time 74687
-Event: carArrives at time 74866
-Event: carLeaves at time 74883
-Event: carArrives at time 74891
-Event: carLeaves at time 74900
-Event: carArrives at time 75012
-Event: carLeaves at time 75022
+Car Place full, moving to another
+Event: carLeaves at time 72118
+Event: carArrives at time 72215
+Car Place full, moving to another
+Event: carArrives at time 72242
+Too many Car Places (3) full in a row
+Event: carArrives at time 72268
+Too many Car Places (3) full in a row
+Event: carLeaves at time 72274
+Event: carArrives at time 72306
+Too many Car Places (3) full in a row
+Event: carArrives at time 72324
+Car Place full, moving to another
+Event: carArrives at time 72336
+Event: carArrives at time 72340
+Car Place full, moving to another
+Event: carLeaves at time 72380
+Event: carArrives at time 72384
+Too many Car Places (3) full in a row
+Event: carArrives at time 72390
+Car Place full, moving to another
+Event: carArrives at time 72398
+Car Place full, moving to another
+Event: carArrives at time 72444
+Event: carArrives at time 72469
+Car Place full, moving to another
+Event: carLeaves at time 72485
+Event: carLeaves at time 72486
+Event: carLeaves at time 72502
+Event: carArrives at time 72531
+Car Place full, moving to another
+Event: carArrives at time 72550
+Car Place full, moving to another
+Event: carArrives at time 72568
+Event: carArrives at time 72574
+Car Place full, moving to another
+Event: carArrives at time 72583
+Event: carArrives at time 72590
+Car Place full, moving to another
+Event: carArrives at time 72593
+Car Place full, moving to another
+Event: carArrives at time 72594
+Car Place full, moving to another
+Event: carArrives at time 72603
+Car Place full, moving to another
+Event: carArrives at time 72610
+Car Place full, moving to another
+Event: carArrives at time 72613
+Car Place full, moving to another
+Event: carArrives at time 72617
+Car Place full, moving to another
+Event: carArrives at time 72629
+Car Place full, moving to another
+Event: carArrives at time 72658
+Car Place full, moving to another
+Event: carLeaves at time 72661
+Event: carArrives at time 72695
+Car Place full, moving to another
+Event: carLeaves at time 72710
+Event: carArrives at time 72718
+Car Place full, moving to another
+Event: carArrives at time 72780
+Event: carArrives at time 72815
+Too many Car Places (3) full in a row
+Event: carLeaves at time 72864
+Event: carLeaves at time 72894
+Event: carArrives at time 72924
+Car Place full, moving to another
+Event: carArrives at time 72924
+Car Place full, moving to another
+Event: carArrives at time 72940
+Too many Car Places (3) full in a row
+Event: carArrives at time 72979
+Car Place full, moving to another
+Event: carArrives at time 72990
+Event: carArrives at time 72998
+Car Place full, moving to another
+Event: carLeaves at time 73010
+Event: carArrives at time 73012
+Event: carArrives at time 73069
+Too many Car Places (3) full in a row
+Event: carLeaves at time 73092
+Event: carArrives at time 73131
+Event: carArrives at time 73150
+Event: carArrives at time 73168
+Car Place full, moving to another
+Event: carArrives at time 73174
+Too many Car Places (3) full in a row
+Event: carArrives at time 73189
+Event: carArrives at time 73190
+Car Place full, moving to another
+Event: carArrives at time 73193
+Event: carArrives at time 73194
+Car Place full, moving to another
+Event: carArrives at time 73203
+Car Place full, moving to another
+Event: carArrives at time 73210
+Event: carArrives at time 73213
+Too many Car Places (3) full in a row
+Event: carArrives at time 73217
+Too many Car Places (3) full in a row
+Event: carArrives at time 73229
+Car Place full, moving to another
+Event: carArrives at time 73258
+Car Place full, moving to another
+Event: carArrives at time 73295
+Too many Car Places (3) full in a row
+Event: carArrives at time 73318
+Too many Car Places (3) full in a row
+Event: carLeaves at time 73354
+Event: carArrives at time 73442
+Event: carArrives at time 73463
+Car Place full, moving to another
+Event: carArrives at time 73507
+Car Place full, moving to another
+Event: carLeaves at time 73520
+Event: carArrives at time 73524
+Car Place full, moving to another
+Event: carArrives at time 73524
+Too many Car Places (3) full in a row
+Event: carArrives at time 73579
+Event: carArrives at time 73598
+Too many Car Places (3) full in a row
+Event: carArrives at time 73625
+Car Place full, moving to another
+Event: carArrives at time 73676
+Car Place full, moving to another
+Event: carLeaves at time 73701
+Event: carArrives at time 73768
+Car Place full, moving to another
+Event: carArrives at time 73790
+Too many Car Places (3) full in a row
+Event: carArrives at time 73794
+Too many Car Places (3) full in a row
+Event: carArrives at time 73803
+Too many Car Places (3) full in a row
+Event: carArrives at time 73827
+Car Place full, moving to another
+Event: carArrives at time 73829
+Too many Car Places (3) full in a row
+Event: carArrives at time 73858
+Too many Car Places (3) full in a row
+Event: carArrives at time 73907
+Event: carArrives at time 73910
+Car Place full, moving to another
+Event: carArrives at time 74063
+Car Place full, moving to another
+Event: carArrives at time 74107
+Car Place full, moving to another
+Event: carArrives at time 74124
+Too many Car Places (3) full in a row
+Event: carArrives at time 74183
+Event: carArrives at time 74224
+Car Place full, moving to another
+Event: carArrives at time 74225
+Car Place full, moving to another
+Event: carArrives at time 74276
+Car Place full, moving to another
+Event: carLeaves at time 74352
+Event: carArrives at time 74368
+Too many Car Places (3) full in a row
+Event: carArrives at time 74427
+Event: carArrives at time 74437
+Car Place full, moving to another
+Event: carArrives at time 74489
+Car Place full, moving to another
+Event: carArrives at time 74510
+Car Place full, moving to another
+Event: carLeaves at time 74544
+Event: carLeaves at time 74559
+Event: carLeaves at time 74620
+Event: carArrives at time 74629
+Event: carArrives at time 74663
+Too many Car Places (3) full in a row
+Event: carLeaves at time 74677
+Event: carArrives at time 74707
+Too many Car Places (3) full in a row
+Event: carLeaves at time 74722
+Event: carLeaves at time 74809
+Event: carArrives at time 74824
+Car Place full, moving to another
+Event: carArrives at time 74824
+Car Place full, moving to another
+Event: carArrives at time 74825
+Event: carArrives at time 74876
+Event: carArrives at time 74888
+Event: carArrives at time 74931
+Car Place full, moving to another
+Event: carLeaves at time 74970
+Event: carArrives at time 75037
+Event: carArrives at time 75075
 Event: carArrives at time 75089
-Event: carLeaves at time 75091
-Event: carArrives at time 75406
-Event: carLeaves at time 75408
-Event: carArrives at time 75463
-Event: carArrives at time 75476
-Event: carLeaves at time 75480
-Event: carLeaves at time 75487
-Event: carArrives at time 75530
-Event: carLeaves at time 75547
+Car Place full, moving to another
+Event: carArrives at time 75110
+Too many Car Places (3) full in a row
+Event: carArrives at time 75144
+Car Place full, moving to another
+Event: carLeaves at time 75297
+Event: carArrives at time 75333
+Car Place full, moving to another
+Event: carArrives at time 75394
+Event: carArrives at time 75424
+Event: carArrives at time 75424
+Too many Car Places (3) full in a row
+Event: carLeaves at time 75463
+Event: carArrives at time 75531
+Event: carArrives at time 75554
+Car Place full, moving to another
+Event: carLeaves at time 75557
+Event: carArrives at time 75589
+Car Place full, moving to another
 Event: solarUpdate at time 75600
-Event: carArrives at time 75657
-Event: carLeaves at time 75676
-Event: carArrives at time 75807
-Event: carLeaves at time 75820
-Event: carArrives at time 75886
-Event: carLeaves at time 75904
-Event: carArrives at time 75908
-Event: carLeaves at time 75949
-Event: carArrives at time 76078
-Event: carLeaves at time 76092
-Event: carArrives at time 76276
-Event: carLeaves at time 76287
+Event: carLeaves at time 75651
+Event: carArrives at time 75689
+Too many Car Places (3) full in a row
+Event: carArrives at time 75744
+Car Place full, moving to another
+Event: carArrives at time 75754
+Car Place full, moving to another
+Event: carArrives at time 75770
+Car Place full, moving to another
+Event: carArrives at time 75810
+Event: carArrives at time 75816
+Car Place full, moving to another
+Event: carArrives at time 75832
+Car Place full, moving to another
+Event: carArrives at time 75933
+Car Place full, moving to another
+Event: carArrives at time 75946
+Event: carLeaves at time 75954
+Event: carArrives at time 76010
+Event: carLeaves at time 76016
+Event: carArrives at time 76154
+Event: carArrives at time 76189
+Car Place full, moving to another
+Event: carLeaves at time 76293
+Event: carArrives at time 76321
+Car Place full, moving to another
+Event: carArrives at time 76323
+Car Place full, moving to another
+Event: carArrives at time 76344
+Too many Car Places (3) full in a row
 Event: carArrives at time 76354
-Event: carLeaves at time 76369
-Event: carArrives at time 76483
-Event: carLeaves at time 76487
-Event: carArrives at time 76495
-Event: carLeaves at time 76503
-Event: carArrives at time 76727
-Event: carLeaves at time 76738
-Event: carArrives at time 76792
-Event: carLeaves at time 76805
-Event: carArrives at time 76830
-Event: carLeaves at time 76840
-Event: carArrives at time 76865
-Event: carLeaves at time 76867
-Event: carArrives at time 77055
-Event: carLeaves at time 77070
-Event: carArrives at time 77103
-Event: carLeaves at time 77109
-Event: carArrives at time 77302
-Event: carLeaves at time 77312
-Event: carArrives at time 77421
-Event: carLeaves at time 77437
-Event: carArrives at time 77509
-Event: carLeaves at time 77551
-Event: carArrives at time 78209
-Event: carLeaves at time 78227
-Event: carArrives at time 78396
-Event: carLeaves at time 78409
-Event: carArrives at time 78595
-Event: carLeaves at time 78603
-Event: carArrives at time 78604
-Event: carLeaves at time 78606
-Event: carArrives at time 78621
-Event: carLeaves at time 78636
-Event: carArrives at time 78708
-Event: carLeaves at time 78725
-Event: carArrives at time 78755
-Event: carArrives at time 78783
-Event: carArrives at time 78787
-Event: carLeaves at time 78792
-Event: carLeaves at time 78797
-Event: carLeaves at time 78804
-Event: carArrives at time 78818
-Event: carLeaves at time 78831
-Event: carArrives at time 78853
+Car Place full, moving to another
+Event: carLeaves at time 76364
+Event: carArrives at time 76370
+Car Place full, moving to another
+Event: carArrives at time 76374
+Car Place full, moving to another
+Event: carArrives at time 76416
+Car Place full, moving to another
+Event: carArrives at time 76432
+Event: carArrives at time 76493
+Car Place full, moving to another
+Event: carArrives at time 76509
+Car Place full, moving to another
+Event: carArrives at time 76533
+Too many Car Places (3) full in a row
+Event: carArrives at time 76574
+Car Place full, moving to another
+Event: carArrives at time 76598
+Car Place full, moving to another
+Event: carArrives at time 76733
+Car Place full, moving to another
+Event: carArrives at time 76781
+Car Place full, moving to another
+Event: carArrives at time 76789
+Too many Car Places (3) full in a row
+Event: carLeaves at time 76817
+Event: carLeaves at time 76844
+Event: carArrives at time 76921
+Car Place full, moving to another
+Event: carArrives at time 76923
+Event: carArrives at time 76928
+Car Place full, moving to another
+Event: carArrives at time 76954
+Too many Car Places (3) full in a row
+Event: carArrives at time 76970
+Too many Car Places (3) full in a row
+Event: carArrives at time 76974
+Car Place full, moving to another
+Event: carLeaves at time 76976
+Event: carArrives at time 77016
+Too many Car Places (3) full in a row
+Event: carArrives at time 77093
+Car Place full, moving to another
+Event: carArrives at time 77109
+Car Place full, moving to another
+Event: carArrives at time 77174
+Car Place full, moving to another
+Event: carArrives at time 77198
+Car Place full, moving to another
+Event: carArrives at time 77333
+Car Place full, moving to another
+Event: carArrives at time 77336
+Event: carArrives at time 77337
+Car Place full, moving to another
+Event: carArrives at time 77339
+Car Place full, moving to another
+Event: carArrives at time 77379
+Car Place full, moving to another
+Event: carArrives at time 77381
+Car Place full, moving to another
+Event: carLeaves at time 77384
+Event: carArrives at time 77521
+Too many Car Places (3) full in a row
+Event: carArrives at time 77528
+Event: carLeaves at time 77547
+Event: carArrives at time 77574
+Too many Car Places (3) full in a row
+Event: carArrives at time 77597
+Car Place full, moving to another
+Event: carLeaves at time 77666
+Event: carArrives at time 77693
+Too many Car Places (3) full in a row
+Event: carArrives at time 77709
+Event: carLeaves at time 77762
+Event: carArrives at time 77774
+Too many Car Places (3) full in a row
+Event: carArrives at time 77798
+Too many Car Places (3) full in a row
+Event: carArrives at time 77914
+Car Place full, moving to another
+Event: carArrives at time 77933
+Event: carArrives at time 77937
+Car Place full, moving to another
+Event: carArrives at time 77939
+Car Place full, moving to another
+Event: carArrives at time 77956
+Car Place full, moving to another
+Event: carArrives at time 77979
+Car Place full, moving to another
+Event: carArrives at time 77981
+Too many Car Places (3) full in a row
+Event: carArrives at time 78006
+Car Place full, moving to another
+Event: carArrives at time 78124
+Car Place full, moving to another
+Event: carArrives at time 78197
+Event: carLeaves at time 78217
+Event: carLeaves at time 78245
+Event: carArrives at time 78291
+Event: carLeaves at time 78337
+Event: carArrives at time 78514
+Event: carArrives at time 78531
+Car Place full, moving to another
+Event: carArrives at time 78537
+Event: carArrives at time 78539
+Too many Car Places (3) full in a row
+Event: carArrives at time 78556
+Event: carArrives at time 78559
+Car Place full, moving to another
+Event: carArrives at time 78579
+Too many Car Places (3) full in a row
+Event: carArrives at time 78606
+Car Place full, moving to another
+Event: carArrives at time 78669
+Car Place full, moving to another
+Event: carArrives at time 78710
+Car Place full, moving to another
+Event: carArrives at time 78724
+Car Place full, moving to another
+Event: carLeaves at time 78749
+Event: carLeaves at time 78841
 Event: carArrives at time 78858
-Event: carLeaves at time 78872
-Event: carLeaves at time 78875
-Event: carArrives at time 79076
-Event: carLeaves at time 79080
-Event: carArrives at time 79143
-Event: carLeaves at time 79152
+Car Place full, moving to another
+Event: carArrives at time 78865
+Car Place full, moving to another
+Event: carArrives at time 78875
+Car Place full, moving to another
+Event: carArrives at time 78970
+Event: carArrives at time 78997
+Event: carArrives at time 79028
+Car Place full, moving to another
+Event: carArrives at time 79131
+Car Place full, moving to another
+Event: carArrives at time 79159
+Car Place full, moving to another
 Event: solarUpdate at time 79200
-Event: carArrives at time 79215
-Event: carLeaves at time 79238
-Event: carArrives at time 79594
-Event: carLeaves at time 79605
-Event: carArrives at time 79653
-Event: carLeaves at time 79665
-Event: carArrives at time 79667
-Event: carLeaves at time 79679
-Event: carArrives at time 79684
-Event: carLeaves at time 79698
+Event: carArrives at time 79206
+Too many Car Places (3) full in a row
+Event: carArrives at time 79216
+Car Place full, moving to another
+Event: carArrives at time 79220
+Car Place full, moving to another
+Event: carArrives at time 79247
+Car Place full, moving to another
+Event: carArrives at time 79269
+Car Place full, moving to another
+Event: carLeaves at time 79274
+Event: carArrives at time 79308
+Event: carArrives at time 79310
+Car Place full, moving to another
+Event: carArrives at time 79324
+Too many Car Places (3) full in a row
+Event: carLeaves at time 79397
+Event: carArrives at time 79400
+Event: carArrives at time 79458
+Car Place full, moving to another
+Event: carArrives at time 79460
+Car Place full, moving to another
+Event: carArrives at time 79465
+Event: carArrives at time 79475
+Car Place full, moving to another
+Event: carLeaves at time 79529
+Event: carArrives at time 79628
+Car Place full, moving to another
+Event: carArrives at time 79731
+Too many Car Places (3) full in a row
+Event: carArrives at time 79750
 Event: carArrives at time 79759
-Event: carArrives at time 79770
-Event: carArrives at time 79772
-Event: carLeaves at time 79773
-Event: carLeaves at time 79776
-Event: carLeaves at time 79777
-Event: carArrives at time 79832
-Event: carLeaves at time 79861
-Event: carArrives at time 80016
-Event: carArrives at time 80040
-Event: carLeaves at time 80043
-Event: carArrives at time 80051
-Event: carLeaves at time 80051
-Event: carLeaves at time 80069
-Event: carArrives at time 80292
-Event: carLeaves at time 80301
-Event: carArrives at time 80712
-Event: carArrives at time 80717
-Event: carLeaves at time 80724
-Event: carLeaves at time 80725
-Event: carArrives at time 80739
-Event: carLeaves at time 80756
-Event: carArrives at time 81169
-Event: carLeaves at time 81182
-Event: carArrives at time 81312
-Event: carLeaves at time 81325
-Event: carArrives at time 81696
-Event: carLeaves at time 81709
-Event: carArrives at time 81747
-Event: carLeaves at time 81755
-Event: carArrives at time 81788
-Event: carLeaves at time 81803
-Event: carArrives at time 81864
-Event: carLeaves at time 81899
-Event: carArrives at time 81924
-Event: carLeaves at time 81937
-Event: carArrives at time 81941
-Event: carLeaves at time 81954
-Event: carArrives at time 82090
-Event: carLeaves at time 82102
-Event: carArrives at time 82500
-Event: carLeaves at time 82512
+Too many Car Places (3) full in a row
+Event: carLeaves at time 79762
+Event: carArrives at time 79816
+Car Place full, moving to another
+Event: carArrives at time 79820
+Car Place full, moving to another
+Event: carArrives at time 79847
+Car Place full, moving to another
+Event: carArrives at time 79869
+Too many Car Places (3) full in a row
+Event: carArrives at time 79910
+Too many Car Places (3) full in a row
+Event: carArrives at time 79923
+Event: carArrives at time 79986
+Car Place full, moving to another
+Event: carArrives at time 79990
+Car Place full, moving to another
+Event: carArrives at time 80058
+Too many Car Places (3) full in a row
+Event: carArrives at time 80060
+Car Place full, moving to another
+Event: carArrives at time 80075
+Too many Car Places (3) full in a row
+Event: carArrives at time 80228
+Too many Car Places (3) full in a row
+Event: carArrives at time 80274
+Car Place full, moving to another
+Event: carLeaves at time 80313
+Event: carArrives at time 80316
+Car Place full, moving to another
+Event: carLeaves at time 80347
+Event: carArrives at time 80381
+Car Place full, moving to another
+Event: carArrives at time 80416
+Too many Car Places (3) full in a row
+Event: carArrives at time 80420
+Too many Car Places (3) full in a row
+Event: carArrives at time 80447
+Too many Car Places (3) full in a row
+Event: carLeaves at time 80549
+Event: carLeaves at time 80564
+Event: carArrives at time 80586
+Car Place full, moving to another
+Event: carArrives at time 80590
+Event: carLeaves at time 80639
+Event: carArrives at time 80644
+Car Place full, moving to another
+Event: carArrives at time 80660
+Too many Car Places (3) full in a row
+Event: carArrives at time 80689
+Car Place full, moving to another
+Event: carLeaves at time 80691
+Event: carLeaves at time 80720
+Event: carLeaves at time 80865
+Event: carArrives at time 80874
+Event: carArrives at time 80916
+Event: carArrives at time 80981
+Event: carArrives at time 81039
+Event: carLeaves at time 81068
+Event: carArrives at time 81098
+Car Place full, moving to another
+Event: carLeaves at time 81107
+Event: carLeaves at time 81112
+Event: carLeaves at time 81128
+Event: carArrives at time 81186
+Event: carLeaves at time 81222
+Event: carArrives at time 81244
+Car Place full, moving to another
+Event: carArrives at time 81289
+Event: carArrives at time 81304
+Car Place full, moving to another
+Event: carArrives at time 81365
+Event: carArrives at time 81371
+Event: carLeaves at time 81399
+Event: carArrives at time 81414
+Event: carLeaves at time 81440
+Event: carLeaves at time 81466
+Event: carLeaves at time 81512
+Event: carArrives at time 81552
+Event: carArrives at time 81678
+Car Place full, moving to another
+Event: carArrives at time 81698
+Event: carLeaves at time 81737
+Event: carArrives at time 81761
+Car Place full, moving to another
+Event: carArrives at time 81844
+Too many Car Places (3) full in a row
+Event: carArrives at time 81904
+Car Place full, moving to another
+Event: carArrives at time 82010
+Car Place full, moving to another
+Event: carLeaves at time 82012
+Event: carArrives at time 82041
+Car Place full, moving to another
+Event: carArrives at time 82075
+Car Place full, moving to another
+Event: carLeaves at time 82076
+Event: carArrives at time 82243
+Event: carLeaves at time 82243
+Event: carLeaves at time 82272
+Event: carArrives at time 82278
+Car Place full, moving to another
+Event: carLeaves at time 82315
+Event: carArrives at time 82316
+Car Place full, moving to another
+Event: carArrives at time 82321
+Car Place full, moving to another
+Event: carLeaves at time 82342
+Event: carLeaves at time 82344
+Event: carLeaves at time 82355
+Event: carArrives at time 82361
+Car Place full, moving to another
+Event: carArrives at time 82386
+Event: carArrives at time 82501
+Event: carArrives at time 82504
 Event: carArrives at time 82519
-Event: carLeaves at time 82527
-Event: carArrives at time 82571
-Event: carLeaves at time 82588
-Event: carArrives at time 82626
-Event: carLeaves at time 82641
-Event: carArrives at time 82707
-Event: carLeaves at time 82710
-Event: carArrives at time 82786
-Event: carLeaves at time 82795
+Event: carArrives at time 82610
+Event: carArrives at time 82641
+Event: carArrives at time 82675
+Event: carArrives at time 82765
+Event: carArrives at time 82772
+Car Place full, moving to another
 Event: solarUpdate at time 82800
-Event: carArrives at time 83308
-Event: carLeaves at time 83323
-Event: carArrives at time 83544
-Event: carLeaves at time 83549
-Event: carArrives at time 83661
-Event: carLeaves at time 83671
-Event: carArrives at time 83703
-Event: carLeaves at time 83714
-Event: carArrives at time 83779
-Event: carLeaves at time 83799
-Event: carArrives at time 84307
-Event: carLeaves at time 84312
-Event: carArrives at time 84518
-Event: carLeaves at time 84526
-Event: carArrives at time 84533
-Event: carLeaves at time 84546
-Event: carArrives at time 84926
-Event: carLeaves at time 84939
-Event: carArrives at time 85069
-Event: carLeaves at time 85094
-Event: carArrives at time 85173
-Event: carLeaves at time 85184
-Event: carArrives at time 85191
-Event: carLeaves at time 85202
-Event: carArrives at time 85258
-Event: carLeaves at time 85260
-Event: carArrives at time 85317
-Event: carLeaves at time 85349
-Event: carArrives at time 85416
-Event: carLeaves at time 85431
-Event: carArrives at time 85456
+Event: carLeaves at time 82870
+Event: carArrives at time 82878
+Event: carArrives at time 82916
+Event: carArrives at time 82921
+Car Place full, moving to another
+Event: carArrives at time 82961
+Too many Car Places (3) full in a row
+Event: carArrives at time 83175
+Event: carLeaves at time 83201
+Event: carLeaves at time 83238
+Event: carArrives at time 83261
+Car Place full, moving to another
+Event: carArrives at time 83265
+Event: carLeaves at time 83346
+Event: carLeaves at time 83354
+Event: carArrives at time 83372
+Event: carLeaves at time 83436
+Event: carArrives at time 83521
+Event: carLeaves at time 83569
+Event: carArrives at time 83580
+Car Place full, moving to another
+Event: carLeaves at time 83593
+Event: carLeaves at time 83606
+Event: carArrives at time 83657
+Car Place full, moving to another
+Event: carArrives at time 83774
+Event: carLeaves at time 83775
+Event: carArrives at time 83861
+Event: carArrives at time 84042
+Event: carArrives at time 84180
+Event: carArrives at time 84257
+Event: carArrives at time 84387
+Car Place full, moving to another
+Event: carArrives at time 84409
+Car Place full, moving to another
+Event: carArrives at time 84448
+Car Place full, moving to another
+Event: carLeaves at time 84469
+Event: carLeaves at time 84480
+Event: carLeaves at time 84672
+Event: carLeaves at time 84720
+Event: carArrives at time 84733
+Car Place full, moving to another
+Event: carLeaves at time 84797
+Event: carArrives at time 84821
+Event: carArrives at time 84823
+Event: carArrives at time 84968
+Car Place full, moving to another
+Event: carLeaves at time 84982
+Event: carArrives at time 84987
+Event: carLeaves at time 84997
+Event: carArrives at time 85009
+Event: carArrives at time 85048
+Event: carLeaves at time 85069
+Event: carLeaves at time 85248
+Event: carLeaves at time 85302
+Event: carArrives at time 85331
+Event: carArrives at time 85333
+Event: carArrives at time 85341
+Event: carArrives at time 85350
+Car Place full, moving to another
 Event: carLeaves at time 85471
-Event: carArrives at time 85529
-Event: carLeaves at time 85554
-Event: carArrives at time 85802
-Event: carLeaves at time 85816
-Event: carArrives at time 85887
-Event: carLeaves at time 85899
-Event: carArrives at time 86155
-Event: carLeaves at time 86170
+Event: carArrives at time 85568
+Event: carLeaves at time 85625
+Event: carLeaves at time 85800
+Event: carArrives at time 85950
+Event: carLeaves at time 86078
+Event: carArrives at time 86101
+Event: carArrives at time 86113
+Event: carArrives at time 86162
+Event: carArrives at time 86201
+Event: carArrives at time 86334
+Car Place full, moving to another
+Event: carLeaves at time 86376
+Event: carLeaves at time 86419
+Event: carLeaves at time 86575
+Event: carLeaves at time 86844
+Event: carLeaves at time 86879
+Event: carLeaves at time 86914
+Event: carArrives at time 86934
+Car Place full, moving to another
+Event: carLeaves at time 87076
+Event: carLeaves at time 87125
+Event: carLeaves at time 87386
+Event: carLeaves at time 87475
+Event: carLeaves at time 87498
+Event: carArrives at time 87534
+Event: carLeaves at time 87836
+Event: carLeaves at time 88039
+Event: carLeaves at time 88128
+Event: carLeaves at time 88190
+Event: carLeaves at time 88212
+Event: carLeaves at time 88308
+Event: carLeaves at time 88565
+Event: carLeaves at time 88669
+Event: carLeaves at time 88752
+Event: carLeaves at time 88898
+Event: carLeaves at time 89065
+Event: carLeaves at time 89115
+Event: carLeaves at time 89384
+Event: carLeaves at time 89640
+Event: carLeaves at time 89657
+Event: carLeaves at time 89701
+Event: carLeaves at time 89704
+Event: carLeaves at time 89842
+Event: carLeaves at time 90550
+Event: carLeaves at time 90572
+Event: carLeaves at time 90738
+Event: carLeaves at time 90755
+Event: carLeaves at time 90986
+Event: carLeaves at time 91094
+Event: carLeaves at time 91144
+Event: carLeaves at time 91205
+Event: carLeaves at time 91271
+Event: carLeaves at time 91390
+Event: carLeaves at time 91467
+Event: carLeaves at time 91652
+Event: carLeaves at time 91781
+Event: carLeaves at time 91797
+Event: carLeaves at time 91811
+Event: carLeaves at time 91891
+Event: carLeaves at time 91973
+Event: carLeaves at time 92027
+Event: carLeaves at time 92097
+Event: carLeaves at time 92187
+Event: carLeaves at time 92209
+Event: carLeaves at time 92217
+Event: carLeaves at time 92383
+Event: carLeaves at time 92691
+Event: carLeaves at time 92749
+Event: carLeaves at time 92833
+Event: carLeaves at time 92874
+Event: carLeaves at time 92965
+Event: carLeaves at time 93017
+Event: carLeaves at time 93037
+Event: carLeaves at time 93309
+Event: carLeaves at time 93362
+Event: carLeaves at time 93525
+Event: carLeaves at time 93603
+Event: carLeaves at time 93647
+Event: carLeaves at time 93705
+Event: carLeaves at time 93758
+Event: carLeaves at time 93975
+Event: carLeaves at time 94010
+Event: carLeaves at time 94152
+Event: carLeaves at time 94205
+Event: carLeaves at time 94400
+Event: carLeaves at time 94403
+Event: carLeaves at time 94545
+Event: carLeaves at time 94629
+Event: carLeaves at time 94639
+Event: carLeaves at time 94734
+Event: carLeaves at time 94765
+Event: carLeaves at time 94801
+Event: carLeaves at time 94901
+Event: carLeaves at time 94953
+Event: carLeaves at time 95002
+Event: carLeaves at time 95203
+Event: carLeaves at time 95506
+Event: carLeaves at time 95581
+Event: carLeaves at time 95740
+Event: carLeaves at time 95772
+Event: carLeaves at time 95888
+Event: carLeaves at time 96192
+Event: carLeaves at time 96563
+Event: carLeaves at time 96620
+Event: carLeaves at time 96626
+Event: carLeaves at time 96663
+Event: carLeaves at time 96825
+Event: carLeaves at time 96879
+Event: carLeaves at time 97010
+Event: carLeaves at time 97165
+Event: carLeaves at time 97349
+Event: carLeaves at time 97367
+Event: carLeaves at time 97536
+Event: carLeaves at time 97554
+Event: carLeaves at time 97641
+Event: carLeaves at time 97658
+Event: carLeaves at time 97684
+Event: carLeaves at time 97839
+Event: carLeaves at time 98001
+Event: carLeaves at time 98148
+Event: carLeaves at time 98156
+Event: carLeaves at time 98232
+Event: carLeaves at time 98607
+Event: carLeaves at time 98653
+Event: carLeaves at time 98656
+Event: carLeaves at time 98728
+Event: carLeaves at time 98808
+Event: carLeaves at time 99126
+Event: carLeaves at time 99165
+Event: carLeaves at time 99456
+Event: carLeaves at time 99480
+Event: carLeaves at time 99587
+Event: carLeaves at time 99669
+Event: carLeaves at time 100239
+Event: carLeaves at time 100456
+Event: carLeaves at time 100675
+Event: carLeaves at time 100898
+Event: carLeaves at time 100908
+Event: carLeaves at time 100939
+Event: carLeaves at time 101010
+Event: carLeaves at time 101072
+Event: carLeaves at time 101080
+Event: carLeaves at time 101136
+Event: carLeaves at time 101238
+Event: carLeaves at time 101465
+Event: carLeaves at time 101474
+Event: carLeaves at time 101562
+Event: carLeaves at time 101861
+Event: carLeaves at time 101980
+Event: carLeaves at time 101993
+Event: carLeaves at time 102089
+Event: carLeaves at time 102180
+Event: carLeaves at time 102250
+Event: carLeaves at time 102357
+Event: carLeaves at time 102418
+Event: carLeaves at time 102524
+Event: carLeaves at time 102536
+Event: carLeaves at time 102558
+Event: carLeaves at time 102729
+Event: carLeaves at time 102990
+Event: carLeaves at time 103318
+Event: carLeaves at time 103468
+Event: carLeaves at time 103725
+Event: carLeaves at time 103918
+Event: carLeaves at time 103990
+Event: carLeaves at time 104112
+Event: carLeaves at time 104318
+Event: carLeaves at time 104320
+Event: carLeaves at time 104423
+Event: carLeaves at time 104499
+Event: carLeaves at time 104575
+Event: carLeaves at time 104779
+Event: carLeaves at time 104823
+Event: carLeaves at time 104840
+Event: carLeaves at time 104977
+Event: carLeaves at time 105329
+Event: carLeaves at time 105353
+Event: carLeaves at time 105412
+Event: carLeaves at time 105437
+Event: carLeaves at time 105535
+Event: carLeaves at time 105610
+Event: carLeaves at time 105846
+Event: carLeaves at time 105891
+Event: carLeaves at time 106074
+Event: carLeaves at time 106084
+Event: carLeaves at time 106171
+Event: carLeaves at time 106499
+Event: carLeaves at time 106566
+Event: carLeaves at time 106588
+Event: carLeaves at time 106730
+Event: carLeaves at time 106893
+Event: carLeaves at time 106900
+Event: carLeaves at time 106906
+Event: carLeaves at time 106927
+Event: carLeaves at time 106959
+Event: carLeaves at time 106984
+Event: carLeaves at time 107002
+Event: carLeaves at time 107034
+Event: carLeaves at time 107232
+Event: carLeaves at time 107394
+Event: carLeaves at time 107463
+Event: carLeaves at time 107550
+Event: carLeaves at time 107694
+Event: carLeaves at time 107739
+Event: carLeaves at time 107803
+Event: carLeaves at time 107836
+Event: carLeaves at time 107931
+Event: carLeaves at time 108187
+Event: carLeaves at time 108499
+Event: carLeaves at time 108607
+Event: carLeaves at time 108883
+Event: carLeaves at time 108958
+Event: carLeaves at time 108990
+Event: carLeaves at time 109035
+Event: carLeaves at time 109338
+Event: carLeaves at time 109367
+Event: carLeaves at time 109397
+Event: carLeaves at time 109513
+Event: carLeaves at time 109904
+Event: carLeaves at time 110128
+Event: carLeaves at time 110283
+Event: carLeaves at time 110301
+Event: carLeaves at time 110332
+Event: carLeaves at time 110347
+Event: carLeaves at time 110361
+Event: carLeaves at time 110427
+Event: carLeaves at time 110663
+Event: carLeaves at time 110677
+Event: carLeaves at time 110689
+Event: carLeaves at time 110690
+Event: carLeaves at time 110914
+Event: carLeaves at time 110925
+Event: carLeaves at time 110932
+Event: carLeaves at time 111130
+Event: carLeaves at time 111156
+Event: carLeaves at time 111328
+Event: carLeaves at time 111441
+Event: carLeaves at time 111457
+Event: carLeaves at time 111460
+Event: carLeaves at time 111489
+Event: carLeaves at time 111731
+Event: carLeaves at time 111738
+Event: carLeaves at time 111756
+Event: carLeaves at time 112023
+Event: carLeaves at time 112042
+Event: carLeaves at time 112062
+Event: carLeaves at time 112346
+Event: carLeaves at time 112380
+Event: carLeaves at time 112432
+Event: carLeaves at time 112973
+Event: carLeaves at time 113012
+Event: carLeaves at time 113017
+Event: carLeaves at time 113133
+Event: carLeaves at time 113218
+Event: carLeaves at time 113243
+Event: carLeaves at time 113553
+Event: carLeaves at time 113583
+Event: carLeaves at time 113734
+Event: carLeaves at time 113744
+Event: carLeaves at time 113758
+Event: carLeaves at time 113771
+Event: carLeaves at time 114187
+Event: carLeaves at time 114368
+Event: carLeaves at time 114952
+Event: carLeaves at time 114970
+Event: carLeaves at time 115024
+Event: carLeaves at time 115257
+Event: carLeaves at time 115259
+Event: carLeaves at time 115276
+Event: carLeaves at time 115572
+Event: carLeaves at time 115898
+Event: carLeaves at time 116486
+Event: carLeaves at time 116549
+Event: carLeaves at time 117106
+Event: carLeaves at time 117309
+Event: carLeaves at time 117538
+Event: carLeaves at time 117603
+Event: carLeaves at time 117681
+Event: carLeaves at time 117723
+Event: carLeaves at time 117829
+Event: carLeaves at time 118056
+Event: carLeaves at time 118219
+Event: carLeaves at time 118235
+Event: carLeaves at time 118243
+Event: carLeaves at time 118264
+Event: carLeaves at time 118337
+Event: carLeaves at time 118514
+Event: carLeaves at time 118537
+Event: carLeaves at time 118882
+Event: carLeaves at time 119024
+Event: carLeaves at time 119506
+Event: carLeaves at time 119872
+Event: carLeaves at time 119886
+Event: carLeaves at time 119950
+Event: carLeaves at time 120257
+Event: carLeaves at time 120390
+Event: carLeaves at time 120889
+Event: carLeaves at time 121688
+Event: carLeaves at time 121765
+Event: carLeaves at time 121769
+Event: carLeaves at time 121991
+Event: carLeaves at time 122119
+Event: carLeaves at time 122323
+Event: carLeaves at time 122977
+Event: carLeaves at time 123123
+Event: carLeaves at time 123232
+Event: carLeaves at time 123412
+Event: carLeaves at time 123496
+Event: carLeaves at time 123531
+Event: carLeaves at time 123678
+Event: carLeaves at time 124496
+Event: carLeaves at time 124941
+Event: carLeaves at time 125225
+Event: carLeaves at time 125672
+Event: carLeaves at time 126200
+Event: carLeaves at time 126375
+Event: carLeaves at time 126418
+Event: carLeaves at time 126501
+Event: carLeaves at time 126583
+Event: carLeaves at time 126676
+Event: carLeaves at time 126890
+Event: carLeaves at time 126990
+Event: carLeaves at time 127242
+Event: carLeaves at time 127351
+Event: carLeaves at time 127579
+Event: carLeaves at time 128091
+Event: carLeaves at time 128214
+Event: carLeaves at time 128368
+Event: carLeaves at time 128597
+Event: carLeaves at time 128599
+Event: carLeaves at time 128621
+Event: carLeaves at time 128937
+Event: carLeaves at time 129186
+Event: carLeaves at time 129198
+Event: carLeaves at time 129723
+Event: carLeaves at time 129946
+Event: carLeaves at time 130168
+Event: carLeaves at time 130574
+Event: carLeaves at time 131009
+Event: carLeaves at time 131163
+Event: carLeaves at time 131381
+Event: carLeaves at time 131439
+Event: carLeaves at time 131621
+Event: carLeaves at time 131722
+Event: carLeaves at time 131806
+Event: carLeaves at time 132131
+Event: carLeaves at time 132234
+Event: carLeaves at time 132913
+Event: carLeaves at time 133743
+Event: carLeaves at time 133843
+Event: carLeaves at time 134207
+Event: carLeaves at time 134389
+Event: carLeaves at time 134556
+Event: carLeaves at time 134655
+Event: carLeaves at time 134842
+Event: carLeaves at time 135167
+Event: carLeaves at time 135383
+Event: carLeaves at time 135448
+Event: carLeaves at time 135533
+Event: carLeaves at time 136156
+Event: carLeaves at time 136212
+Event: carLeaves at time 136300
+Event: carLeaves at time 136390
+Event: carLeaves at time 136501
+Event: carLeaves at time 136909
+Event: carLeaves at time 136979
+Event: carLeaves at time 138084
+Event: carLeaves at time 138179
+Event: carLeaves at time 138733
+Event: carLeaves at time 139097
+Event: carLeaves at time 139267
+Event: carLeaves at time 141076
+Event: carLeaves at time 141627
+Event: carLeaves at time 142968
+Event: carLeaves at time 143448
+Event: carLeaves at time 143647
+Event: carLeaves at time 143794
+Event: carLeaves at time 144078
+Event: carLeaves at time 145240
+Event: carLeaves at time 146111
+Event: carLeaves at time 147010
+Event: carLeaves at time 147499
+Event: carLeaves at time 150459
+Event: carLeaves at time 151010
+Event: carLeaves at time 151053
+Event: carLeaves at time 152677
+Event: carLeaves at time 153722
+Event: carLeaves at time 153733
+Event: carLeaves at time 156112
+Event: carLeaves at time 158421
+Event: carLeaves at time 159121
+Event: carLeaves at time 159398
+Event: carLeaves at time 159826
+Event: carLeaves at time 160071
+Event: carLeaves at time 160856
+Event: carLeaves at time 163323
+Event: carLeaves at time 163615
+Event: carLeaves at time 164023
+Event: carLeaves at time 164700
+Event: carLeaves at time 165176
+Event: carLeaves at time 165971
+Event: carLeaves at time 167316
+Event: carLeaves at time 169001
+Event: carLeaves at time 169065
+Event: carLeaves at time 169923
+Event: carLeaves at time 170116
+Event: carLeaves at time 171691
+Event: carLeaves at time 172275
+Event: carLeaves at time 173288
+Event: carLeaves at time 178954
+Event: carLeaves at time 180058
+Event: carLeaves at time 183976
+Event: carLeaves at time 185338
+Event: carLeaves at time 185842
+Event: carLeaves at time 186337
+Event: carLeaves at time 187318
+Event: carLeaves at time 188169
+Event: carLeaves at time 190928
+Event: carLeaves at time 196501
+Event: carLeaves at time 196741
+Event: carLeaves at time 198481
+Event: carLeaves at time 199061
+Event: carLeaves at time 201865
+Event: carLeaves at time 201955
+Event: carLeaves at time 202484
+Event: carLeaves at time 203103
+Event: carLeaves at time 203761
+Event: carLeaves at time 204952
+Event: carLeaves at time 206217
+Event: carLeaves at time 207410
+Event: carLeaves at time 208511
+Event: carLeaves at time 208817
+Event: carLeaves at time 213305
+Event: carLeaves at time 214765
+Event: carLeaves at time 217087
+Event: carLeaves at time 217305
+Event: carLeaves at time 218040
+Event: carLeaves at time 219397
+Event: carLeaves at time 224189
+Event: carLeaves at time 225805
+Event: carLeaves at time 228242
+Event: carLeaves at time 234116
+Event: carLeaves at time 275432
+Event: carLeaves at time 275482
+Event: carLeaves at time 286068
+Event: carLeaves at time 300559
+Event: carLeaves at time 303895
+Event: carLeaves at time 304386
+Event: carLeaves at time 312473
+Event: carLeaves at time 319791
+Event: carLeaves at time 335265
