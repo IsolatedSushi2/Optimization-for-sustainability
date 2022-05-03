@@ -5,12 +5,16 @@ import dataReader as dr
 import event
 
 class Car():
-    carParksVisited = {}
+    carParksVisited = None
     whereParked = None
-    timeStartCharging = None 
-    def __init__(self, chargingVolume, connectionTime):
+    timeStartCharging = None
+    parkingPlaceID = None
+    
+    def __init__(self, chargingVolume, connectionTime, parkingPlaceID):
         self.chargingVolume = chargingVolume
         self.connectionTime = connectionTime
+        self.parkingPlaceID = parkingPlaceID
+        self.carParksVisited = []
 
 def generateCar(charging_volume_distributions, connection_time_distributions):
     charging_volumes, charging_probabilities = zip(*charging_volume_distributions)
@@ -20,8 +24,11 @@ def generateCar(charging_volume_distributions, connection_time_distributions):
     chargingVolume = np.random.choice(charging_volumes, p=(charging_probabilities/sum(charging_probabilities)))
     min_connection_time_hours = int(np.ceil(chargingVolume/(6*0.7))) #minimum connection time in hours
     connectionTime = np.random.choice(connection_times[min_connection_time_hours:], p=(connection_probabilities[min_connection_time_hours:]/sum(connection_probabilities[min_connection_time_hours:])))
+
+    randomParkingPlaceID = generateParkingPlace()
+
     #print(f'generated car with charging volume: {chargingVolume}, connection time: {connectionTime}')
-    return Car(chargingVolume=chargingVolume, connectionTime=connectionTime)
+    return Car(chargingVolume=chargingVolume, connectionTime=connectionTime, parkingPlaceID=randomParkingPlaceID)
 
 def generateSolarValue(timeOfDay, solar_availability_distributions, season='summer'):
     # returns a randomly generated value for available power from a solar panel array at the specified time of day in the specified season (summer/winter)
@@ -33,6 +40,19 @@ def generateSolarValue(timeOfDay, solar_availability_distributions, season='summ
     value = np.random.normal(solar_power, 0.15*solar_power)
     #print(f'generated solar power, value: {value}')
     return value 
+
+def generateParkingPlace(already_visited_places = []):
+    #Could be improved later
+    while(True):
+        randomPlace = np.random.choice([1, 2, 3, 4, 5, 6, 7],
+                                        p=[0.15, 0.15, 0.15, 0.2, 0.15, 0.1, 0.1])
+
+        parkingPlaceID = str(randomPlace)
+
+        if parkingPlaceID not in already_visited_places:
+            return parkingPlaceID
+
+
 
 def generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, average_daily_cars=750, timeLength = 24, season='summer'):
     # N.B. timeLength input is in HOURS not in seconds
@@ -47,12 +67,12 @@ def generateAllEvents(arrival_fractions, charging_volume_distributions, connecti
             #print(f'Generating car at time {t*3600+time}')
             for i in range(allMoments[time]):
                 # Loop is needed in case two cars arrive the very same second.
-                generatedEvents.put(event.Event(time=t*3600+time,data=("carArrives", (generateCar(charging_volume_distributions, connection_time_distributions) ) ) ) )
+                generatedEvents.put(event.Event(time=t*3600+time, eventType="carArrives", data=((generateCar(charging_volume_distributions, connection_time_distributions) ) ) ) )
                     
 
     # Generate solar events
     for t in range(timeLength):
-        generatedEvents.put(event.Event(time=t*3600, data=("solarUpdate", (generateSolarValue(t%24, solar_availability_distributions, season) ) ) ) )
+        generatedEvents.put(event.Event(time=t*3600,eventType="solarUpdate", data=((generateSolarValue(t%24, solar_availability_distributions, season) ) ) ) )
 
     return generatedEvents
 

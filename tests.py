@@ -13,7 +13,7 @@ def testCarArrivals():
 
     while (not eventsQueue.empty()):
         a = eventsQueue.get()  # throw away one event
-        if a.data[0] == "carArrives":
+        if a.data.eventType == "carArrives":
             carArrivalTimes.append(a.time)
 
 
