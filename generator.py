@@ -27,11 +27,16 @@ def generateCar(charging_volume_distributions, connection_time_distributions, ca
     charging_volumes, charging_probabilities, connection_times, connection_probabilities = np.array(charging_volumes), np.array(charging_probabilities), np.array(connection_times), np.array(connection_probabilities)
     
     chargingVolume = np.random.choice(charging_volumes, p=(charging_probabilities/sum(charging_probabilities)))
-    min_connection_time_hours = int(np.ceil(chargingVolume/(6*0.7))) #minimum connection time in hours
-    connectionTime = np.random.choice(connection_times[min_connection_time_hours:], p=(connection_probabilities[min_connection_time_hours:]/sum(connection_probabilities[min_connection_time_hours:]))) * 3600
+    min_connection_time_hours = int(chargingVolume/(6*0.7)) #minimum connection time in hours
+
+    connectionTime_hours = np.random.choice(connection_times[min_connection_time_hours:], p=(connection_probabilities[min_connection_time_hours:]/sum(connection_probabilities[min_connection_time_hours:])))
+    connectionTime = -1
+    while connectionTime < chargingVolume/(6*0.7):
+        connectionTime = connectionTime_hours * 3600 + np.random.choice(3600)
+    
     randomParkingPlaceID = generateParkingPlace()
 
-    #print(f'generated car with charging volume: {chargingVolume}, connection time: {connectionTime}')
+    # print(f'generated car with charging volume: {chargingVolume}, connection time: {connectionTime} seconds / {connectionTime/3600} hours')
     return Car(chargingVolume=chargingVolume, connectionTime=connectionTime, parkingPlaceID=randomParkingPlaceID, carID=carID)
 
 def generateSolarValue(timeOfDay, solar_availability_distributions, season='summer'):
