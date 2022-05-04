@@ -2,7 +2,8 @@ import event
 import state
 import generator
 import logger
-
+import showPlots
+import time
 
 # Start the simulation
 def startSimulation(eventQueue):
@@ -18,6 +19,7 @@ def startSimulation(eventQueue):
     currState = state.createInitialState()
 
     # The event loop
+    startTime = time.time()
     while not eventQueue.empty():
 
         # Get next event and type
@@ -32,9 +34,12 @@ def startSimulation(eventQueue):
             eventQueue.put(returnEvent)
 
         # Log every event for debugging
+        state.storeDataPerTimestep(currEvent.time, currState)
         logger.logEvent(currEvent)
 
+    print("Simulation took", time.time() - startTime, "seconds")
     state.printResults(currState)
+    showPlots.showOverloadDensity(currState)
 
 
 def handleCarPlannedLeaves(currEvent, currState):
@@ -59,12 +64,20 @@ def handleCarPlannedLeaves(currEvent, currState):
 def handleCarBeginsChargingEvent(currEvent, currState):
     currCar = currEvent.data
     currCar.timeStartCharging = currEvent.time
+
+    currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
+    currParkingPlace.startCharging()
+
     # Calculate how much time to finish charging without interruption
     return [event.Event(time=currEvent.time + currCar.chargingVolume / (6 / 3600), eventType="carStopsCharging", data=currCar)]
 
 
 def handleCarStopsChargingEvent(currEvent, currState):
     currCar = currEvent.data
+
+    currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
+    currParkingPlace.stopCharging()
+
     # Calculate how much was charged
     currCar.amountCharged = (
         6/3600) * (currEvent.time - currCar.timeStartCharging)

@@ -2,9 +2,18 @@ class ParkingPlace():
     maxNumberCharginStations: int
     amountCurrentlyParked: int
 
-    def __init__(self, maxNumberCharginStations, amountCurrentlyParked):
+    def __init__(self, maxNumberCharginStations):
         self.maxNumberCharginStations = maxNumberCharginStations
-        self.amountCurrentlyParked = amountCurrentlyParked
+        self.amountCurrentlyParked = 0
+        self.amountCurrentlyCharging = 0
+
+    def startCharging(self):
+        assert self.amountCurrentlyCharging + 1 <= self.amountCurrentlyParked
+        self.amountCurrentlyCharging += 1
+
+    def stopCharging(self):
+        assert self.amountCurrentlyCharging > 0
+        self.amountCurrentlyCharging -= 1
 
     def arriveAtCharger(self):
         assert self.amountCurrentlyParked <= self.maxNumberCharginStations
@@ -23,5 +32,5 @@ def createParkingPlaces():
     parkingPlaces = {}
     for index in range(7):
         parkingPlaceIndex = str(index+1)
-        parkingPlaces[parkingPlaceIndex] = ParkingPlace(maxNumberCharginStations=chargingStationAmounts[index], amountCurrentlyParked=0)
+        parkingPlaces[parkingPlaceIndex] = ParkingPlace(maxNumberCharginStations=chargingStationAmounts[index])
     return parkingPlaces
