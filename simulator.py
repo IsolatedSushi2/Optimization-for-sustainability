@@ -39,6 +39,8 @@ def startSimulation(eventQueue):
 
     print("Simulation took", time.time() - startTime, "seconds")
     state.printResults(currState)
+    showPlots.showParkingDensity(currState)
+    showPlots.showChargeDensity(currState)
     showPlots.showOverloadDensity(currState)
 
 
@@ -47,7 +49,7 @@ def handleCarPlannedLeaves(currEvent, currState):
 
     # Hasnt even started charging, so reuse the connection time
     if currCar.amountCharged == 0 and currCar.chargingVolume > 0:
-        return [event.Event(time=currEvent.time + currCar.connectionTime, eventType="carPlannedLeave", data=currCar)]
+        return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged) / (6/3600), eventType="carPlannedLeave", data=currCar)]
     # Is finished charging
     elif currCar.amountCharged >= currCar.chargingVolume:
         logger.logMessage(f'Car {currCar.carID}, succesfully charged')
@@ -58,7 +60,7 @@ def handleCarPlannedLeaves(currEvent, currState):
             f'Car {currCar.carID}, not succesfully charged. ERROR in basecase')
         currCar.amountCharged = (
             6/3600) * (currEvent.time - currCar.timeStartCharging)
-        return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged) / (6/3600), eventType="carLeaves", data=currCar)]
+        return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged) / (6/3600), eventType="carPlannedLeave", data=currCar)]
 
 
 def handleCarBeginsChargingEvent(currEvent, currState):
@@ -130,8 +132,7 @@ def handleCarLeavesEvent(currEvent, currState):
 
     return []
 
+
 # TODO
-
-
 def handleSolarUpdateEvent(currEvent, currState):
     return []

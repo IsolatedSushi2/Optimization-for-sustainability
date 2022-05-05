@@ -16,10 +16,9 @@ def createInitialState():
 
 def storeDataPerTimestep(currTimestamp, state):
 
-    parkingIDS =  state["parkingPlaceIDs"]
+    parkingIDS = state["parkingPlaceIDs"]
     allcurrentlyParked = [state["parkingPlaces"][currID].amountCurrentlyParked for currID in parkingIDS]
     allcurrentlyCharging = [state["parkingPlaces"][currID].amountCurrentlyCharging for currID in parkingIDS]
-
 
     state["parkedPerTimestep"].append((currTimestamp, allcurrentlyParked))
     state["chargingperTimestemp"].append((currTimestamp, allcurrentlyCharging))

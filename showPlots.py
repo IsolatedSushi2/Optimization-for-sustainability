@@ -70,7 +70,7 @@ def calculateChargePerCable(chargePerTimestep):
     
     # Compound cables
     cables["cable6"] = cables["cable7"] + cables["cable8"]
-    cables["cable4"] = cables["cable6"] + cables["cable5"]
+    cables["cable4"] = cables["cable6"] + cables["cable5"] + chargePerTimestep[3] * 6
     cables["cable0"] = cables["cable1"] + cables["cable2"] + cables["cable3"]
     
 
