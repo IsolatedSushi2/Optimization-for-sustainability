@@ -135,4 +135,7 @@ def handleCarLeavesEvent(currEvent, currState):
 
 # TODO
 def handleSolarUpdateEvent(currEvent, currState):
+
+    for currParkingPlace in currState["parkingPlaces"].values():
+        currParkingPlace.setSolarPower(currEvent.data)
     return []

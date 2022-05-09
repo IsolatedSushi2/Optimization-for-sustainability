@@ -38,13 +38,14 @@ def showChargeDensity(currState):
 def showOverloadDensity(currState):
 
     chargingPerTimestamp = currState["chargingperTimestemp"]
+    powerPerTimestep = currState["powerDrawnPerTimeStep"]
 
-    chargePerCablePerStep = [calculateChargePerCable(curr[1]) for curr in chargingPerTimestamp]
+    powerPerCablePerStep = [calculateChargePerCable(curr[1]) for curr in powerPerTimestep]
 
-    for cable in chargePerCablePerStep[0].keys():
+    for cable in powerPerCablePerStep[0].keys():
 
         xData = [curr[0] for curr in chargingPerTimestamp] 
-        yData = [curr[cable] for curr in chargePerCablePerStep]
+        yData = [curr[cable] for curr in powerPerCablePerStep]
 
         plt.plot(xData, yData)
         plt.axhline(y=200, color='r', linestyle='-')
@@ -61,16 +62,16 @@ def showOverloadDensity(currState):
 
 def calculateChargePerCable(chargePerTimestep):
     cables = {}
-    cables["cable1"] = chargePerTimestep[0] * 6
-    cables["cable2"] = chargePerTimestep[1] * 6
-    cables["cable3"] = chargePerTimestep[2] * 6
-    cables["cable5"] = chargePerTimestep[6] * 6
-    cables["cable7"] = chargePerTimestep[4] * 6
-    cables["cable8"] = chargePerTimestep[5] * 6
+    cables["cable1"] = chargePerTimestep[0]
+    cables["cable2"] = chargePerTimestep[1]
+    cables["cable3"] = chargePerTimestep[2]
+    cables["cable5"] = chargePerTimestep[6]
+    cables["cable7"] = chargePerTimestep[4]
+    cables["cable8"] = chargePerTimestep[5]
     
     # Compound cables
     cables["cable6"] = cables["cable7"] + cables["cable8"]
-    cables["cable4"] = cables["cable6"] + cables["cable5"] + chargePerTimestep[3] * 6
+    cables["cable4"] = cables["cable6"] + cables["cable5"] + chargePerTimestep[3]
     cables["cable0"] = cables["cable1"] + cables["cable2"] + cables["cable3"]
     
 

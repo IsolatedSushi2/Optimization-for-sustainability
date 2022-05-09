@@ -1,6 +1,7 @@
 class ParkingPlace():
     maxNumberCharginStations: int
     amountCurrentlyParked: int
+    currSolarEnergy: float
 
     def __init__(self, maxNumberCharginStations):
         self.maxNumberCharginStations = maxNumberCharginStations
@@ -22,6 +23,10 @@ class ParkingPlace():
     def leaveCharger(self):
         assert self.amountCurrentlyParked > 0
         self.amountCurrentlyParked -= 1
+
+    def setSolarPower(self, newVal):
+        self.currSolarEnergy = newVal
+        return
 
     def isFull(self):
         return self.maxNumberCharginStations == self.amountCurrentlyParked
