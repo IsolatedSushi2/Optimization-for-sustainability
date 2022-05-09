@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import performanceMeasures
 
 def showParkingDensity(currState):
 
@@ -40,7 +41,7 @@ def showOverloadDensity(currState):
     chargingPerTimestamp = currState["chargingperTimestemp"]
     powerPerTimestep = currState["powerDrawnPerTimeStep"]
 
-    powerPerCablePerStep = [calculateChargePerCable(curr[1]) for curr in powerPerTimestep]
+    powerPerCablePerStep = [performanceMeasures.calculateChargePerCable(curr[1]) for curr in powerPerTimestep]
 
     for cable in powerPerCablePerStep[0].keys():
 
@@ -60,19 +61,3 @@ def showOverloadDensity(currState):
     plt.title("Used capacity for the transformer")
     plt.show()
 
-def calculateChargePerCable(chargePerTimestep):
-    cables = {}
-    cables["cable1"] = chargePerTimestep[0]
-    cables["cable2"] = chargePerTimestep[1]
-    cables["cable3"] = chargePerTimestep[2]
-    cables["cable5"] = chargePerTimestep[6]
-    cables["cable7"] = chargePerTimestep[4]
-    cables["cable8"] = chargePerTimestep[5]
-    
-    # Compound cables
-    cables["cable6"] = cables["cable7"] + cables["cable8"]
-    cables["cable4"] = cables["cable6"] + cables["cable5"] + chargePerTimestep[3]
-    cables["cable0"] = cables["cable1"] + cables["cable2"] + cables["cable3"]
-    
-
-    return cables

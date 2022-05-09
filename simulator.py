@@ -3,6 +3,7 @@ import state
 import generator
 import logger
 import showPlots
+import performanceMeasures
 import time
 
 # Start the simulation
@@ -39,9 +40,12 @@ def startSimulation(eventQueue):
 
     print("Simulation took", time.time() - startTime, "seconds")
     state.printResults(currState)
+    performanceMeasures.print10OverloadPercentage(currState)
+    performanceMeasures.printMaximumCableLoad(currState)
     showPlots.showParkingDensity(currState)
     showPlots.showChargeDensity(currState)
     showPlots.showOverloadDensity(currState)
+
 
 
 def handleCarPlannedLeaves(currEvent, currState):
