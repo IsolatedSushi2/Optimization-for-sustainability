@@ -30,9 +30,7 @@ def generateCar(charging_volume_distributions, connection_time_distributions, ca
     min_connection_time_hours = int(chargingVolume/(6*0.7)) #minimum connection time in hours
 
     connectionTime_hours = np.random.choice(connection_times[min_connection_time_hours:], p=(connection_probabilities[min_connection_time_hours:]/sum(connection_probabilities[min_connection_time_hours:])))
-    connectionTime = -1
-    while connectionTime < chargingVolume/(6*0.7):
-        connectionTime = connectionTime_hours * 3600 + np.random.choice(3600)
+    connectionTime = max(connectionTime_hours * 3600 + np.random.choice(3600), chargingVolume/(6*0.7))
     
     randomParkingPlaceID = generateParkingPlace()
 
