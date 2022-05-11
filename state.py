@@ -15,6 +15,17 @@ def createInitialState():
 
     return state
 
+
+def clearPerformanceFiles():
+    file = open('./performances/parkingDensity.txt',"w")
+    file.close()
+
+    file = open('./performances/chargingDensity.txt',"w")
+    file.close()
+
+    file = open('./performances/powerDensity.txt',"w")
+    file.close()
+
 def storeDataPerTimestep(currTimestamp, state):
 
     parkingIDS = state["parkingPlaceIDs"]
@@ -22,9 +33,16 @@ def storeDataPerTimestep(currTimestamp, state):
     allcurrentlyCharging = [state["parkingPlaces"][currID].amountCurrentlyCharging for currID in parkingIDS]
     allPowerDrawn = [max(0,state["parkingPlaces"][currID].amountCurrentlyCharging * 6 - state["parkingPlaces"][currID].currSolarEnergy) for currID in parkingIDS]
 
-    state["parkedPerTimestep"].append((currTimestamp, allcurrentlyParked))
-    state["chargingperTimestemp"].append((currTimestamp, allcurrentlyCharging))
-    state["powerDrawnPerTimeStep"].append((currTimestamp, allPowerDrawn))
+    #Append the data to files
+
+    with open('./performances/parkingDensity.txt', "a") as myfile:     
+        myfile.write(str(currTimestamp) + "," + ",".join(map(str,allcurrentlyParked)) + "\n")
+
+    with open('./performances/chargingDensity.txt', "a") as myfile:     
+        myfile.write(str(currTimestamp) + "," + ",".join(map(str,allcurrentlyCharging)) + "\n")
+
+    with open('./performances/powerDensity.txt', "a") as myfile:     
+        myfile.write(str(currTimestamp) + "," + ",".join(map(str,allPowerDrawn)) + "\n")
 
 #Print the results after the simulation
 def printResults(currState):

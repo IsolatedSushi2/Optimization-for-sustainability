@@ -3,8 +3,10 @@ import generator
 import dataReader as dr
 import simulator
 import logger
+import state
 def main():
     logger.clearLog()
+    state.clearPerformanceFiles()
 
     arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions = dr.readCSVs()
     eventQueue = generator.generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, timeLength=24 * 1)
