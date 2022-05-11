@@ -39,12 +39,14 @@ def startSimulation(eventQueue):
         logger.logEvent(currEvent)
 
     print("Simulation took", time.time() - startTime, "seconds")
-    state.printResults(currState)
-    performanceMeasures.print10OverloadPercentage(currState)
-    performanceMeasures.printMaximumCableLoad(currState)
-    showPlots.showParkingDensity(currState)
-    showPlots.showChargeDensity(currState)
-    showPlots.showOverloadDensity(currState)
+    
+    
+    # state.printResults(currState)
+    # performanceMeasures.print10OverloadPercentage(currState)
+    # performanceMeasures.printMaximumCableLoad(currState)
+    # showPlots.showParkingDensity(currState)
+    # showPlots.showChargeDensity(currState)
+    # showPlots.showOverloadDensity(currState)
 
 
 
