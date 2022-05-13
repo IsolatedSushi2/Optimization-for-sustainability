@@ -80,8 +80,7 @@ def handleCarStopsChargingEvent(currEvent, currState):
     currParkingPlace.stopCharging()
 
     # Calculate how much was charged
-    currCar.amountCharged += (
-        6/3600) * (currEvent.time - currCar.timeStartCharging)
+    currCar.amountCharged += (6/3600) * (currEvent.time - currCar.timeStartCharging)
 
     currCar.timeStartCharging = None
     return []
