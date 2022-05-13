@@ -9,13 +9,10 @@ def createInitialState():
     state["carsCharged"] = 0
     state["carsUnableCharged"] = 0
     state["carsAtFullParking"] = 0
-    state["parkedPerTimestep"] = []
-    state["chargingperTimestemp"] = []
-    state["powerDrawnPerTimeStep"] = []
 
     return state
 
-
+# Clear the files in order to use them for this simulation
 def clearPerformanceFiles():
     file = open('./performances/parkingDensity.txt',"w")
     file.close()
@@ -26,6 +23,8 @@ def clearPerformanceFiles():
     file = open('./performances/powerDensity.txt',"w")
     file.close()
 
+
+# Store the data for the timesteps
 def storeDataPerTimestep(currTimestamp, state):
 
     parkingIDS = state["parkingPlaceIDs"]
@@ -34,7 +33,6 @@ def storeDataPerTimestep(currTimestamp, state):
     allPowerDrawn = [max(0,state["parkingPlaces"][currID].amountCurrentlyCharging * 6 - state["parkingPlaces"][currID].currSolarEnergy) for currID in parkingIDS]
 
     #Append the data to files
-
     with open('./performances/parkingDensity.txt', "a") as myfile:     
         myfile.write(str(currTimestamp) + "," + ",".join(map(str,allcurrentlyParked)) + "\n")
 
@@ -49,10 +47,3 @@ def printResults(currState):
     print(currState["carsCharged"], "cars were charged")
     print(currState["carsUnableCharged"], "cars were unable to be charged")
     print(currState["carsAtFullParking"], "times cars arrived at a full parking place")
-
-
-
-# def storeResults(currState):
-#     with open('./results', 'w') as f:
-#         for item in my_list:
-#             f.write("%s\n" % item)

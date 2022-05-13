@@ -27,6 +27,7 @@ def print10OverloadPercentage(currState):
         noOverload = 0
 
         cableName = "cable" + str(i)
+        # Calculate how long the overloads last
         for j in range(len(timesteps) - 1):
             if cablePowerDict[cableName][j] >= 1.1 * 200:
                 atLeast10 += timesteps[j+1] - timesteps[j]
@@ -35,15 +36,14 @@ def print10OverloadPercentage(currState):
             else:
                 noOverload += timesteps[j+1] - timesteps[j]
 
+
+        #Divide to get the fraction
         atLeast10 /= finalTimestep
         max10 /= finalTimestep
         noOverload /= finalTimestep
         
         print("For cable", cableName, "at least 10% overload:", atLeast10, ", at most 10% overload", max10, "and no overload", noOverload)
         print("check summation==1:", atLeast10 + max10 + noOverload)
-
-            
-
 
 def chargeDictToLists(powerPerCablePerStep):
     
@@ -58,8 +58,7 @@ def chargeDictToLists(powerPerCablePerStep):
     return returnDict
 
 
-
-
+# Calculate cable loads
 def calculateChargePerCable(chargePerTimestep):
     cables = {}
     cables["cable1"] = chargePerTimestep[0]
@@ -73,6 +72,5 @@ def calculateChargePerCable(chargePerTimestep):
     cables["cable6"] = cables["cable7"] + cables["cable8"]
     cables["cable4"] = cables["cable6"] + cables["cable5"] + chargePerTimestep[3]
     cables["cable0"] = cables["cable1"] + cables["cable2"] + cables["cable3"]
-    
 
     return cables
