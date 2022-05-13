@@ -45,20 +45,21 @@ def startSimulation(eventQueue):
 def handleCarPlannedLeaves(currEvent, currState):
     currCar = currEvent.data
 
-    # Hasnt even started charging, so reuse the connection time
-    if currCar.amountCharged == 0 and currCar.chargingVolume > 0:
-        return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged) / (6/3600), eventType="carPlannedLeave", data=currCar)]
+    chargedSinceLastStart = 0
+    if currCar.timeStartCharging:
+        chargedSinceLastStart = (6/3600) * (currEvent.time - currCar.timeStartCharging)
+
+    totalCharge = currCar.amountCharged + chargedSinceLastStart
+    
     # Is finished charging
-    elif currCar.amountCharged >= currCar.chargingVolume:
+    if totalCharge >= currCar.chargingVolume:
         logger.logMessage(f'Car {currCar.carID}, succesfully charged')
         return [event.Event(time=currEvent.time, eventType="carLeaves", data=currCar)]
     # Hasn't finished charging, but is busy charging
     else:
         logger.logMessage(
             f'Car {currCar.carID}, not succesfully charged. ERROR in basecase')
-        currCar.amountCharged = (
-            6/3600) * (currEvent.time - currCar.timeStartCharging)
-        return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged) / (6/3600), eventType="carPlannedLeave", data=currCar)]
+        return [event.Event(time=currEvent.time + (currCar.chargingVolume - totalCharge) / (6/3600), eventType="carPlannedLeave", data=currCar)]
 
 
 def handleCarBeginsChargingEvent(currEvent, currState):
@@ -79,8 +80,10 @@ def handleCarStopsChargingEvent(currEvent, currState):
     currParkingPlace.stopCharging()
 
     # Calculate how much was charged
-    currCar.amountCharged = (
+    currCar.amountCharged += (
         6/3600) * (currEvent.time - currCar.timeStartCharging)
+
+    currCar.timeStartCharging = None
     return []
 
 
@@ -108,8 +111,6 @@ def handleCarPlaceFull(currEvent, currState):
         currState["carsUnableCharged"] += 1
         return []
 
-    # TODO normal distributed travel time to other parkingPlace
-    timeToTravel = 10 * 60
 
     # Get new parking place, and schedule a new event after certain amount of time
     currCar.parkingPlaceID = generator.generateParkingPlace(
@@ -117,7 +118,7 @@ def handleCarPlaceFull(currEvent, currState):
 
     logger.logMessage("Car Place full, moving to another")
     currState["carsAtFullParking"] += 1
-    return [event.Event(time=currEvent.time + timeToTravel, eventType="carArrives", data=currCar)]
+    return [event.Event(time=currEvent.time, eventType="carArrives", data=currCar)]
 
 
 # Occurs when the car has finished charging

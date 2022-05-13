@@ -6,7 +6,6 @@ import event
 
 class Car():
     carParksVisited = None
-    whereParked = None
     timeStartCharging = None
     parkingPlaceID = None
     
