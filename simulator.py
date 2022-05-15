@@ -17,7 +17,8 @@ def startSimulation(eventQueue):
                      "carLeaves": handleCarLeavesEvent,
                      "carBeginsCharging": handleCarBeginsChargingEvent,
                      "carStopsCharging": handleCarStopsChargingEvent,
-                     "carPlannedLeave": handleCarPlannedLeaves}
+                     "carPlannedLeave": handleCarPlannedLeaves,
+                     "endSimulation": handleEndSimulation}
     currState = state.createInitialState()
 
     # The event loop
@@ -27,10 +28,6 @@ def startSimulation(eventQueue):
         # Get next event and type
         currEvent = eventQueue.get()
         currEventType = currEvent.eventType
-
-        # End the simulation when we encounter the endSimulation event
-        # if currEventType == "endSimulation":
-        #     break 
 
         assert currEventType in eventHandlers
 
@@ -42,6 +39,10 @@ def startSimulation(eventQueue):
         # Log every event for debugging
         state.storeDataPerTimestep(currEvent.time, currState)
         logger.logEvent(currEvent)
+
+        # End the simulation when we encounter the endSimulation event
+        if currEventType == "endSimulation":
+            break 
 
     print("Simulation took", time.time() - startTime, "seconds")
     
@@ -197,8 +198,6 @@ def handleCarLeavesEvent(currEvent, currState):
 
     return []
 
-
-# TODO
 def handleSolarUpdateEvent(currEvent, currState):
     for currParkingPlace in currState["parkingPlaces"].values():
         currParkingPlace.setSolarPower(currEvent.data)
@@ -214,7 +213,14 @@ def handleCarExpectedStopChargingEvent(currEvent, currState):
     if currCar.timeStartCharging:
         chargedSinceLastStart = (currEvent.time - currCar.timeStartCharging) * (6/3600)
         if currCar.amountCharged + chargedSinceLastStart >= currCar.chargingVolume:
-            return []
+            return [event.Event(time=currEvent.time, eventType="carStopsCharging", data=currCar)]
         else:
             return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged - chargedSinceLastStart) / (6 / 3600), eventType="carExpectedStopCharging", data=currCar)]
+    return []
+
+def handleEndSimulation(currEvent, currState):
+    print("----- ENDING SIMULATION -----")
+    print(f'amount of cars serviced: {currState["carsCharged"]}')
+    print(f'amount of cars unable to be serviced: {currState["carsUnableCharged"]}')
+    print(f'amount of times a car arrived at a full parking place: {currState["carsAtFullParking"]}')
     return []
