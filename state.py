@@ -2,14 +2,14 @@
 import parkingPlace
 
 #Create the initial state with some variables
-def createInitialState():
+def createInitialState(chargingStrategy = 'base'):
     state = {}
     state["parkingPlaceIDs"] = ["1", "2", "3", "4", "5", "6", "7"]
     state["parkingPlaces"] = parkingPlace.createParkingPlaces()
     state["carsCharged"] = 0
     state["carsUnableCharged"] = 0
     state["carsAtFullParking"] = 0
-
+    state["chargingStrategy"] = chargingStrategy #This should be 'base', 'price-driven', 'FCFS' or 'ELFS'
     return state
 
 # Clear the files in order to use them for this simulation

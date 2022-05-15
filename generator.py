@@ -81,7 +81,10 @@ def generateAllEvents(arrival_fractions, charging_volume_distributions, connecti
     # Generate solar events (extend +70 hours as that is how long cars can continue being present)
     for t in range(timeLength+70):
         generatedEvents.put(event.Event(time=t*3600,eventType="solarUpdate", data=((generateSolarValue(t%24, solar_availability_distributions, season) ) ) ) )
-
+    
+    #add Simulation end
+    generatedEvents.put(event.Event(time = 3600*timeLength, eventType="endSimulation", data=()))
+    
     return generatedEvents
 
 
