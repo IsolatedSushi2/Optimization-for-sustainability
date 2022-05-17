@@ -76,7 +76,7 @@ def showOverloadDensity(currState):
 
 
     xData = timestamps
-    yData = [sum(curr) * 6 for curr in data]
+    yData = [sum(curr) for curr in data]
     plt.plot(xData, yData)
     plt.axhline(y=1000, color='r', linestyle='-')
     plt.title("Used capacity for the transformer")
