@@ -1,35 +1,37 @@
 class ParkingPlace():
     maxNumberCharginStations: int
-    amountCurrentlyParked: int
     currSolarEnergy: float
 
     def __init__(self, maxNumberCharginStations):
         self.maxNumberCharginStations = maxNumberCharginStations
-        self.amountCurrentlyParked = 0
-        self.amountCurrentlyCharging = 0
+        self.currentlyParked = {}
+        self.currentlyCharging = {}
 
-    def startCharging(self):
-        assert self.amountCurrentlyCharging + 1 <= self.amountCurrentlyParked
-        self.amountCurrentlyCharging += 1
+    def startCharging(self, car):
+        assert len(self.currentlyCharging) + 1 <= len(self.currentlyParked)
+        self.currentlyCharging[car] = True
 
-    def stopCharging(self):
-        assert self.amountCurrentlyCharging > 0
-        self.amountCurrentlyCharging -= 1
+    def stopCharging(self, car):
+        assert len(self.currentlyCharging) > 0
+        assert car in self.currentlyCharging
 
-    def arriveAtCharger(self):
-        assert self.amountCurrentlyParked <= self.maxNumberCharginStations
-        self.amountCurrentlyParked += 1
+        del self.currentlyCharging[car]
 
-    def leaveCharger(self):
-        assert self.amountCurrentlyParked > 0
-        self.amountCurrentlyParked -= 1
+    def arriveAtCharger(self, car):
+        assert len(self.currentlyParked) <= self.maxNumberCharginStations
+        self.currentlyParked[car] = True
+
+    def leaveCharger(self, car):
+        assert len(self.currentlyParked)
+        assert car in self.currentlyParked
+        del self.currentlyParked[car]
 
     def setSolarPower(self, newVal):
         self.currSolarEnergy = newVal
         return
 
     def isFull(self):
-        return self.maxNumberCharginStations == self.amountCurrentlyParked
+        return self.maxNumberCharginStations == len(self.currentlyParked)
 
 #Creates the parking places, using strings for the IDS
 def createParkingPlaces():

@@ -74,7 +74,7 @@ def handleCarBeginsChargingEvent(currEvent, currState):
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
     # TODO: update the line below when parking places keep track of all cars parked/charging there
-    currParkingPlace.startCharging()
+    currParkingPlace.startCharging(currCar)
 
     # Calculate how much time to finish charging without interruption
     return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged) / (6 / 3600), eventType="carExpectedStopCharging", data=currCar)]
@@ -85,7 +85,7 @@ def handleCarStopsChargingEvent(currEvent, currState):
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
     # TODO: update the line below when parking places keep track of all cars parked/charging there
-    currParkingPlace.stopCharging()
+    currParkingPlace.stopCharging(currCar)
 
     # Calculate how much was charged
     currCar.amountCharged += (6/3600) * (currEvent.time - currCar.timeStartCharging)
@@ -107,7 +107,7 @@ def handleCarArrivalEvent(currEvent, currState):
         return handleCarPlaceFull(currEvent, currState)
 
     # TODO: update the line below when parking places keep track of all cars parked/charging there
-    currParkingPlace.arriveAtCharger()
+    currParkingPlace.arriveAtCharger(currCar)
     # Use the carBeginsChargingEvent for later addition of the not base cases. Also schedule the planned leave
     assert currState['chargingStrategy'] in {'base', 'price-driven', 'FCFS', 'ELFS'}
     if currState['chargingStrategy'] == 'base':
@@ -193,7 +193,7 @@ def handleCarLeavesEvent(currEvent, currState):
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
     # TODO: update the line below when parking places keep track of all cars parked/charging there
-    currParkingPlace.leaveCharger()
+    currParkingPlace.leaveCharger(currCar)
     currState["carsCharged"] += 1
 
     return []

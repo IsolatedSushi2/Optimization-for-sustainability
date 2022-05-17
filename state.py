@@ -28,9 +28,9 @@ def clearPerformanceFiles():
 def storeDataPerTimestep(currTimestamp, state):
 
     parkingIDS = state["parkingPlaceIDs"]
-    allcurrentlyParked = [state["parkingPlaces"][currID].amountCurrentlyParked for currID in parkingIDS]
-    allcurrentlyCharging = [state["parkingPlaces"][currID].amountCurrentlyCharging for currID in parkingIDS]
-    allPowerDrawn = [max(0,state["parkingPlaces"][currID].amountCurrentlyCharging * 6 - state["parkingPlaces"][currID].currSolarEnergy) for currID in parkingIDS]
+    allcurrentlyParked = [len(state["parkingPlaces"][currID].currentlyParked) for currID in parkingIDS]
+    allcurrentlyCharging = [len(state["parkingPlaces"][currID].currentlyCharging) for currID in parkingIDS]
+    allPowerDrawn = [max(0,len(state["parkingPlaces"][currID].currentlyCharging) * 6 - state["parkingPlaces"][currID].currSolarEnergy) for currID in parkingIDS]
 
     #Append the data to files
     with open('./performances/parkingDensity.txt', "a") as myfile:     
