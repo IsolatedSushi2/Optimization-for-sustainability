@@ -10,6 +10,7 @@ def createInitialState(chargingStrategy = 'base'):
     state["carsUnableCharged"] = 0
     state["carsAtFullParking"] = 0
     state["chargingStrategy"] = chargingStrategy #This should be 'base', 'price-driven', 'FCFS' or 'ELFS'
+    state["cableLoads"] = [0] * 9
     return state
 
 # Clear the files in order to use them for this simulation
