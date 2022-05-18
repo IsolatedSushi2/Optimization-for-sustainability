@@ -202,7 +202,7 @@ def findCheapestTime(currEvent, currState):
     generateMoreTimes = True 
     days = firstTime // (24*3600)
     while generateMoreTimes:
-        times = [days, days + 8*3600, days+16*3600, days+20*3600]
+        times = [days, days + 8*3600, days + 8*3600 - chargingTime, days+16*3600, days + 16*3600 - chargingTime, days+20*3600, days + 20*3600 - chargingTime, days + 24*3600 - chargingTime]
         for time in times:
             if firstTime < time < lastTime:
                 timesToCheck.append(time)
