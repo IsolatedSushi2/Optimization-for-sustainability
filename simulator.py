@@ -8,7 +8,7 @@ import performanceMeasures
 import time
 
 # Start the simulation
-def startSimulation(eventQueue):
+def startSimulation(eventQueue, chargingStrategy = 'base', parkingPlacesWithPanelsID = []):
 
     # The eventhandlers allow the events to be mapped to their handlers
     eventHandlers = {"carArrives": handleCarArrivalEvent,
@@ -19,7 +19,7 @@ def startSimulation(eventQueue):
                      "carStopsCharging": handleCarStopsChargingEvent,
                      "carPlannedLeave": handleCarPlannedLeaves,
                      "endSimulation": handleEndSimulation}
-    currState = state.createInitialState()
+    currState = state.createInitialState(chargingStrategy=chargingStrategy, parkingPlacesWithPanelsID=parkingPlacesWithPanelsID)
     assert currState['chargingStrategy'] in {'base', 'price-driven', 'FCFS', 'ELFS'}
 
     # The event loop
@@ -33,7 +33,7 @@ def startSimulation(eventQueue):
         assert currEventType in eventHandlers
 
         # Some events may schedule new events, schedule those here
-        print(currEvent)
+        # print(currEvent)
         returnEvents = eventHandlers[currEventType](currEvent, currState)
         for returnEvent in returnEvents:
             eventQueue.put(returnEvent)
@@ -75,13 +75,13 @@ def handleCarBeginsChargingEvent(currEvent, currState):
     currCar.timeStartCharging = currEvent.time
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
-    # TODO: update the line below when parking places keep track of all cars parked/charging there
     currParkingPlace.startCharging(currCar)
 
     # Update the current loads
-    cableIndices = getCablesIndicesForParkingPlace(currCar.parkingPlaceID, currState)
-    for index in cableIndices:
-        currState["cableLoads"][index] += 6
+    updateCableLoads()
+    # cableIndices = getCablesIndicesForParkingPlace(currCar.parkingPlaceID, currState)
+    # for index in cableIndices:
+    #     currState["cableLoads"][index] += 6
 
 
     # Calculate how much time to finish charging without interruption
@@ -92,13 +92,13 @@ def handleCarStopsChargingEvent(currEvent, currState):
     currCar = currEvent.data
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
-    # TODO: update the line below when parking places keep track of all cars parked/charging there
     currParkingPlace.stopCharging(currCar)
 
     # Remove the cableloads
-    cableIndices = getCablesIndicesForParkingPlace(currCar.parkingPlaceID, currState)
-    for index in cableIndices:
-        currState["cableLoads"][index] -= 6
+    updateCableLoads()
+    # cableIndices = getCablesIndicesForParkingPlace(currCar.parkingPlaceID, currState)
+    # for index in cableIndices:
+    #     currState["cableLoads"][index] -= 6
 
     # Calculate how much was charged
     currCar.amountCharged += (6/3600) * (currEvent.time - currCar.timeStartCharging)
@@ -155,6 +155,33 @@ def isAdditionalChargePossible(currEvent, currState):
             return False
 
     return True
+
+def updateCableLoads(currState):
+    parkingPlaces = currState["parkingPlaces"]
+    def calcPowerDrawn(parkingPlaceID):
+        return 6 * len(parkingPlaces[parkingPlaceID].currentlyCharging) - parkingPlaces[parkingPlaceID].currSolarEnergy
+    d1 = calcPowerDrawn("1")
+    d2 = calcPowerDrawn("2")
+    d3 = calcPowerDrawn("3")
+    d4 = calcPowerDrawn("4")
+    d5 = calcPowerDrawn("5")
+    d6 = calcPowerDrawn("6")
+    d7 = calcPowerDrawn("7")
+    
+    newCableLoads = [0]*9
+    newCableLoads[0] = abs(d1 + d2 + d3)
+    newCableLoads[1] = abs(d1)
+    newCableLoads[2] = abs(d2)
+    newCableLoads[3] = abs(d3)
+    newCableLoads[4] = abs(d4 + d5 + d6 + d7)
+    newCableLoads[5] = abs(d7)
+    newCableLoads[6] = abs(d5 + d6)
+    newCableLoads[7] = abs(d5)
+    newCableLoads[8] = abs(d6) 
+    currState["cableLoads"] = newCableLoads
+
+
+
 
 def getCablesIndicesForParkingPlace(parkingPlaceID, currState):
     if parkingPlaceID == "1":
@@ -246,19 +273,23 @@ def handleCarLeavesEvent(currEvent, currState):
     currCar = currEvent.data
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
-    # TODO: update the line below when parking places keep track of all cars parked/charging there
     currParkingPlace.leaveCharger(currCar)
     currState["carsCharged"] += 1
 
     return []
 
 def handleSolarUpdateEvent(currEvent, currState):
-    for currParkingPlace in currState["parkingPlaces"].values():
-        currParkingPlace.setSolarPower(currEvent.data)
+    for currParkingPlaceID in currState["parkingPlaceIDs"]:
+        currParkingPlace = currState["parkingPlaces"][currParkingPlaceID]
+        if currParkingPlaceID in currState["parkingPlacesWithPanelsID"]:
+            currParkingPlace.setSolarPower(currEvent.data)
+        else:
+            currParkingPlace.setSolarPower(0)
     if currState['chargingStrategy'] == ('base' or 'price-driven'):
+        updateCableLoads()
         return []
     elif currState['chargingStrategy'] == 'FCFS':
-        return []
+        return [] # TODO: implement scheduling more/less car charging after solar update
     elif currState['chargingStrategy'] == 'ELFS': 
         pass # TODO: implement scheduling more/less car charging after solar update
 

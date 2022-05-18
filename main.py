@@ -5,6 +5,7 @@ import simulator
 import logger
 import state
 import showPlots
+
 def main():
     # Clear the files for a new run
     logger.clearLog()
