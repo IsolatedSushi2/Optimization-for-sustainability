@@ -20,6 +20,7 @@ def startSimulation(eventQueue):
                      "carPlannedLeave": handleCarPlannedLeaves,
                      "endSimulation": handleEndSimulation}
     currState = state.createInitialState()
+    assert currState['chargingStrategy'] in {'base', 'price-driven', 'FCFS', 'ELFS'}
 
     # The event loop
     startTime = time.time()
@@ -106,10 +107,8 @@ def handleCarArrivalEvent(currEvent, currState):
     if currParkingPlace.isFull():
         return handleCarPlaceFull(currEvent, currState)
 
-    # TODO: update the line below when parking places keep track of all cars parked/charging there
     currParkingPlace.arriveAtCharger(currCar)
     # Use the carBeginsChargingEvent for later addition of the not base cases. Also schedule the planned leave
-    assert currState['chargingStrategy'] in {'base', 'price-driven', 'FCFS', 'ELFS'}
     if currState['chargingStrategy'] == 'base':
         return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=currCar),
             event.Event(time=currEvent.time + currCar.connectionTime, eventType="carPlannedLeave", data=currCar)]

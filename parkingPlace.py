@@ -1,3 +1,5 @@
+import queue
+
 class ParkingPlace():
     maxNumberCharginStations: int
     currSolarEnergy: float
@@ -6,6 +8,8 @@ class ParkingPlace():
         self.maxNumberCharginStations = maxNumberCharginStations
         self.currentlyParked = {}
         self.currentlyCharging = {}
+
+        self.queue = None
 
     def startCharging(self, car):
         assert len(self.currentlyCharging) + 1 <= len(self.currentlyParked)
@@ -34,10 +38,16 @@ class ParkingPlace():
         return self.maxNumberCharginStations == len(self.currentlyParked)
 
 #Creates the parking places, using strings for the IDS
-def createParkingPlaces():
+def createParkingPlaces(chargingStrategy):
     chargingStationAmounts = [60, 80, 60, 70, 60, 60, 50]
     parkingPlaces = {}
     for index in range(7):
         parkingPlaceIndex = str(index+1)
         parkingPlaces[parkingPlaceIndex] = ParkingPlace(maxNumberCharginStations=chargingStationAmounts[index])
+
+        if chargingStrategy == "FCFS":
+            parkingPlaces[parkingPlaceIndex].queue = queue.Queue()
+        if chargingStrategy == "ELFS":
+            parkingPlaces[parkingPlaceIndex].queue = queue.PriorityQueue()
+
     return parkingPlaces

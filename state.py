@@ -5,7 +5,7 @@ import parkingPlace
 def createInitialState(chargingStrategy = 'base'):
     state = {}
     state["parkingPlaceIDs"] = ["1", "2", "3", "4", "5", "6", "7"]
-    state["parkingPlaces"] = parkingPlace.createParkingPlaces()
+    state["parkingPlaces"] = parkingPlace.createParkingPlaces(chargingStrategy)
     state["carsCharged"] = 0
     state["carsUnableCharged"] = 0
     state["carsAtFullParking"] = 0
