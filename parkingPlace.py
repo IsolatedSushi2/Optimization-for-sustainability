@@ -4,10 +4,11 @@ class ParkingPlace():
     maxNumberCharginStations: int
     currSolarEnergy: float
 
-    def __init__(self, maxNumberCharginStations):
+    def __init__(self, maxNumberCharginStations, ID):
         self.maxNumberCharginStations = maxNumberCharginStations
         self.currentlyParked = {}
         self.currentlyCharging = {}
+        self.ID = ID
 
         self.queue = None
 
@@ -43,7 +44,7 @@ def createParkingPlaces(chargingStrategy):
     parkingPlaces = {}
     for index in range(7):
         parkingPlaceIndex = str(index+1)
-        parkingPlaces[parkingPlaceIndex] = ParkingPlace(maxNumberCharginStations=chargingStationAmounts[index])
+        parkingPlaces[parkingPlaceIndex] = ParkingPlace(maxNumberCharginStations=chargingStationAmounts[index], ID=parkingPlaceIndex)
 
         if chargingStrategy == "FCFS":
             parkingPlaces[parkingPlaceIndex].queue = queue.Queue()

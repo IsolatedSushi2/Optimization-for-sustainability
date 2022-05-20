@@ -13,7 +13,7 @@ def createInitialState(chargingStrategy = 'base', parkingPlacesWithPanelsID = []
     state["chargingStrategy"] = chargingStrategy #This should be 'base', 'price-driven', 'FCFS' or 'ELFS'
     state["cableLoads"] = [0] * 9
 
-    assert state["chargingStrategy"] is ('base' or 'price-driven' or 'FCFS' or 'ELFS')
+    assert state["chargingStrategy"] in {'base', 'price-driven', 'FCFS', 'ELFS'}
     for parkingPlaceID in state["parkingPlacesWithPanelsID"]:
         assert parkingPlaceID in state["parkingPlaceIDs"]
 
