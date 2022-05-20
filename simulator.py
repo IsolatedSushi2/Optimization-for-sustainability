@@ -117,8 +117,35 @@ def handleCarStopsChargingEvent(currEvent, currState):
             return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=currCar)]
         else:
             return []
-    elif currState['chargingStrategy'] == 'ELFS': 
-        pass # TODO: implement scheduling of another car's charging when current car stops charging
+    elif currState['chargingStrategy'] == 'ELFS':
+        currCar = getNextCarFromQueueELFS(currState)
+        if currCar is not None:
+            return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=currCar)]
+        else:
+            return []
+        
+
+def getNextCarFromQueueELFS(currState):
+
+    #First get which parkingPlace we should queue
+    priorityList = currState["priorityList"]
+    sortedPriorityList = sorted(priorityList, key=lambda x: x[1], reverse=True)
+
+    for currIndex in range(len(sortedPriorityList)):
+        
+        currCar, _ = sortedPriorityList[currIndex]
+        parkingPlaceID = currCar.parkingPlaceID
+        cableIndices = getCablesIndicesForParkingPlace(parkingPlace.ID, currState)
+
+        # Load not possible
+        if not isAdditionalChargePossibleIndices(cableIndices, currState):
+            continue
+        
+        del sortedPriorityList[currIndex]
+        
+        return currCar
+
+    return None
 
 def getNextCarFromQueueFCFS(currState):
 
@@ -177,8 +204,11 @@ def handleCarArrivalEvent(currEvent, currState):
             event.Event(time=currEvent.time + currCar.connectionTime, eventType="carPlannedLeave", data=currCar)]
         else:
             priority = currCar.chargingVolume * 6 / currCar.connectionTime
-            currState["parkingPlaces"][currCar.parkingPlaceID].queue.put((priority, currCar))
+            currState["priorityList"].append((currCar, priority))
             return []
+
+def noCablesOverloaded(currState):
+    return isAdditionalChargePossibleIndices(range(len(currState["cableLoads"])), currState)
 
 def isAdditionalChargePossibleIndices(cableIDs, currState):
     for index in cableIDs:
@@ -323,11 +353,22 @@ def handleSolarUpdateEvent(currEvent, currState):
             currParkingPlace.setSolarPower(currEvent.data)
         else:
             currParkingPlace.setSolarPower(0)
-    if currState['chargingStrategy'] == ('base' or 'price-driven'):
+    if currState['chargingStrategy'] == 'base' or currState['chargingStrategy'] == 'price-driven':
         updateCableLoads(currState)
         return []
     elif currState['chargingStrategy'] == 'FCFS':
-        return [] # TODO: implement scheduling more/less car charging after solar update
+        updateCableLoads(currState)
+
+        if noCablesOverloaded(currState):
+            return [] #TODO
+        else:
+            # Check if another car is possible
+            currCar = getNextCarFromQueueFCFS(currState)
+            #Start scheduling
+            if currCar is not None:
+                return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=currCar)]
+            else:
+                return []
     elif currState['chargingStrategy'] == 'ELFS': 
         pass # TODO: implement scheduling more/less car charging after solar update
 

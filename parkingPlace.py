@@ -48,7 +48,5 @@ def createParkingPlaces(chargingStrategy):
 
         if chargingStrategy == "FCFS":
             parkingPlaces[parkingPlaceIndex].queue = queue.Queue()
-        if chargingStrategy == "ELFS":
-            parkingPlaces[parkingPlaceIndex].queue = queue.PriorityQueue()
 
     return parkingPlaces
