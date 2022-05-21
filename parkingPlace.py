@@ -18,7 +18,13 @@ class ParkingPlace():
 
     def stopCharging(self, car):
         assert len(self.currentlyCharging) > 0
+        
+        if car not in self.currentlyCharging:
+            print("CAR", car)
+            print(self.currentlyCharging)
+        
         assert car in self.currentlyCharging
+
 
         del self.currentlyCharging[car]
 

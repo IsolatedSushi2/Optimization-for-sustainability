@@ -76,9 +76,12 @@ def handleCarPlannedLeaves(currEvent, currState):
 
 def handleCarBeginsChargingEvent(currEvent, currState):
     currCar = currEvent.data
-    currCar.timeStartCharging = currEvent.time
-
+    
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
+    if currParkingPlace.isFull():
+        return []
+    
+    currCar.timeStartCharging = currEvent.time
     currParkingPlace.startCharging(currCar)
 
     # Update the current loads
@@ -100,27 +103,32 @@ def getOverloadedCableIndices(currState):
 
     return returnIndices
 
-def stopCarCharging(currTime, currState):
+def stopCarCharging(currTime, currState, ELFS= False):
 
     # Remove from the smallest
 
 
     while len(getOverloadedCableIndices(currState)) > 0:
+        breaking = False
         sortedParkingPlaces = sorted(parkingPlaces, key=lambda x: x.queue.qsize())
         overloadedIndices = getOverloadedCableIndices(currState)
         for parkingPlace in sortedParkingPlaces:
             cableIndices = getCablesIndicesForParkingPlace(parkingPlaceID.ID, currState)
 
             if len(set(cableIndices).intersection(set(overloadedIndices))) > 0:
-                currCar = list(parkingPlace.currentlyCharging.values())[0]
-                handleCarStopsChargingEvent(event.Event(time=currTime, eventType="carStopsCharging", data=currCar), currState)
+                currentlyCharging = list(parkingPlace.currentlyCharging.values())
+                if ELFS:
+                    currCar = sorted(currentlyCharging, key = lambda x: (x.amountCharged + (currTime - x.timeStartCharging)) / x.connectionTime, reverse=True)[0]
+                else:
+                    currCar = currentlyCharging[0]
+                
+                if currCar is not None:
+                    handleCarStopsChargingEvent(event.Event(time=currTime, eventType="carStopsCharging", data=currCar), currState)
+                    breaking = True
+
+            if(breaking):
                 break
-        
-
-
-
-
-
+                    
 
 def handleCarStopsChargingEvent(currEvent, currState):
     currCar = currEvent.data
@@ -165,7 +173,7 @@ def getNextCarFromQueueELFS(currState):
         
         currCar, _ = sortedPriorityList[currIndex]
         parkingPlaceID = currCar.parkingPlaceID
-        cableIndices = getCablesIndicesForParkingPlace(parkingPlace.ID, currState)
+        cableIndices = getCablesIndicesForParkingPlace(parkingPlaceID, currState)
 
         # Load not possible
         if not isAdditionalChargePossibleIndices(cableIndices, currState):
@@ -403,7 +411,27 @@ def handleSolarUpdateEvent(currEvent, currState):
             else:
                 return []
     elif currState['chargingStrategy'] == 'ELFS': 
-        pass # TODO: implement scheduling more/less car charging after solar update
+        updateCableLoads(currState)
+
+        if noCablesOverloaded(currState):
+            stopCarCharging(currEvent.time, currState, True)
+            return []
+        else:
+            # Check if another car is possible
+            sortedPriorityList = sortedPriorityList = sorted(currState["priorityList"], key=lambda x: x[1], reverse=True)
+            #Start scheduling
+            for currCar, _ in sortedPriorityList:
+                indices = getCablesIndicesForParkingPlace(currCar.parkingPlaceID, currState)
+
+                if isAdditionalChargePossibleIndices(indices, currState):
+                    return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=currCar)]
+
+            return []
+
+
+
+
+
 
 def handleCarExpectedStopChargingEvent(currEvent, currState):
     currCar = currEvent.data 
