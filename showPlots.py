@@ -4,8 +4,8 @@ import performanceMeasures
 
 
 def showPlots(currState):
-    showParkingDensity(currState)
-    showChargeDensity(currState)
+    #showParkingDensity(currState)
+    #showChargeDensity(currState)
     showOverloadDensity(currState)
 
 

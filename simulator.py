@@ -91,6 +91,36 @@ def handleCarBeginsChargingEvent(currEvent, currState):
     # Calculate how much time to finish charging without interruption
     return [event.Event(time=currEvent.time + (currCar.chargingVolume - currCar.amountCharged) / (6 / 3600), eventType="carExpectedStopCharging", data=currCar)]
 
+def getOverloadedCableIndices(currState):
+    returnIndices = []
+    cableLoads = currState["cableLoads"]
+    for index in range(len(cableLoads)):
+        if cableLoads[index] + 6 > 200:
+            returnIndices.append(index)
+
+    return returnIndices
+
+def stopCarCharging(currTime, currState):
+
+    # Remove from the smallest
+
+
+    while len(getOverloadedCableIndices(currState)) > 0:
+        sortedParkingPlaces = sorted(parkingPlaces, key=lambda x: x.queue.qsize())
+        overloadedIndices = getOverloadedCableIndices(currState)
+        for parkingPlace in sortedParkingPlaces:
+            cableIndices = getCablesIndicesForParkingPlace(parkingPlaceID.ID, currState)
+
+            if len(set(cableIndices).intersection(set(overloadedIndices))) > 0:
+                currCar = list(parkingPlace.currentlyCharging.values())[0]
+                handleCarStopsChargingEvent(event.Event(time=currTime, eventType="carStopsCharging", data=currCar), currState)
+                break
+        
+
+
+
+
+
 
 def handleCarStopsChargingEvent(currEvent, currState):
     currCar = currEvent.data
@@ -223,6 +253,8 @@ def isAdditionalChargePossibleEvent(currEvent, currState):
     cableIDs = getCablesIndicesForParkingPlace(parkingPlaceID, currState)
     
     return isAdditionalChargePossibleIndices(cableIDs, currState)
+
+
 
 def updateCableLoads(currState):
     parkingPlaces = currState["parkingPlaces"]
@@ -360,7 +392,8 @@ def handleSolarUpdateEvent(currEvent, currState):
         updateCableLoads(currState)
 
         if noCablesOverloaded(currState):
-            return [] #TODO
+            stopCarCharging(currEvent.time, currState)
+            return []
         else:
             # Check if another car is possible
             currCar = getNextCarFromQueueFCFS(currState)
