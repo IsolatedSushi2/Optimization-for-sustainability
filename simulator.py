@@ -47,8 +47,8 @@ def startSimulation(eventQueue, chargingStrategy = 'base', parkingPlacesWithPane
         logger.logEvent(currEvent)
 
         # End the simulation when we encounter the endSimulation event
-        # if currEventType == "endSimulation":
-        #     break 
+        if currEventType == "endSimulation":
+            break 
 
     print("Simulation took", time.time() - startTime, "seconds")
     
@@ -78,9 +78,7 @@ def handleCarBeginsChargingEvent(currEvent, currState):
     currCar = currEvent.data
     
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
-    if currParkingPlace.isFull():
-        return []
-    
+
     currCar.timeStartCharging = currEvent.time
     currParkingPlace.startCharging(currCar)
 

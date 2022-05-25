@@ -135,4 +135,4 @@ def print10OverloadPercentage(currState):
         
         print("For cable", str(i), "at least 10% overload:", atLeast10, "at most 10% overload", max10, "and no overload", noOverload)
 
-        assert atLeast10 + max10 + noOverload == 1.0
+        assert abs(atLeast10 + max10 + noOverload - 1.0) < 0.01
