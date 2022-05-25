@@ -352,6 +352,7 @@ def handleCarLeavesEvent(currEvent, currState):
 
 def handleSolarUpdateEvent(currEvent, currState):
 
+    print("New Solar", currEvent.data, currEvent.time)
     #Set new values for solar panels
     for currParkingPlaceID in currState["parkingPlaceIDs"]:
         currParkingPlace = currState["parkingPlaces"][currParkingPlaceID]

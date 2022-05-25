@@ -40,7 +40,7 @@ def storeDataPerTimestep(currTimestamp, state):
     parkingIDS = state["parkingPlaceIDs"]
     allcurrentlyParked = [len(state["parkingPlaces"][currID].currentlyParked) for currID in parkingIDS]
     allcurrentlyCharging = [len(state["parkingPlaces"][currID].currentlyCharging) for currID in parkingIDS]
-    allPowerDrawn = [max(0,len(state["parkingPlaces"][currID].currentlyCharging) * 6 - state["parkingPlaces"][currID].currSolarEnergy) for currID in parkingIDS] #TODO replace this with cable load
+    allPowerDrawn = state["cableLoads"]
 
     #Append the data to files
     with open('./performances/parkingDensity.txt', "a") as myfile:     
