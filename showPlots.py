@@ -29,10 +29,10 @@ def readFile(path):
 def printDelays():
     with open("./performances/delays.txt", "r") as file:
         lines = file.readlines()
-        print(lines)
 
     parsed = np.array([float(x) for x in lines])
 
+    print("Minimum delay:", np.min(parsed))
     print("Maximum delay:", np.max(parsed))
     print("Average delay:", np.mean(parsed))
     print("Percentage with delay:", 100 * parsed[parsed!=0.0].shape[0] / parsed.shape[0])
