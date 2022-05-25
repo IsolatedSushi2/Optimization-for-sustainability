@@ -14,7 +14,7 @@ def main():
     #Generate the distributions, events and start the simulation
     arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions = dr.readCSVs()
     eventQueue = generator.generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, timeLength=24 * 1)
-    currState = simulator.startSimulation(eventQueue, "FCFS")
+    currState = simulator.startSimulation(eventQueue, "ELFS")
 
     #Show the results
     state.printResults(currState)
