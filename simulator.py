@@ -188,6 +188,7 @@ def handleCarArrivalEvent(currEvent, currState):
     if currParkingPlace.isFull():
         return handleCarPlaceFull(currEvent, currState)
 
+    currCar.carArrivalTime = currEvent.time
     currParkingPlace.arriveAtCharger(currCar)
     # Use the carBeginsChargingEvent for later addition of the not base cases. Also schedule the planned leave
     if currState['chargingStrategy'] == 'base':
@@ -348,11 +349,14 @@ def handleCarLeavesEvent(currEvent, currState):
     currParkingPlace.leaveCharger(currCar)
     currState["carsCharged"] += 1
 
+    deltaTime = currEvent.time - currCar.carArrivalTime
+    delay = max(0, deltaTime - currCar.connectionTime)
+    state.storeDelay(delay)
+
     return []
 
 def handleSolarUpdateEvent(currEvent, currState):
 
-    print("New Solar", currEvent.data, currEvent.time)
     #Set new values for solar panels
     for currParkingPlaceID in currState["parkingPlaceIDs"]:
         currParkingPlace = currState["parkingPlaces"][currParkingPlaceID]
@@ -379,4 +383,6 @@ def handleEndSimulation(currEvent, currState):
     print(f'amount of cars serviced: {currState["carsCharged"]}')
     print(f'amount of cars unable to be serviced: {currState["carsUnableCharged"]}')
     print(f'amount of times a car arrived at a full parking place: {currState["carsAtFullParking"]}')
+    showPlots.printMaximumCableLoad(currState)
+    showPlots.print10OverloadPercentage(currState)
     return []

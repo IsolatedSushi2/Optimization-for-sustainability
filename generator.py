@@ -16,6 +16,7 @@ class Car():
         self.carParksVisited = []
         self.amountCharged = 0
         self.carID = carID
+        self.carArrivalTime = None
 
     def __repr__(self):
         return f'Car ID: {self.carID}, chargingVolume: {self.chargingVolume}, connectionTime: {self.connectionTime} parkingPlace: {self.parkingPlaceID}, amountCharged: {self.amountCharged}, carParksVisited: {self.carParksVisited}'

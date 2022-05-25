@@ -33,6 +33,9 @@ def clearPerformanceFiles():
     file = open('./performances/powerDensity.txt',"w")
     file.close()
 
+    file = open('./performances/delays.txt',"w")
+    file.close()
+
 
 # Store the data for the timesteps
 def storeDataPerTimestep(currTimestamp, state):
@@ -51,6 +54,11 @@ def storeDataPerTimestep(currTimestamp, state):
 
     with open('./performances/powerDensity.txt', "a") as myfile:     
         myfile.write(str(currTimestamp) + "," + ",".join(map(str,allPowerDrawn)) + "\n")
+
+def storeDelay(delay):
+    with open('./performances/delays.txt', "a") as myfile:     
+        myfile.write(str(delay) + "\n")
+    
 
 #Print the results after the simulation
 def printResults(currState):
