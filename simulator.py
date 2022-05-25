@@ -144,8 +144,10 @@ def getNextCarFromQueueELFS(currState):
         if not isAdditionalChargePossibleIndices(cableIndices, currState):
             continue
         
-        del sortedPriorityList[currIndex]
-        
+
+        toBeRemoved = sortedPriorityList[currIndex]
+
+        priorityList.remove(toBeRemoved)        
         return currCar
 
     return None
