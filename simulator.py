@@ -47,8 +47,8 @@ def startSimulation(eventQueue, chargingStrategy = 'base', parkingPlacesWithPane
         logger.logEvent(currEvent)
 
         # End the simulation when we encounter the endSimulation event
-        if currEventType == "endSimulation":
-            break 
+        # if currEventType == "endSimulation":
+        #     break 
 
     print("Simulation took", time.time() - startTime, "seconds")
     
@@ -325,6 +325,10 @@ def findCheapestTime(currEvent, currState):
 def handleCarPlaceFull(currEvent, currState):
     currCar = currEvent.data
 
+
+    logger.logMessage("Car Place full, moving to another")
+    currState["carsAtFullParking"] += 1
+
     # As specified in assignment, stop visiting
     if len(currCar.carParksVisited) == 3:
         logger.logMessage("Too many Car Places (3) full in a row")
@@ -336,8 +340,6 @@ def handleCarPlaceFull(currEvent, currState):
     currCar.parkingPlaceID = generator.generateParkingPlace(
         currCar.carParksVisited)
 
-    logger.logMessage("Car Place full, moving to another")
-    currState["carsAtFullParking"] += 1
     return [event.Event(time=currEvent.time, eventType="carArrives", data=currCar)]
 
 
@@ -351,6 +353,9 @@ def handleCarLeavesEvent(currEvent, currState):
 
     deltaTime = currEvent.time - currCar.carArrivalTime
     delay = max(0, deltaTime - currCar.connectionTime)
+
+    if(delay > 0):
+        print(currEvent.time, currCar)
     state.storeDelay(delay)
 
     return []

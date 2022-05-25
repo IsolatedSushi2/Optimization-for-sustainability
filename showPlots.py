@@ -4,9 +4,9 @@ import performanceMeasures
 
 
 def showPlots(currState):
-    #showParkingDensity(currState)
-    #showChargeDensity(currState)
-    #showOverloadDensity(currState)
+    showParkingDensity(currState)
+    showChargeDensity(currState)
+    showOverloadDensity(currState)
     return
 
 
@@ -91,7 +91,7 @@ def showOverloadDensity(currState):
 
 
     xData = timestamps
-    yData = [sum(curr) for curr in data]
+    yData = powerPerCablePerStep[0] + powerPerCablePerStep[4]
     plt.plot(xData, yData)
     plt.axhline(y=1000, color='r', linestyle='-')
     plt.title("Used capacity for the transformer")

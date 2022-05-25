@@ -19,7 +19,7 @@ class Car():
         self.carArrivalTime = None
 
     def __repr__(self):
-        return f'Car ID: {self.carID}, chargingVolume: {self.chargingVolume}, connectionTime: {self.connectionTime} parkingPlace: {self.parkingPlaceID}, amountCharged: {self.amountCharged}, carParksVisited: {self.carParksVisited}'
+        return f'Car ID: {self.carID}, chargingVolume: {self.chargingVolume}, connectionTime: {self.connectionTime} parkingPlace: {self.parkingPlaceID}, amountCharged: {self.amountCharged}, carParksVisited: {self.carParksVisited}, arrivalTime: {self.carArrivalTime}'
 
 def generateCar(charging_volume_distributions, connection_time_distributions, carID):
     charging_volumes, charging_probabilities = zip(*charging_volume_distributions)
@@ -30,7 +30,7 @@ def generateCar(charging_volume_distributions, connection_time_distributions, ca
     min_connection_time_hours = int(chargingVolume/(6*0.7)) #minimum connection time in hours
 
     connectionTime_hours = np.random.choice(connection_times[min_connection_time_hours:], p=(connection_probabilities[min_connection_time_hours:]/sum(connection_probabilities[min_connection_time_hours:])))
-    connectionTime = max(connectionTime_hours * 3600 + np.random.choice(3600), chargingVolume/(6*0.7))
+    connectionTime = max(connectionTime_hours * 3600 + np.random.choice(3600), 1 + int(chargingVolume * 3600/(6*0.7)))
     
     randomParkingPlaceID = generateParkingPlace()
 

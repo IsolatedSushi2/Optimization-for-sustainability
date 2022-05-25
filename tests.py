@@ -45,8 +45,7 @@ def testCarConnectionTimes():
 
 
 def main():
-    strat = "base"
-    print(strat == ('base' or 'price-driven'))
+    testCarArrivals()
         
 
 
