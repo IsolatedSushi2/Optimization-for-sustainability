@@ -113,16 +113,16 @@ def handleCarStopsChargingEvent(currEvent, currState):
     if currState['chargingStrategy'] == 'base' or currState['chargingStrategy'] == 'price-driven':
         return []
     elif currState['chargingStrategy'] == 'FCFS':
-        currCar = getNextCarFromQueueFCFS(currState)
+        nextCar = getNextCarFromQueueFCFS(currState)
         #Start scheduling
-        if currCar is not None:
-            return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=currCar)]
+        if nextCar is not None:
+            return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=nextCar)]
         else:
             return []
     elif currState['chargingStrategy'] == 'ELFS':
-        currCar = getNextCarFromQueueELFS(currState)
-        if currCar is not None:
-            return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=currCar)]
+        nextCar = getNextCarFromQueueELFS(currState)
+        if nextCar is not None:
+            return [event.Event(time=currEvent.time, eventType="carBeginsCharging", data=nextCar)]
         else:
             return []
         
@@ -201,7 +201,7 @@ def handleCarArrivalEvent(currEvent, currState):
             else:
                 priority = currCar.chargingVolume * 6 / currCar.connectionTime
                 currState["priorityList"].append((currCar, priority))
-            return []
+            return [event.Event(time=currEvent.time + currCar.connectionTime, eventType="carPlannedLeave", data=currCar)]
 
 
 def noCablesOverloaded(currState):
@@ -348,8 +348,8 @@ def handleCarLeavesEvent(currEvent, currState):
     deltaTime = currEvent.time - currCar.carArrivalTime
     delay = max(0, deltaTime - currCar.connectionTime)
 
-    if(delay > 0):
-        print(currEvent.time, currCar)
+    # if(delay > 0):
+    #     print(currEvent.time, currCar)
     state.storeDelay(delay)
 
     return []
