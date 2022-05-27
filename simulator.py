@@ -131,7 +131,7 @@ def getNextCarFromQueueELFS(currState):
 
     #First get which parkingPlace we should queue
     priorityList = currState["priorityList"]
-    sortedPriorityList = sorted(priorityList, key=lambda x: x[1], reverse=True)
+    sortedPriorityList = sorted(priorityList, key=lambda x: x[1])
 
     for currIndex in range(len(sortedPriorityList)):
         
@@ -199,7 +199,10 @@ def handleCarArrivalEvent(currEvent, currState):
             if currState['chargingStrategy'] == 'FCFS':
                 currState["parkingPlaces"][currCar.parkingPlaceID].queue.put(currCar)
             else:
-                priority = currCar.chargingVolume * 6 / currCar.connectionTime
+                plannedLeave = currCar.carArrivalTime + currCar.connectionTime
+                latestStart = plannedLeave - currCar.chargingVolume * 3600 / 6
+                priority =  currCar.chargingVolume * 6 / currCar.connectionTime
+
                 currState["priorityList"].append((currCar, priority))
             return [event.Event(time=currEvent.time + currCar.connectionTime, eventType="carPlannedLeave", data=currCar)]
 
