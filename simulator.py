@@ -274,20 +274,45 @@ def getCablesIndicesForParkingPlace(parkingPlaceID, currState):
 
 # NOT AN EVENT, but a helper function for clarity
 def findCheapestTime(currEvent, currState):
+    # def findCost(startTime, duration):
+    #     endTime = startTime + duration 
+    #     cost = 0
+    #     for t in range(int(startTime), int(endTime)): # Good grief, this is ugly but it's hot and I'm tired. Let's improve this another day
+    #         t = t  % (24*3600)
+    #         if 0 <= t < 8*3600:
+    #             cost += 16 / (3600/6)
+    #         elif 8*3600 <= t < 16*3600:
+    #             cost += 18 / (3600/6)
+    #         elif 16*3600 <= t < 20*3600:
+    #             cost += 22 / (3600/6)
+    #         elif 20*3600 <= t < 24*3600:
+    #             cost += 20 / (3600/6)
+    #     return cost 
+
     def findCost(startTime, duration):
-        endTime = startTime + duration 
+        startTime = startTime % (24*3600)
+        endTime = startTime + duration
         cost = 0
-        for t in range(int(startTime), int(endTime)): # Good grief, this is ugly but it's hot and I'm tired. Let's improve this another day
-            t = t  % (24*3600)
-            if 0 <= t < 8*3600:
-                cost += 16 / (3600/6)
-            elif 8*3600 <= t < 16*3600:
-                cost += 18 / (3600/6)
-            elif 16*3600 <= t < 20*3600:
-                cost += 22 / (3600/6)
-            elif 20*3600 <= t < 24*3600:
-                cost += 20 / (3600/6)
-        return cost 
+        notDone = True 
+        while notDone:
+            if 0 <= startTime < 8*3600:
+                notDone = 8*3600 < endTime 
+                cost += 16 * (min(endTime, 8*3600) - startTime) * 6/3600
+                startTime = 8*3600
+            elif 8*3600 <= startTime < 16*3600:
+                notDone = 16*3600 < endTime 
+                cost += 18 * (min(endTime, 16*3600) - startTime) * 6/3600
+                startTime = 16*3600
+            elif 16*3600 <= startTime < 20*3600:
+                notDone = 20*3600 < endTime 
+                cost += 22 * (min(endTime, 20*3600) - startTime) * 6/3600
+                startTime = 20*3600
+            elif 20*3600 <= startTime < 24*3600:
+                notDone = 24*3600 < endTime 
+                cost += 20 * (min(endTime, 24*3600) - startTime) * 6/3600
+                startTime = 0
+                endTime -= 24*3600
+        return cost
 
     currCar = currEvent.data
     chargingTime = currCar.chargingVolume /(6/3600)
