@@ -277,9 +277,8 @@ def getCablesIndicesForParkingPlace(parkingPlaceID, currState):
 def findCheapestTime(currEvent, currState):
     def findCost(startTime, duration):
         endTime = startTime + duration 
-
         cost = 0
-        for t in range(startTime, endTime): # Good grief, this is ugly but it's hot and I'm tired. Let's improve this another day
+        for t in range(int(startTime), int(endTime)): # Good grief, this is ugly but it's hot and I'm tired. Let's improve this another day
             t = t  % (24*3600)
             if 0 <= t < 8*3600:
                 cost += 16 / (3600/6)
@@ -295,12 +294,20 @@ def findCheapestTime(currEvent, currState):
     chargingTime = currCar.chargingVolume /(6/3600)
     firstTime = currEvent.time
     lastTime = firstTime + currCar.connectionTime - chargingTime
-    
+
     timesToCheck = [firstTime, lastTime] 
     generateMoreTimes = True 
     days = firstTime // (24*3600)
     while generateMoreTimes:
-        times = [days, days + 8*3600, days + 8*3600 - chargingTime, days+16*3600, days + 16*3600 - chargingTime, days+20*3600, days + 20*3600 - chargingTime, days + 24*3600 - chargingTime]
+        times = [days*24*3600, 
+        days*24*3600 + 8*3600, 
+        days*24*3600 + 8*3600 - chargingTime, 
+        days*24*3600 + 16*3600, 
+        days*24*3600 + 16*3600 - chargingTime, 
+        days*24*3600 + 20*3600, 
+        days*24*3600 + 20*3600 - chargingTime, 
+        days*24*3600 + 24*3600 - chargingTime]
+
         for time in times:
             if firstTime < time < lastTime:
                 timesToCheck.append(time)
