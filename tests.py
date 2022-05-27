@@ -40,12 +40,12 @@ def testCarConnectionTimes():
         if a.eventType == "carArrives":
             carConnectionTimes.append(a.data.connectionTime)
     carConnectionTimes = np.array(carConnectionTimes)
-    print("Mean", np.mean(carConnectionTimes))
-    print("Max", np.max(carConnectionTimes))
+    print("Mean", np.mean(carConnectionTimes) / 3600)
+    print("Max", np.max(carConnectionTimes) / 3600)
 
 
 def main():
-    testCarArrivals()
+    testCarConnectionTimes()
         
 
 

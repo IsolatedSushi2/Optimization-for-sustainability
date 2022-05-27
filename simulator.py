@@ -156,13 +156,9 @@ def getNextCarFromQueueFCFS(currState):
     parkingPlaces = list(currState["parkingPlaces"].values())
     sortedParkingPlaces = sorted(parkingPlaces, reverse=True, key=lambda x: x.queue.qsize())
 
-    # No possible cars
-    if sortedParkingPlaces[0].queue.qsize() == 0:
-        return None
-
     for parkingPlace in sortedParkingPlaces:
         if parkingPlace.queue.qsize() == 0:
-            continue
+            break
 
         cableIndices = getCablesIndicesForParkingPlace(parkingPlace.ID, currState)
 
