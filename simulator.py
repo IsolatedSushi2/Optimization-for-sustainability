@@ -156,13 +156,9 @@ def getNextCarFromQueueFCFS(currState):
     parkingPlaces = list(currState["parkingPlaces"].values())
     sortedParkingPlaces = sorted(parkingPlaces, reverse=True, key=lambda x: x.queue.qsize())
 
-    # No possible cars
-    if sortedParkingPlaces[0].queue.qsize() == 0:
-        return None
-
     for parkingPlace in sortedParkingPlaces:
         if parkingPlace.queue.qsize() == 0:
-            continue
+            break
 
         cableIndices = getCablesIndicesForParkingPlace(parkingPlace.ID, currState)
 
@@ -277,7 +273,7 @@ def getCablesIndicesForParkingPlace(parkingPlaceID, currState):
 def findCheapestTime(currEvent, currState):
     def findCost(startTime, duration):
         endTime = startTime + duration 
-
+        
         cost = 0
         for t in range(startTime, endTime): # Good grief, this is ugly but it's hot and I'm tired. Let's improve this another day
             t = t  % (24*3600)
