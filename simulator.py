@@ -274,20 +274,6 @@ def getCablesIndicesForParkingPlace(parkingPlaceID, currState):
 
 # NOT AN EVENT, but a helper function for clarity
 def findCheapestTime(currEvent, currState):
-    # def findCost(startTime, duration):
-    #     endTime = startTime + duration 
-    #     cost = 0
-    #     for t in range(int(startTime), int(endTime)): # Good grief, this is ugly but it's hot and I'm tired. Let's improve this another day
-    #         t = t  % (24*3600)
-    #         if 0 <= t < 8*3600:
-    #             cost += 16 / (3600/6)
-    #         elif 8*3600 <= t < 16*3600:
-    #             cost += 18 / (3600/6)
-    #         elif 16*3600 <= t < 20*3600:
-    #             cost += 22 / (3600/6)
-    #         elif 20*3600 <= t < 24*3600:
-    #             cost += 20 / (3600/6)
-    #     return cost 
 
     def findCost(startTime, duration):
         startTime = startTime % (24*3600)
