@@ -58,7 +58,21 @@ def storeDataPerTimestep(currTimestamp, state):
 def storeDelay(delay):
     with open('./performances/delays.txt', "a") as myfile:     
         myfile.write(str(delay) + "\n")
-    
+
+
+def storeSimulationHeader(i):
+    #Append the data to files
+    with open('./performances/parkingDensity.txt', "a") as myfile:     
+        myfile.write("-----Simulation " + str(i) + "-----" + "\n")
+
+    with open('./performances/chargingDensity.txt', "a") as myfile:     
+        myfile.write("-----Simulation " + str(i) + "-----" + "\n")
+
+    with open('./performances/powerDensity.txt', "a") as myfile:     
+        myfile.write("-----Simulation " + str(i) + "-----" + "\n")
+
+    with open('./performances/delays.txt', "a") as myfile:     
+        myfile.write("-----Simulation " + str(i) + "-----" + "\n")
 
 #Print the results after the simulation
 def printResults(currState):
