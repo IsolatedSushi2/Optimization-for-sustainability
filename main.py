@@ -11,15 +11,30 @@ def main():
     logger.clearLog()
     state.clearPerformanceFiles()
 
-    #Generate the distributions, events and start the simulation
-    arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions = dr.readCSVs()
-    eventQueue = generator.generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, timeLength=24 * 3)
-    currState = simulator.startSimulation(eventQueue, "price-driven")#, ["6", "7"] )
+    simulationAmount = 2
+    for index in range(simulationAmount):
+        currState = runSimulation(index)
 
-    #Show the results
+    state.storeSimulationHeader("END")
     state.printResults(currState)
     showPlots.showPlots(currState)
     showPlots.printDelays()
+
+
+def runSimulation(index):
+    print("Running Simulation", index)
+    state.storeSimulationHeader(index)
+    #Generate the distributions, events and start the simulation
+    arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions = dr.readCSVs()
+    eventQueue = generator.generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, timeLength=24 * 3)
+    currState = simulator.startSimulation(eventQueue, "base")#, ["6", "7"] )
+
+    #Show the results
+    
+
+    return currState
+
+
 
 if __name__ == "__main__":
     main()

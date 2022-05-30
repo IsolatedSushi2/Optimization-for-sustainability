@@ -417,6 +417,6 @@ def handleEndSimulation(currEvent, currState):
     print(f'amount of cars serviced: {currState["carsCharged"]}')
     print(f'amount of cars unable to be serviced: {currState["carsUnableCharged"]}')
     print(f'amount of times a car arrived at a full parking place: {currState["carsAtFullParking"]}')
-    showPlots.printMaximumCableLoad(currState)
-    showPlots.print10OverloadPercentage(currState)
+    #showPlots.printMaximumCableLoad(currState)
+    #showPlots.print10OverloadPercentage(currState)
     return []
