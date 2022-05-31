@@ -16,9 +16,9 @@ def main():
         currState = runSimulation(index)
 
     state.storeSimulationHeader("END")
-    state.printResults(currState)
-    showPlots.showPlots(currState)
-    showPlots.printDelays()
+    #state.printResults(currState)
+    #showPlots.showPlots(currState)
+    #showPlots.printDelays()
 
 
 def runSimulation(index):
@@ -26,8 +26,8 @@ def runSimulation(index):
     state.storeSimulationHeader(index)
     #Generate the distributions, events and start the simulation
     arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions = dr.readCSVs()
-    eventQueue = generator.generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, timeLength=24 * 10)
-    currState = simulator.startSimulation(eventQueue, "price-driven")#, ["6", "7"] )
+    eventQueue = generator.generateAllEvents(arrival_fractions, charging_volume_distributions, connection_time_distributions, solar_availability_distributions, timeLength=24 * 10, season='winter')
+    currState = simulator.startSimulation(eventQueue, "price-driven")
 
     #Show the results
     
