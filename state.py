@@ -36,9 +36,19 @@ def clearPerformanceFiles():
     file = open('./performances/delays.txt',"w")
     file.close()
 
+    file = open('./performances/serviced.txt',"w")
+    file.close()
+
 
 # Store the data for the timesteps
 def storeDataPerTimestep(currTimestamp, state):
+
+    if(currTimestamp < 2 * 24 * 3600):
+        return
+
+    if(currTimestamp > 9 * 24 * 3600):
+        return
+
 
     parkingIDS = state["parkingPlaceIDs"]
     allcurrentlyParked = [len(state["parkingPlaces"][currID].currentlyParked) for currID in parkingIDS]
@@ -55,9 +65,16 @@ def storeDataPerTimestep(currTimestamp, state):
     with open('./performances/powerDensity.txt', "a") as myfile:     
         myfile.write(str(currTimestamp) + "," + ",".join(map(str,allPowerDrawn)) + "\n")
 
-def storeDelay(delay):
+def storeDelay(currTimestamp, delay):
+    
+    if(currTimestamp < 2 * 24 * 3600):
+        return
+
+    if(currTimestamp > 9 * 24 * 3600):
+        return
+    
     with open('./performances/delays.txt', "a") as myfile:     
-        myfile.write(str(delay) + "\n")
+        myfile.write(str(currTimestamp) + "," + str(delay) + "\n")
 
 
 def storeSimulationHeader(i):

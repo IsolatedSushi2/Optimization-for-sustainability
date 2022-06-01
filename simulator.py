@@ -342,12 +342,14 @@ def handleCarPlaceFull(currEvent, currState):
 
 
     logger.logMessage("Car Place full, moving to another")
-    currState["carsAtFullParking"] += 1
+    if currEvent.time > 2 * 24 * 3600 and currEvent.time < 9 * 24 * 3600:
+        currState["carsAtFullParking"] += 1
 
     # As specified in assignment, stop visiting
     if len(currCar.carParksVisited) == 3:
         logger.logMessage("Too many Car Places (3) full in a row")
-        currState["carsUnableCharged"] += 1
+        if currEvent.time > 2 * 24 * 3600 and currEvent.time < 9 * 24 * 3600:
+            currState["carsUnableCharged"] += 1
         return []
 
 
@@ -364,14 +366,16 @@ def handleCarLeavesEvent(currEvent, currState):
 
     currParkingPlace = currState["parkingPlaces"][currCar.parkingPlaceID]
     currParkingPlace.leaveCharger(currCar)
-    currState["carsCharged"] += 1
+
+    if currEvent.time > 2 * 24 * 3600 and currEvent.time < 9 * 24 * 3600:
+        currState["carsCharged"] += 1
 
     deltaTime = currEvent.time - currCar.carArrivalTime
     delay = max(0, deltaTime - currCar.connectionTime)
 
     # if(delay > 0):
     #     print(currEvent.time, currCar)
-    state.storeDelay(delay)
+    state.storeDelay(currEvent.time, delay)
 
     return []
 
@@ -403,6 +407,11 @@ def handleEndSimulation(currEvent, currState):
     print(f'amount of cars serviced: {currState["carsCharged"]}')
     print(f'amount of cars unable to be serviced: {currState["carsUnableCharged"]}')
     print(f'amount of times a car arrived at a full parking place: {currState["carsAtFullParking"]}')
+
+
+    file = open('./performances/serviced.txt',"a")
+    file.write(str(currState["carsCharged"]) + "," + str(currState["carsUnableCharged"]) + "," + str(currState["carsAtFullParking"]) + "\n")
+    file.close()
     #showPlots.printMaximumCableLoad(currState)
     #showPlots.print10OverloadPercentage(currState)
     return []
