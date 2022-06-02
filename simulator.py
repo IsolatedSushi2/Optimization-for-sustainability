@@ -182,6 +182,8 @@ def handleCarArrivalEvent(currEvent, currState):
     if currParkingPlace.isFull():
         return handleCarPlaceFull(currEvent, currState)
 
+    state.storeServiced(currEvent.time, "served")
+
     currCar.carArrivalTime = currEvent.time
     currParkingPlace.arriveAtCharger(currCar)
     # Use the carBeginsChargingEvent for later addition of the not base cases. Also schedule the planned leave
@@ -350,6 +352,8 @@ def handleCarPlaceFull(currEvent, currState):
         logger.logMessage("Too many Car Places (3) full in a row")
         if currEvent.time > 2 * 24 * 3600 and currEvent.time < 9 * 24 * 3600:
             currState["carsUnableCharged"] += 1
+
+            state.storeServiced(currEvent.time, "notserved")
         return []
 
 
@@ -409,9 +413,7 @@ def handleEndSimulation(currEvent, currState):
     print(f'amount of times a car arrived at a full parking place: {currState["carsAtFullParking"]}')
 
 
-    file = open('./performances/serviced.txt',"a")
-    file.write(str(currState["carsCharged"]) + "," + str(currState["carsUnableCharged"]) + "," + str(currState["carsAtFullParking"]) + "\n")
-    file.close()
+    
     #showPlots.printMaximumCableLoad(currState)
     #showPlots.print10OverloadPercentage(currState)
     return []

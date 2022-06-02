@@ -37,7 +37,7 @@ def runSimulation(index):
 
 
 if __name__ == "__main__":
-    curr = state.createInitialState()
-    showPlots.showChargeDensity(curr)
+    # curr = state.createInitialState()
+    # showPlots.showChargeDensity(curr)
 
-    #main()
+    main()

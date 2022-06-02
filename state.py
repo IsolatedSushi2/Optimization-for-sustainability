@@ -65,6 +65,12 @@ def storeDataPerTimestep(currTimestamp, state):
     with open('./performances/powerDensity.txt', "a") as myfile:     
         myfile.write(str(currTimestamp) + "," + ",".join(map(str,allPowerDrawn)) + "\n")
 
+    
+def storeServiced(currTimestamp, servedOrNot):
+
+    with open('./performances/serviced.txt', "a") as myfile:     
+        myfile.write(str(currTimestamp) + "," + servedOrNot + "\n")
+
 def storeDelay(currTimestamp, delay):
     
     if(currTimestamp < 2 * 24 * 3600):
@@ -89,6 +95,9 @@ def storeSimulationHeader(i):
         myfile.write("-----Simulation " + str(i) + "-----" + "\n")
 
     with open('./performances/delays.txt', "a") as myfile:     
+        myfile.write("-----Simulation " + str(i) + "-----" + "\n")
+
+    with open('./performances/serviced.txt', "a") as myfile:     
         myfile.write("-----Simulation " + str(i) + "-----" + "\n")
 
 #Print the results after the simulation
