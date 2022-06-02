@@ -68,6 +68,12 @@ def storeDataPerTimestep(currTimestamp, state):
     
 def storeServiced(currTimestamp, servedOrNot):
 
+    if(currTimestamp < 2 * 24 * 3600):
+        return
+
+    if(currTimestamp > 9 * 24 * 3600):
+        return
+
     with open('./performances/serviced.txt', "a") as myfile:     
         myfile.write(str(currTimestamp) + "," + servedOrNot + "\n")
 
