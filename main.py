@@ -52,5 +52,7 @@ if __name__ == "__main__":
     for strategy in ['base', 'FCFS', 'ELFS']:
         for solarPanels in [[],['6','7'],['1','2','6','7']]:
             for season in ['summer','winter']:
-                main(strategy=strategy, solarPanels=solarPanels,season=season)
+                if not (solarPanels == [] and season == 'winter'): #prevent running duplicate simulation for different seasons when there's no solar panels anyway
+                    main(strategy=strategy, solarPanels=solarPanels,season=season)
+
     # main()

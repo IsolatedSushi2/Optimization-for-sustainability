@@ -42,9 +42,11 @@ def clearPerformanceFiles():
 
 def movePerformanceFiles(newRoot):
     shutil.move('./performances/parkingDensity.txt', f'./{newRoot}/parkingDensity.txt')
+    shutil.move('./performances/powerDensity.txt', f'./{newRoot}/powerDensity.txt')
     shutil.move('./performances/chargingDensity.txt', f'./{newRoot}/chargingDensity.txt')
     shutil.move('./performances/delays.txt', f'./{newRoot}/delays.txt')
     shutil.move('./performances/serviced.txt', f'./{newRoot}/serviced.txt')
+    shutil.move('./performances/misc.txt', f'./{newRoot}/misc.txt')
 
 # Store the data for the timesteps
 def storeDataPerTimestep(currTimestamp, state):
@@ -68,7 +70,7 @@ def storeDataPerTimestep(currTimestamp, state):
     with open('./performances/chargingDensity.txt', "a") as myfile:     
         myfile.write(str(currTimestamp) + "," + ",".join(map(str,allcurrentlyCharging)) + "\n")
 
-    with open('./performances/powerDensity.txt', "a") as myfile:     
+    with open('./performances/powerDensity.txt', "a") as myfile:  
         myfile.write(str(currTimestamp) + "," + ",".join(map(str,allPowerDrawn)) + "\n")
 
     
