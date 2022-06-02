@@ -112,7 +112,7 @@ def findDelays(root):
             allData.append(currSimulationData)
             currSimulationData = []
         else:
-            currSimulationData.append(float(line))
+            currSimulationData.append(float(line.split(',')[1].strip()))
     # Max delay, Average delay, percentage with delay
     results = ([],[],[])
     for parsed in allData:
@@ -129,7 +129,7 @@ def findDelays(root):
     return results 
 
 def findCableLoads(root):
-    allTimestamps, allCablePower = readFile(f'./{root}/powerDensity.txt')
+    allTimestamps, allCablePower = readFile(f'./{root}/chargingDensity.txt')
     
     #[max, % overload, % blackout] for each cable
     results = (([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]))
@@ -170,7 +170,7 @@ def findCableLoads(root):
     return results 
 
 def findNonServiced(root, simLength=10*86400, cutStart = 2*86400, cutEnd = 1*86400):
-    with open(f"./{root}/nonserviced.txt", "r") as file:
+    with open(f"./{root}/serviced.txt", "r") as file:
         lines = file.readlines()
     # % non serviced, average daily non serviced
     results = ([],[])
@@ -190,7 +190,7 @@ def findNonServiced(root, simLength=10*86400, cutStart = 2*86400, cutEnd = 1*864
             if cutStart < timeStamp < simLength - cutEnd:
                 if isServed.lower() == "served":
                     totalServed += 1
-                elif isServed.lower() == "onserved":
+                elif isServed.lower() == "notserved":
                     totalNonServed += 1
                 else:
                     raise AssertionError

@@ -1,0 +1,60 @@
+Running Simulation 0
+----- ENDING SIMULATION -----
+amount of cars serviced: 5386
+amount of cars unable to be serviced: 1522
+amount of times a car arrived at a full parking place: 6176
+Simulation took 23.831165552139282 seconds
+Running Simulation 1
+----- ENDING SIMULATION -----
+amount of cars serviced: 5451
+amount of cars unable to be serviced: 1624
+amount of times a car arrived at a full parking place: 6553
+Simulation took 24.850219249725342 seconds
+Running Simulation 2
+----- ENDING SIMULATION -----
+amount of cars serviced: 5539
+amount of cars unable to be serviced: 1637
+amount of times a car arrived at a full parking place: 6526
+Simulation took 25.253161191940308 seconds
+Running Simulation 3
+----- ENDING SIMULATION -----
+amount of cars serviced: 5375
+amount of cars unable to be serviced: 1631
+amount of times a car arrived at a full parking place: 6500
+Simulation took 25.3065345287323 seconds
+Running Simulation 4
+----- ENDING SIMULATION -----
+amount of cars serviced: 5400
+amount of cars unable to be serviced: 1771
+amount of times a car arrived at a full parking place: 6908
+Simulation took 25.753630876541138 seconds
+Running Simulation 5
+----- ENDING SIMULATION -----
+amount of cars serviced: 5471
+amount of cars unable to be serviced: 1614
+amount of times a car arrived at a full parking place: 6528
+Simulation took 26.24808931350708 seconds
+Running Simulation 6
+----- ENDING SIMULATION -----
+amount of cars serviced: 5524
+amount of cars unable to be serviced: 1547
+amount of times a car arrived at a full parking place: 6323
+Simulation took 26.82940411567688 seconds
+Running Simulation 7
+----- ENDING SIMULATION -----
+amount of cars serviced: 5461
+amount of cars unable to be serviced: 1682
+amount of times a car arrived at a full parking place: 6687
+Simulation took 26.44887351989746 seconds
+Running Simulation 8
+----- ENDING SIMULATION -----
+amount of cars serviced: 5483
+amount of cars unable to be serviced: 1680
+amount of times a car arrived at a full parking place: 6778
+Simulation took 26.488242149353027 seconds
+Running Simulation 9
+----- ENDING SIMULATION -----
+amount of cars serviced: 5454
+amount of cars unable to be serviced: 1457
+amount of times a car arrived at a full parking place: 5946
+Simulation took 25.510218143463135 seconds

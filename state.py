@@ -1,5 +1,6 @@
 
 import parkingPlace
+import shutil
 
 #Create the initial state with some variables
 def createInitialState(chargingStrategy = 'base', parkingPlacesWithPanelsID = []):
@@ -39,6 +40,11 @@ def clearPerformanceFiles():
     file = open('./performances/serviced.txt',"w")
     file.close()
 
+def movePerformanceFiles(newRoot):
+    shutil.move('./performances/parkingDensity.txt', f'./{newRoot}/parkingDensity.txt')
+    shutil.move('./performances/chargingDensity.txt', f'./{newRoot}/chargingDensity.txt')
+    shutil.move('./performances/delays.txt', f'./{newRoot}/delays.txt')
+    shutil.move('./performances/serviced.txt', f'./{newRoot}/serviced.txt')
 
 # Store the data for the timesteps
 def storeDataPerTimestep(currTimestamp, state):
