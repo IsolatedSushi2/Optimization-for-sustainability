@@ -1,4 +1,5 @@
 
+from ast import Assert
 from distutils.filelist import findall
 from math import sqrt
 import numpy as np
@@ -39,7 +40,7 @@ def findAllPairedConfidenceIntervals(cases, file = 'tables.txt', params = ["maxD
         resultsDict[case]['maxLoad6'], resultsDict[case]['overload6'], resultsDict[case]['blackout6'] = cable6
         resultsDict[case]['maxLoad7'], resultsDict[case]['overload7'], resultsDict[case]['blackout7'] = cable7
         resultsDict[case]['maxLoad8'], resultsDict[case]['overload8'], resultsDict[case]['blackout8'] = cable8
-        resultsDict[case]['percentNonServiced'], resultsDict[case]['avgDailyNonServiced'], resultsDict[case]['fullParkPlaceArrivals'] =  ([1,1],[1,1],[1,1]) #findNonServiced(case)
+        resultsDict[case]['percentNonServiced'], resultsDict[case]['avgDailyNonServiced'] =  findNonServiced(case)
 
     amountCases = len(cases)
     for param in params:
@@ -168,16 +169,33 @@ def findCableLoads(root):
             results[i][2].append(atLeast10)
     return results 
 
-def findNonServiced(root, simLength=7):
+def findNonServiced(root, simLength=10*86400, cutStart = 2*86400, cutEnd = 1*86400):
     with open(f"./{root}/nonserviced.txt", "r") as file:
         lines = file.readlines()
-    # % non serviced, average daily non serviced, amount arrivals at full parking places
-    results = ([],[],[])
+    # % non serviced, average daily non serviced
+    results = ([],[])
+
+    totalServed = 0
+    totalNonServed = 0
     for line in lines:
-        totalServiced, totalNonServiced, arrivedAtFullParkingPlace = line.split(',')
-        results[0].append(100*float(totalNonServiced)/(float(totalNonServiced) + float(totalServiced)))
-        results[1].append(float(totalNonServiced)/simLength)
-        results[2].append(int(arrivedAtFullParkingPlace))
+        if (line[0] == "-") and (totalServed + totalNonServed > 0):
+            results[0].append(100*totalNonServed/(totalNonServed + totalServed))
+            results[1].append(86400*totalNonServed/(simLength-cutStart - cutEnd))
+            totalNonServed = 0
+            totalServed = 0
+        else:
+            timeStamp, isServed = line.split(',')
+            timeStamp = int(timeStamp)
+            isServed = isServed.strip()
+            if cutStart < timeStamp < simLength - cutEnd:
+                if isServed.lower() == "served":
+                    totalServed += 1
+                elif isServed.lower() == "onserved":
+                    totalNonServed += 1
+                else:
+                    raise AssertionError
+        
+
     return results 
 
 findAllPairedConfidenceIntervals(['base','base-summer-1-2-6-7', 'base-summer-6-7'])
