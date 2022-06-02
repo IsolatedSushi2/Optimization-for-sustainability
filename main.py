@@ -9,14 +9,18 @@ import os
 
 def main(strategy = 'base', solarPanels = [], season = 'summer'):
 
-
+    
     path_root = os.getcwd()
-    target_dir = f'{strategy}'
     if solarPanels != []:
         target_dir = f'{strategy}-{season}'
         for panel in solarPanels:
             target_dir += f'-{panel}'
+    else:
+        target_dir = strategy
     combined_dir = os.path.join(path_root, target_dir)
+
+    # state.movePerformanceFiles(target_dir)
+
     if not os.path.isdir(combined_dir):
         # Clear the files for a new run
         logger.clearLog()
@@ -27,9 +31,8 @@ def main(strategy = 'base', solarPanels = [], season = 'summer'):
 
         state.storeSimulationHeader("END")
 
-        
         os.mkdir(combined_dir)
-        state.movePerformanceFiles(combined_dir)
+        state.movePerformanceFiles(target_dir)
     else:
         print(f'folder already exists: {combined_dir}')
     #state.printResults(currState)

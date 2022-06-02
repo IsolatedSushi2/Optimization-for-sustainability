@@ -40,6 +40,9 @@ def clearPerformanceFiles():
     file = open('./performances/serviced.txt',"w")
     file.close()
 
+    file = open('./performances/serviced.txt', 'w')
+    file.close()
+
 def movePerformanceFiles(newRoot):
     shutil.move('./performances/parkingDensity.txt', f'./{newRoot}/parkingDensity.txt')
     shutil.move('./performances/powerDensity.txt', f'./{newRoot}/powerDensity.txt')
