@@ -23,7 +23,14 @@ def main(strategy = 'base', solarPanels = [], season = 'summer'):
 
         state.storeSimulationHeader("END")
         os.mkdir(combined_dir)
-        state.movePerformanceFiles(f'{strategy}-{season}-{solarPanels}')
+
+        newDir = f'{strategy}'
+        if solarPanels != []:
+            newDir = f'{strategy}-{season}'
+            for panel in solarPanels:
+                newDir += f'-{panel}'
+                
+        state.movePerformanceFiles(newDir)
     else:
         print(f'folder already exists: {combined_dir}')
     #state.printResults(currState)
