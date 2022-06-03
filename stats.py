@@ -13,7 +13,7 @@ def writeTable(data, file, header = "Data Table: \\\\ \hline \n"):
             for element in line:
                 newline += f" & {element}"
             newline += " \\\\ \n"
-            myfile.write(newline)
+            myfile.write(newline[3:])
         myfile.write("\n ---- \n")
 
 def emptyList(h,w):
@@ -22,7 +22,7 @@ def emptyList(h,w):
         lst.append([None]*w)
     return lst
 
-def findAllPairedConfidenceIntervals(cases, file = 'tables.txt', params = ["maxDelay", "avgDelay", "percentDelayed", "maxLoad0", "overload0", "blackout0", "maxLoad1", "overload1", "blackout1", "percentNonServiced", "avgDailyNonServiced", "fullParkPlaceArrivals"]):
+def findAllPairedConfidenceIntervals(cases, file = 'tables.txt', params = ["maxDelay", "avgDelay", "percentDelayed", "maxLoad0", "overload0", "blackout0", "maxLoad1", "overload1", "blackout1", "percentNonServiced", "avgDailyNonServiced"]):
     resultsDict = {}
     for case in cases:
         print(f'finding {case} measures')
@@ -129,7 +129,7 @@ def findDelays(root):
     return results 
 
 def findCableLoads(root):
-    allTimestamps, allCablePower = readFile(f'./{root}/chargingDensity.txt')
+    allTimestamps, allCablePower = readFile(f'./{root}/powerDensity.txt')
     
     #[max, % overload, % blackout] for each cable
     results = (([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]), ([],[],[]))
@@ -183,7 +183,7 @@ def findNonServiced(root, simLength=10*86400, cutStart = 2*86400, cutEnd = 1*864
             results[1].append(86400*totalNonServed/(simLength-cutStart - cutEnd))
             totalNonServed = 0
             totalServed = 0
-        else:
+        elif line[0].isdigit():
             timeStamp, isServed = line.split(',')
             timeStamp = int(timeStamp)
             isServed = isServed.strip()
