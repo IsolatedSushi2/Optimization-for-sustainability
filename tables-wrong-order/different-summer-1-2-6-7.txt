@@ -1,0 +1,132 @@
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum delay}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (57421.31, 111937.69) & (29734.3, 36643.9) \\ 
+ELFS-summer-1-2-6-7 & (-111937.69, -57421.31) & (0.0, 0.0) & (-77349.0, -25631.8) \\ 
+FCFS-summer-1-2-6-7 & (-36643.9, -29734.3) & (25631.8, 77349.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of average delay}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (1893.4, 2164.42) & (878.26, 1021.73) \\ 
+ELFS-summer-1-2-6-7 & (-2164.42, -1893.4) & (0.0, 0.0) & (-1226.0, -931.84) \\ 
+FCFS-summer-1-2-6-7 & (-1021.73, -878.26) & (931.84, 1226.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of average delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentage of cars with a delay}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (10.45, 11.2) & (10.01, 10.92) \\ 
+ELFS-summer-1-2-6-7 & (-11.2, -10.45) & (0.0, 0.0) & (-0.95, 0.23) \\ 
+FCFS-summer-1-2-6-7 & (-10.92, -10.01) & (-0.23, 0.95) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentage of cars with a delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum load on cable 0}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (-257.11, -179.99) & (-256.63, -177.58) \\ 
+ELFS-summer-1-2-6-7 & (179.99, 257.11) & (0.0, 0.0) & (-5.05, 7.94) \\ 
+FCFS-summer-1-2-6-7 & (177.58, 256.63) & (-7.94, 5.05) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum load on cable 0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 0 is overloaded}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (-0.02, -0.0) & (-0.01, 0.0) \\ 
+ELFS-summer-1-2-6-7 & (0.0, 0.02) & (0.0, 0.0) & (0.0, 0.01) \\ 
+FCFS-summer-1-2-6-7 & (-0.0, 0.01) & (-0.01, -0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 0 is overloaded}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 0 is blacked out}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (-0.31, -0.29) & (-0.31, -0.29) \\ 
+ELFS-summer-1-2-6-7 & (0.29, 0.31) & (0.0, 0.0) & (-0.01, 0.0) \\ 
+FCFS-summer-1-2-6-7 & (0.29, 0.31) & (-0.0, 0.01) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 0 is blacked out}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum load on cable 4}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (-277.5, -233.11) & (-276.21, -236.09) \\ 
+ELFS-summer-1-2-6-7 & (233.11, 277.5) & (0.0, 0.0) & (-13.07, 11.37) \\ 
+FCFS-summer-1-2-6-7 & (236.09, 276.21) & (-11.37, 13.07) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum load on cable 4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 4 is overloaded}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (-0.0, 0.01) & (0.0, 0.02) \\ 
+ELFS-summer-1-2-6-7 & (-0.01, 0.0) & (0.0, 0.0) & (0.0, 0.01) \\ 
+FCFS-summer-1-2-6-7 & (-0.02, -0.0) & (-0.01, -0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 4 is overloaded}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 4 is blacked out}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (-0.39, -0.37) & (-0.39, -0.37) \\ 
+ELFS-summer-1-2-6-7 & (0.37, 0.39) & (0.0, 0.0) & (-0.01, 0.01) \\ 
+FCFS-summer-1-2-6-7 & (0.37, 0.39) & (-0.01, 0.01) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 4 is blacked out}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentage of arriving cars that are not served}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (0.62, 3.1) & (-0.04, 1.99) \\ 
+ELFS-summer-1-2-6-7 & (-3.1, -0.62) & (0.0, 0.0) & (-1.58, -0.19) \\ 
+FCFS-summer-1-2-6-7 & (-1.99, 0.04) & (0.19, 1.58) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentage of arriving cars that are not served}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of average number of daily non-served cars}
+	\begin{tabular}{c|ccc}
+  & base-summer-1-2-6-7 & ELFS-summer-1-2-6-7 & FCFS-summer-1-2-6-7 \\ \hline 
+base-summer-1-2-6-7 & (0.0, 0.0) & (0.94, 24.14) & (-4.33, 15.73) \\ 
+ELFS-summer-1-2-6-7 & (-24.14, -0.94) & (0.0, 0.0) & (-13.75, 0.06) \\ 
+FCFS-summer-1-2-6-7 & (-15.73, 4.33) & (-0.06, 13.75) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of average number of daily non-served cars}
+\end{table}
+

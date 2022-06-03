@@ -1,0 +1,132 @@
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum delay}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (86253.87, 109602.53) & (402949.05, 593952.15) \\ 
+FCFS & (-109602.53, -86253.87) & (0.0, 0.0) & (300538.4, 500506.4) \\ 
+ELFS & (-593952.15, -402949.05) & (-500506.4, -300538.4) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of average delay}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (8657.25, 10480.07) & (7949.01, 9669.17) \\ 
+FCFS & (-10480.07, -8657.25) & (0.0, 0.0) & (-2418.03, 898.9) \\ 
+ELFS & (-9669.17, -7949.01) & (-898.9, 2418.03) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of average delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentage of cars with a delay}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (41.83, 46.0) & (19.31, 20.49) \\ 
+FCFS & (-46.0, -41.83) & (0.0, 0.0) & (-26.54, -21.49) \\ 
+ELFS & (-20.49, -19.31) & (21.49, 26.54) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentage of cars with a delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum load on cable 0}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (-308.37, -270.03) & (-308.37, -270.03) \\ 
+FCFS & (270.03, 308.37) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS & (270.03, 308.37) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum load on cable 0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 0 is overloaded}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (-0.07, -0.06) & (-0.07, -0.06) \\ 
+FCFS & (0.06, 0.07) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS & (0.06, 0.07) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 0 is overloaded}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 0 is blacked out}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (-0.5, -0.47) & (-0.5, -0.47) \\ 
+FCFS & (0.47, 0.5) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS & (0.47, 0.5) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 0 is blacked out}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum load on cable 4}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (-390.43, -337.97) & (-390.43, -337.97) \\ 
+FCFS & (337.97, 390.43) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS & (337.97, 390.43) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum load on cable 4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 4 is overloaded}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (-0.05, -0.03) & (-0.05, -0.03) \\ 
+FCFS & (0.03, 0.05) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS & (0.03, 0.05) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 4 is overloaded}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 4 is blacked out}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (-0.63, -0.6) & (-0.63, -0.6) \\ 
+FCFS & (0.6, 0.63) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS & (0.6, 0.63) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 4 is blacked out}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentage of arriving cars that are not served}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (7.45, 10.22) & (8.63, 11.34) \\ 
+FCFS & (-10.22, -7.45) & (0.0, 0.0) & (-0.15, 2.44) \\ 
+ELFS & (-11.34, -8.63) & (-2.44, 0.15) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentage of arriving cars that are not served}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of average number of daily non-served cars}
+	\begin{tabular}{c|ccc}
+  & base & FCFS & ELFS \\ \hline 
+base & (0.0, 0.0) & (54.13, 78.87) & (63.0, 87.71) \\ 
+FCFS & (-78.87, -54.13) & (0.0, 0.0) & (-3.2, 20.92) \\ 
+ELFS & (-87.71, -63.0) & (-20.92, 3.2) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of average number of daily non-served cars}
+\end{table}
+

@@ -1,0 +1,132 @@
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum delay}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (301603.07, 467586.93) & (61020.23, 77096.57) \\ 
+ELFS-winter-1-2-6-7 & (-467586.93, -301603.07) & (0.0, 0.0) & (-402040.83, -229032.37) \\ 
+FCFS-winter-1-2-6-7 & (-77096.57, -61020.23) & (229032.37, 402040.83) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of average delay}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (5242.36, 6658.68) & (4824.87, 6104.37) \\ 
+ELFS-winter-1-2-6-7 & (-6658.68, -5242.36) & (0.0, 0.0) & (-1572.89, 601.09) \\ 
+FCFS-winter-1-2-6-7 & (-6104.37, -4824.87) & (-601.09, 1572.89) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of average delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentage of cars with a delay}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (15.87, 16.53) & (29.21, 32.49) \\ 
+ELFS-winter-1-2-6-7 & (-16.53, -15.87) & (0.0, 0.0) & (13.1, 16.2) \\ 
+FCFS-winter-1-2-6-7 & (-32.49, -29.21) & (-16.2, -13.1) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentage of cars with a delay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum load on cable 0}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (-271.68, -221.04) & (-268.72, -224.1) \\ 
+ELFS-winter-1-2-6-7 & (221.04, 271.68) & (0.0, 0.0) & (-5.12, 5.03) \\ 
+FCFS-winter-1-2-6-7 & (224.1, 268.72) & (-5.03, 5.12) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum load on cable 0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 0 is overloaded}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (-0.03, -0.02) & (-0.03, -0.02) \\ 
+ELFS-winter-1-2-6-7 & (0.02, 0.03) & (0.0, 0.0) & (-0.0, 0.01) \\ 
+FCFS-winter-1-2-6-7 & (0.02, 0.03) & (-0.01, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 0 is overloaded}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 0 is blacked out}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (-0.39, -0.35) & (-0.39, -0.35) \\ 
+ELFS-winter-1-2-6-7 & (0.35, 0.39) & (0.0, 0.0) & (-0.0, 0.0) \\ 
+FCFS-winter-1-2-6-7 & (0.35, 0.39) & (-0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 0 is blacked out}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maximum load on cable 4}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (-340.97, -282.04) & (-337.85, -284.73) \\ 
+ELFS-winter-1-2-6-7 & (282.04, 340.97) & (0.0, 0.0) & (-9.74, 10.16) \\ 
+FCFS-winter-1-2-6-7 & (284.73, 337.85) & (-10.16, 9.74) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maximum load on cable 4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 4 is overloaded}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (-0.03, -0.02) & (-0.03, -0.01) \\ 
+ELFS-winter-1-2-6-7 & (0.02, 0.03) & (0.0, 0.0) & (0.0, 0.01) \\ 
+FCFS-winter-1-2-6-7 & (0.01, 0.03) & (-0.01, -0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 4 is overloaded}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of fraction of time cable 4 is blacked out}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (-0.5, -0.47) & (-0.5, -0.47) \\ 
+ELFS-winter-1-2-6-7 & (0.47, 0.5) & (0.0, 0.0) & (-0.0, 0.0) \\ 
+FCFS-winter-1-2-6-7 & (0.47, 0.5) & (-0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of fraction of time cable 4 is blacked out}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentage of arriving cars that are not served}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (4.68, 6.89) & (4.31, 6.07) \\ 
+ELFS-winter-1-2-6-7 & (-6.89, -4.68) & (0.0, 0.0) & (-1.82, 0.63) \\ 
+FCFS-winter-1-2-6-7 & (-6.07, -4.31) & (-0.63, 1.82) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentage of arriving cars that are not served}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of average number of daily non-served cars}
+	\begin{tabular}{c|ccc}
+  & base-winter-1-2-6-7 & ELFS-winter-1-2-6-7 & FCFS-winter-1-2-6-7 \\ \hline 
+base-winter-1-2-6-7 & (0.0, 0.0) & (32.86, 52.99) & (30.55, 46.16) \\ 
+ELFS-winter-1-2-6-7 & (-52.99, -32.86) & (0.0, 0.0) & (-15.59, 6.45) \\ 
+FCFS-winter-1-2-6-7 & (-46.16, -30.55) & (-6.45, 15.59) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of average number of daily non-served cars}
+\end{table}
+
