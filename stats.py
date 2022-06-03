@@ -129,12 +129,6 @@ def findDelays(root):
         results[0].append(np.max(parsed)) # max delay
         results[1].append(np.mean(parsed)) # average delay
         results[2].append(100 * parsed[parsed!=0.0].shape[0] / parsed.shape[0]) # percentage delayed
-        # print(parsed)
-        # print("Minimum delay:", np.min(parsed))
-        # print("Maximum delay:", np.max(parsed))
-        # print("Average delay:", np.mean(parsed))
-        # print("Percentage with delay:", 100 * parsed[parsed!=0.0].shape[0] / parsed.shape[0])
-        # print("Percentage without delay:", 100 * parsed[parsed==0.0].shape[0] / parsed.shape[0])
     return results 
 
 def findCableLoads(root):
@@ -207,11 +201,11 @@ def findNonServiced(root, simLength=10*86400, cutStart = 2*86400, cutEnd = 1*864
 
     return results 
 
-# findAllPairedConfidenceIntervals(cases = ['base','base-summer-1-2-6-7', 'base-summer-6-7','base-winter-1-2-6-7','base-winter-6-7'], file='base-different-solars.txt')
-# findAllPairedConfidenceIntervals(cases = ['ELFS','ELFS-summer-1-2-6-7','ELFS-summer-6-7','ELFS-winter-1-2-6-7','ELFS-winter-6-7'], file='ELFS-different-solars.txt')
-# findAllPairedConfidenceIntervals(cases = ['FCFS','FCFS-summer-1-2-6-7','FCFS-summer-6-7','FCFS-winter-1-2-6-7','FCFS-winter-6-7'], file='FCFS-different-solars.txt')
+findAllPairedConfidenceIntervals(cases = ['base','base-summer-1-2-6-7', 'base-summer-6-7','base-winter-1-2-6-7','base-winter-6-7'], file='base-different-solars.txt')
+findAllPairedConfidenceIntervals(cases = ['ELFS','ELFS-summer-1-2-6-7','ELFS-summer-6-7','ELFS-winter-1-2-6-7','ELFS-winter-6-7'], file='ELFS-different-solars.txt')
+findAllPairedConfidenceIntervals(cases = ['FCFS','FCFS-summer-1-2-6-7','FCFS-summer-6-7','FCFS-winter-1-2-6-7','FCFS-winter-6-7'], file='FCFS-different-solars.txt')
 findAllPairedConfidenceIntervals(cases = ['base', 'FCFS','ELFS'], file = 'different-no-solar.txt')
 findAllPairedConfidenceIntervals(cases = ['base-summer-1-2-6-7','FCFS-summer-1-2-6-7', 'ELFS-summer-1-2-6-7'], file = 'different-summer-1-2-6-7.txt')
-# findAllPairedConfidenceIntervals(cases = ['base-summer-6-7','FCFS-summer-6-7','ELFS-summer-6-7'], file = 'different-summer-6-7.txt')
+findAllPairedConfidenceIntervals(cases = ['base-summer-6-7','FCFS-summer-6-7','ELFS-summer-6-7'], file = 'different-summer-6-7.txt')
 findAllPairedConfidenceIntervals(cases = ['base-winter-1-2-6-7','FCFS-winter-1-2-6-7', 'ELFS-winter-1-2-6-7'], file = 'different-winter-1-2-6-7.txt')
-# findAllPairedConfidenceIntervals(cases = ['base-winter-6-7','FCFS-winter-6-7','ELFS-winter-6-7'], file = 'different-winter-6-7.txt')
+findAllPairedConfidenceIntervals(cases = ['base-winter-6-7','FCFS-winter-6-7','ELFS-winter-6-7'], file = 'different-winter-6-7.txt')
