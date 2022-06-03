@@ -203,9 +203,8 @@ def handleCarArrivalEvent(currEvent, currState):
             else:
                 plannedLeave = currCar.carArrivalTime + currCar.connectionTime
                 latestStart = plannedLeave - currCar.chargingVolume * 3600 / 6
-                priority =  currCar.chargingVolume * 6 / currCar.connectionTime
 
-                currState["priorityList"].append((currCar, priority))
+                currState["priorityList"].append((currCar, latestStart))
             return [event.Event(time=currEvent.time + currCar.connectionTime, eventType="carPlannedLeave", data=currCar)]
 
 
