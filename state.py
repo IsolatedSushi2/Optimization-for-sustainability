@@ -40,8 +40,6 @@ def clearPerformanceFiles():
     file = open('./performances/serviced.txt',"w")
     file.close()
 
-    file = open('./performances/serviced.txt', 'w')
-    file.close()
 
 def movePerformanceFiles(newRoot):
     shutil.move('./performances/parkingDensity.txt', f'./{newRoot}/parkingDensity.txt')
@@ -49,7 +47,7 @@ def movePerformanceFiles(newRoot):
     shutil.move('./performances/chargingDensity.txt', f'./{newRoot}/chargingDensity.txt')
     shutil.move('./performances/delays.txt', f'./{newRoot}/delays.txt')
     shutil.move('./performances/serviced.txt', f'./{newRoot}/serviced.txt')
-    shutil.move('./performances/misc.txt', f'./{newRoot}/misc.txt')
+    # shutil.move('./performances/misc.txt', f'./{newRoot}/misc.txt')
 
 # Store the data for the timesteps
 def storeDataPerTimestep(currTimestamp, state):
