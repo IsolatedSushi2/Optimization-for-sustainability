@@ -1,0 +1,132 @@
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxDelay}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (402949.05, 593952.15) & (86253.87, 109602.53) \\ 
+ELFS & (-593952.15, -402949.05) & (0.0, 0.0) & (-500506.4, -300538.4) \\ 
+FCFS & (-109602.53, -86253.87) & (300538.4, 500506.4) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxDelay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of avgDelay}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (7949.01, 9669.17) & (8657.25, 10480.07) \\ 
+ELFS & (-9669.17, -7949.01) & (0.0, 0.0) & (-898.9, 2418.03) \\ 
+FCFS & (-10480.07, -8657.25) & (-2418.03, 898.9) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of avgDelay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentDelayed}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (19.31, 20.49) & (41.83, 46.0) \\ 
+ELFS & (-20.49, -19.31) & (0.0, 0.0) & (21.49, 26.54) \\ 
+FCFS & (-46.0, -41.83) & (-26.54, -21.49) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentDelayed}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxLoad0}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (-308.37, -270.03) & (-308.37, -270.03) \\ 
+ELFS & (270.03, 308.37) & (0.0, 0.0) & (0.0, 0.0) \\ 
+FCFS & (270.03, 308.37) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxLoad0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of overload0}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (-0.07, -0.06) & (-0.07, -0.06) \\ 
+ELFS & (0.06, 0.07) & (0.0, 0.0) & (0.0, 0.0) \\ 
+FCFS & (0.06, 0.07) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of overload0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of blackout0}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (-0.5, -0.47) & (-0.5, -0.47) \\ 
+ELFS & (0.47, 0.5) & (0.0, 0.0) & (0.0, 0.0) \\ 
+FCFS & (0.47, 0.5) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of blackout0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxLoad4}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (-390.43, -337.97) & (-390.43, -337.97) \\ 
+ELFS & (337.97, 390.43) & (0.0, 0.0) & (0.0, 0.0) \\ 
+FCFS & (337.97, 390.43) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxLoad4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of overload4}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (-0.05, -0.03) & (-0.05, -0.03) \\ 
+ELFS & (0.03, 0.05) & (0.0, 0.0) & (0.0, 0.0) \\ 
+FCFS & (0.03, 0.05) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of overload4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of blackout4}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (-0.63, -0.6) & (-0.63, -0.6) \\ 
+ELFS & (0.6, 0.63) & (0.0, 0.0) & (0.0, 0.0) \\ 
+FCFS & (0.6, 0.63) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of blackout4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentNonServiced}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (8.63, 11.34) & (7.45, 10.22) \\ 
+ELFS & (-11.34, -8.63) & (0.0, 0.0) & (-2.44, 0.15) \\ 
+FCFS & (-10.22, -7.45) & (-0.15, 2.44) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentNonServiced}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of avgDailyNonServiced}
+	\begin{tabular}{c|ccc}
+  & base & ELFS & FCFS \\ \hline 
+base & (0.0, 0.0) & (63.0, 87.71) & (54.13, 78.87) \\ 
+ELFS & (-87.71, -63.0) & (0.0, 0.0) & (-20.92, 3.2) \\ 
+FCFS & (-78.87, -54.13) & (-3.2, 20.92) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of avgDailyNonServiced}
+\end{table}
+

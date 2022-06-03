@@ -1,0 +1,154 @@
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxDelay}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (-502210.12, -325332.08) & (-481710.08, -263223.32) & (-236254.9, 8543.7) & (-237999.4, 32553.0) \\ 
+ELFS-summer-1-2-6-7 & (325332.08, 502210.12) & (0.0, 0.0) & (4808.43, 77800.37) & (220532.05, 379298.95) & (208175.03, 413920.77) \\ 
+ELFS-summer-6-7 & (263223.32, 481710.08) & (-77800.37, -4808.43) & (0.0, 0.0) & (177572.24, 339649.96) & (180056.83, 359430.17) \\ 
+ELFS-winter-1-2-6-7 & (-8543.7, 236254.9) & (-379298.95, -220532.05) & (-339649.96, -177572.24) & (0.0, 0.0) & (-139366.58, 161631.38) \\ 
+ELFS-winter-6-7 & (-32553.0, 237999.4) & (-413920.77, -208175.03) & (-359430.17, -180056.83) & (-161631.38, 139366.58) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxDelay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of avgDelay}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (-7606.64, -5953.73) & (-6179.67, -4445.02) & (-3965.82, -1751.33) & (-2703.93, -688.54) \\ 
+ELFS-summer-1-2-6-7 & (5953.73, 7606.64) & (0.0, 0.0) & (1156.99, 1778.68) & (3153.29, 4689.92) & (4637.74, 5530.14) \\ 
+ELFS-summer-6-7 & (4445.02, 6179.67) & (-1778.68, -1156.99) & (0.0, 0.0) & (1869.83, 3037.71) & (3138.74, 4093.47) \\ 
+ELFS-winter-1-2-6-7 & (1751.33, 3965.82) & (-4689.92, -3153.29) & (-3037.71, -1869.83) & (0.0, 0.0) & (354.2, 1970.47) \\ 
+ELFS-winter-6-7 & (688.54, 2703.93) & (-5530.14, -4637.74) & (-4093.47, -3138.74) & (-1970.47, -354.2) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of avgDelay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentDelayed}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (-9.82, -8.33) & (-6.07, -4.43) & (-4.42, -2.98) & (-2.27, -1.23) \\ 
+ELFS-summer-1-2-6-7 & (8.33, 9.82) & (0.0, 0.0) & (3.0, 4.64) & (4.75, 5.99) & (6.6, 8.05) \\ 
+ELFS-summer-6-7 & (4.43, 6.07) & (-4.64, -3.0) & (0.0, 0.0) & (0.85, 2.26) & (2.54, 4.47) \\ 
+ELFS-winter-1-2-6-7 & (2.98, 4.42) & (-5.99, -4.75) & (-2.26, -0.85) & (0.0, 0.0) & (1.34, 2.57) \\ 
+ELFS-winter-6-7 & (1.23, 2.27) & (-8.05, -6.6) & (-4.47, -2.54) & (-2.57, -1.34) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentDelayed}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxLoad0}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (52.72, 64.31) & (0.0, 0.0) & (33.09, 41.79) & (-0.76, 1.96) \\ 
+ELFS-summer-1-2-6-7 & (-64.31, -52.72) & (0.0, 0.0) & (-64.31, -52.72) & (-26.87, -15.27) & (-63.92, -51.91) \\ 
+ELFS-summer-6-7 & (0.0, 0.0) & (52.72, 64.31) & (0.0, 0.0) & (33.09, 41.79) & (-0.76, 1.96) \\ 
+ELFS-winter-1-2-6-7 & (-41.79, -33.09) & (15.27, 26.87) & (-41.79, -33.09) & (0.0, 0.0) & (-41.93, -31.75) \\ 
+ELFS-winter-6-7 & (-1.96, 0.76) & (51.91, 63.92) & (-1.96, 0.76) & (31.75, 41.93) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxLoad0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of overload0}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (0.03, 0.03) & (0.0, 0.0) & (0.02, 0.03) & (0.0, 0.0) \\ 
+ELFS-summer-1-2-6-7 & (-0.03, -0.03) & (0.0, 0.0) & (-0.03, -0.03) & (-0.01, -0.0) & (-0.03, -0.03) \\ 
+ELFS-summer-6-7 & (0.0, 0.0) & (0.03, 0.03) & (0.0, 0.0) & (0.02, 0.03) & (0.0, 0.0) \\ 
+ELFS-winter-1-2-6-7 & (-0.03, -0.02) & (0.0, 0.01) & (-0.03, -0.02) & (0.0, 0.0) & (-0.03, -0.02) \\ 
+ELFS-winter-6-7 & (0.0, 0.0) & (0.03, 0.03) & (0.0, 0.0) & (0.02, 0.03) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of overload0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of blackout0}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (0.01, 0.02) & (0.0, 0.0) & (0.0, 0.01) & (0.0, 0.0) \\ 
+ELFS-summer-1-2-6-7 & (-0.02, -0.01) & (0.0, 0.0) & (-0.02, -0.01) & (-0.01, -0.0) & (-0.02, -0.01) \\ 
+ELFS-summer-6-7 & (0.0, 0.0) & (0.01, 0.02) & (0.0, 0.0) & (0.0, 0.01) & (0.0, 0.0) \\ 
+ELFS-winter-1-2-6-7 & (-0.01, -0.0) & (0.0, 0.01) & (-0.01, -0.0) & (0.0, 0.0) & (-0.01, -0.0) \\ 
+ELFS-winter-6-7 & (0.0, 0.0) & (0.01, 0.02) & (0.0, 0.0) & (0.0, 0.01) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of blackout0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxLoad4}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (63.2, 79.12) & (61.55, 72.92) & (34.73, 50.27) & (36.08, 46.27) \\ 
+ELFS-summer-1-2-6-7 & (-79.12, -63.2) & (0.0, 0.0) & (-14.44, 6.59) & (-39.67, -17.66) & (-41.03, -18.94) \\ 
+ELFS-summer-6-7 & (-72.92, -61.55) & (-6.59, 14.44) & (0.0, 0.0) & (-35.38, -14.1) & (-32.12, -20.0) \\ 
+ELFS-winter-1-2-6-7 & (-50.27, -34.73) & (17.66, 39.67) & (14.1, 35.38) & (0.0, 0.0) & (-12.57, 9.93) \\ 
+ELFS-winter-6-7 & (-46.27, -36.08) & (18.94, 41.03) & (20.0, 32.12) & (-9.93, 12.57) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxLoad4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of overload4}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (0.03, 0.04) & (0.04, 0.04) & (0.03, 0.03) & (0.03, 0.03) \\ 
+ELFS-summer-1-2-6-7 & (-0.04, -0.03) & (0.0, 0.0) & (-0.0, 0.01) & (-0.01, -0.0) & (-0.01, -0.0) \\ 
+ELFS-summer-6-7 & (-0.04, -0.04) & (-0.01, 0.0) & (0.0, 0.0) & (-0.01, -0.0) & (-0.01, -0.01) \\ 
+ELFS-winter-1-2-6-7 & (-0.03, -0.03) & (0.0, 0.01) & (0.0, 0.01) & (0.0, 0.0) & (-0.01, 0.01) \\ 
+ELFS-winter-6-7 & (-0.03, -0.03) & (0.0, 0.01) & (0.01, 0.01) & (-0.01, 0.01) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of overload4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of blackout4}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (0.02, 0.03) & (0.02, 0.02) & (0.01, 0.01) & (0.0, 0.01) \\ 
+ELFS-summer-1-2-6-7 & (-0.03, -0.02) & (0.0, 0.0) & (-0.01, -0.0) & (-0.02, -0.01) & (-0.02, -0.02) \\ 
+ELFS-summer-6-7 & (-0.02, -0.02) & (0.0, 0.01) & (0.0, 0.0) & (-0.02, -0.01) & (-0.02, -0.01) \\ 
+ELFS-winter-1-2-6-7 & (-0.01, -0.01) & (0.01, 0.02) & (0.01, 0.02) & (0.0, 0.0) & (-0.0, 0.0) \\ 
+ELFS-winter-6-7 & (-0.01, -0.0) & (0.02, 0.02) & (0.01, 0.02) & (-0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of blackout4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentNonServiced}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (-8.24, -6.48) & (-6.94, -4.47) & (-4.96, -2.52) & (-3.81, -0.99) \\ 
+ELFS-summer-1-2-6-7 & (6.48, 8.24) & (0.0, 0.0) & (1.09, 2.22) & (3.17, 4.07) & (3.62, 6.3) \\ 
+ELFS-summer-6-7 & (4.47, 6.94) & (-2.22, -1.09) & (0.0, 0.0) & (1.2, 2.74) & (2.14, 4.47) \\ 
+ELFS-winter-1-2-6-7 & (2.52, 4.96) & (-4.07, -3.17) & (-2.74, -1.2) & (0.0, 0.0) & (-0.22, 2.9) \\ 
+ELFS-winter-6-7 & (0.99, 3.81) & (-6.3, -3.62) & (-4.47, -2.14) & (-2.9, 0.22) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentNonServiced}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of avgDailyNonServiced}
+	\begin{tabular}{c|ccccc}
+  & ELFS & ELFS-summer-1-2-6-7 & ELFS-summer-6-7 & ELFS-winter-1-2-6-7 & ELFS-winter-6-7 \\ \hline 
+ELFS & (0.0, 0.0) & (-63.07, -47.04) & (-53.97, -29.72) & (-40.11, -16.01) & (-30.14, -1.94) \\ 
+ELFS-summer-1-2-6-7 & (47.04, 63.07) & (0.0, 0.0) & (7.73, 18.7) & (22.19, 31.81) & (27.17, 50.86) \\ 
+ELFS-summer-6-7 & (29.72, 53.97) & (-18.7, -7.73) & (0.0, 0.0) & (7.58, 19.99) & (14.72, 36.88) \\ 
+ELFS-winter-1-2-6-7 & (16.01, 40.11) & (-31.81, -22.19) & (-19.99, -7.58) & (0.0, 0.0) & (-2.42, 26.45) \\ 
+ELFS-winter-6-7 & (1.94, 30.14) & (-50.86, -27.17) & (-36.88, -14.72) & (-26.45, 2.42) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of avgDailyNonServiced}
+\end{table}
+

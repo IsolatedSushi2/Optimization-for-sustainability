@@ -1,0 +1,132 @@
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxDelay}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (35476.11, 41019.89) & (105177.25, 146790.55) \\ 
+FCFS-summer-6-7 & (-41019.89, -35476.11) & (0.0, 0.0) & (67260.51, 108211.29) \\ 
+ELFS-summer-6-7 & (-146790.55, -105177.25) & (-108211.29, -67260.51) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxDelay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of avgDelay}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (1708.59, 2117.82) & (3219.61, 3773.87) \\ 
+FCFS-summer-6-7 & (-2117.82, -1708.59) & (0.0, 0.0) & (1198.62, 1968.46) \\ 
+ELFS-summer-6-7 & (-3773.87, -3219.61) & (-1968.46, -1198.62) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of avgDelay}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentDelayed}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (16.64, 18.97) & (13.94, 15.35) \\ 
+FCFS-summer-6-7 & (-18.97, -16.64) & (0.0, 0.0) & (-4.62, -1.7) \\ 
+ELFS-summer-6-7 & (-15.35, -13.94) & (1.7, 4.62) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentDelayed}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxLoad0}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (-302.92, -276.68) & (-304.3, -276.5) \\ 
+FCFS-summer-6-7 & (276.68, 302.92) & (0.0, 0.0) & (-1.96, 0.76) \\ 
+ELFS-summer-6-7 & (276.5, 304.3) & (-0.76, 1.96) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxLoad0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of overload0}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (-0.08, -0.06) & (-0.08, -0.06) \\ 
+FCFS-summer-6-7 & (0.06, 0.08) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS-summer-6-7 & (0.06, 0.08) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of overload0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of blackout0}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (-0.5, -0.46) & (-0.5, -0.46) \\ 
+FCFS-summer-6-7 & (0.46, 0.5) & (0.0, 0.0) & (0.0, 0.0) \\ 
+ELFS-summer-6-7 & (0.46, 0.5) & (0.0, 0.0) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of blackout0}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of maxLoad4}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (-289.19, -233.18) & (-297.5, -232.67) \\ 
+FCFS-summer-6-7 & (233.18, 289.19) & (0.0, 0.0) & (-16.31, 8.51) \\ 
+ELFS-summer-6-7 & (232.67, 297.5) & (-8.51, 16.31) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of maxLoad4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of overload4}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (0.01, 0.02) & (0.0, 0.01) \\ 
+FCFS-summer-6-7 & (-0.02, -0.01) & (0.0, 0.0) & (-0.01, -0.0) \\ 
+ELFS-summer-6-7 & (-0.01, -0.0) & (0.0, 0.01) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of overload4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of blackout4}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (-0.4, -0.37) & (-0.4, -0.37) \\ 
+FCFS-summer-6-7 & (0.37, 0.4) & (0.0, 0.0) & (-0.01, 0.0) \\ 
+ELFS-summer-6-7 & (0.37, 0.4) & (-0.0, 0.01) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of blackout4}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of percentNonServiced}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (2.05, 3.61) & (3.98, 5.11) \\ 
+FCFS-summer-6-7 & (-3.61, -2.05) & (0.0, 0.0) & (0.61, 2.82) \\ 
+ELFS-summer-6-7 & (-5.11, -3.98) & (-2.82, -0.61) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of percentNonServiced}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Paired confidence intervals of avgDailyNonServiced}
+	\begin{tabular}{c|ccc}
+  & base-summer-6-7 & FCFS-summer-6-7 & ELFS-summer-6-7 \\ \hline 
+base-summer-6-7 & (0.0, 0.0) & (15.32, 29.34) & (30.68, 41.98) \\ 
+FCFS-summer-6-7 & (-29.34, -15.32) & (0.0, 0.0) & (2.76, 25.24) \\ 
+ELFS-summer-6-7 & (-41.98, -30.68) & (-25.24, -2.76) & (0.0, 0.0) \\ 
+	 \end{tabular}
+	\label{tab:paired confidence intervals of avgDailyNonServiced}
+\end{table}
+

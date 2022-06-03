@@ -5,16 +5,25 @@ from math import sqrt
 import numpy as np
 import performanceMeasures
 
-def writeTable(data, file, header = "Data Table: \\\\ \hline \n"):
+def writeTable(data, file, param):
     with open(f'./tables/{file}', 'a') as myfile:
-        myfile.write(header)
+        myfile.write('\\begin{table}[H]\n\t\\centering\n\t\\caption{Paired confidence intervals of ' + str(param) + '}\n\t\\begin{tabular}{c|' + 'c'*(len(data[0])-1) + '}\n')
+        hline = True 
         for line in data:
             newline = ""
             for element in line:
-                newline += f" & {element}"
-            newline += " \\\\ \n"
+                if type(element) == str:
+                    newline += f" & {element}"
+                else:
+                    low, high = element
+                    newline += f" & ({round(float(low), 2)}, {round(float(high), 2)})"
+            if hline:
+                newline += ' \\\\ \\hline \n'
+                hline = False
+            else:
+                newline += " \\\\ \n" 
             myfile.write(newline[3:])
-        myfile.write("\n ---- \n")
+        myfile.write("\t \\end{tabular}\n\t\\label{tab:paired confidence intervals of " + str(param) +'}\n\\end{table}\n\n')
 
 def emptyList(h,w):
     lst = []
@@ -22,25 +31,25 @@ def emptyList(h,w):
         lst.append([None]*w)
     return lst
 
-def findAllPairedConfidenceIntervals(cases, file = 'tables.txt', params = ["maxDelay", "avgDelay", "percentDelayed", "maxLoad0", "overload0", "blackout0", "maxLoad1", "overload1", "blackout1", "percentNonServiced", "avgDailyNonServiced"]):
+def findAllPairedConfidenceIntervals(cases, file = 'tables.txt', params = ["maximum delay", "average delay", "percentage of cars with a delay", "maximum load on cable 0", "fraction of time cable 0 is overloaded", "fraction of time cable 0 is blacked out", "maximum load on cable 4", "fraction of time cable 4 is overloaded", "fraction of time cable 4 is blacked out", "percentage of arriving cars that are not served", "average number of daily non-served cars"]):
     resultsDict = {}
     for case in cases:
         print(f'finding {case} measures')
         if case not in resultsDict:
             resultsDict[case] = {}
 
-        resultsDict[case]["maxDelay"], resultsDict[case]["avgDelay"], resultsDict[case]["percentDelayed"] = findDelays(case)
+        resultsDict[case]["maximum delay"], resultsDict[case]["average delay"], resultsDict[case]["percentage of cars with a delay"] = findDelays(case)
         cable0, cable1, cable2, cable3, cable4, cable5, cable6, cable7, cable8 = findCableLoads(case)
-        resultsDict[case]['maxLoad0'], resultsDict[case]['overload0'], resultsDict[case]['blackout0'] = cable0
-        resultsDict[case]["maxLoad1"], resultsDict[case]["overload1"], resultsDict[case]["blackout1"] = cable1
-        resultsDict[case]["maxLoad2"], resultsDict[case]["overload2"], resultsDict[case]['blackout2'] = cable2
-        resultsDict[case]['maxLoad3'], resultsDict[case]['overload3'], resultsDict[case]['blackout3'] = cable3
-        resultsDict[case]['maxLoad4'], resultsDict[case]['overload4'], resultsDict[case]['blackout4'] = cable4
-        resultsDict[case]['maxLoad5'], resultsDict[case]['overload5'], resultsDict[case]['blackout5'] = cable5
-        resultsDict[case]['maxLoad6'], resultsDict[case]['overload6'], resultsDict[case]['blackout6'] = cable6
-        resultsDict[case]['maxLoad7'], resultsDict[case]['overload7'], resultsDict[case]['blackout7'] = cable7
-        resultsDict[case]['maxLoad8'], resultsDict[case]['overload8'], resultsDict[case]['blackout8'] = cable8
-        resultsDict[case]['percentNonServiced'], resultsDict[case]['avgDailyNonServiced'] =  findNonServiced(case)
+        resultsDict[case]['maximum load on cable 0'], resultsDict[case]['fraction of time cable 0 is overloaded'], resultsDict[case]['fraction of time cable 0 is blacked out'] = cable0
+        resultsDict[case]["maximum load on cable 1"], resultsDict[case]["fraction of time cable 1 is overloaded"], resultsDict[case]["fraction of time cable 1 is blacked out"] = cable1
+        resultsDict[case]["maximum load on cable 2"], resultsDict[case]["fraction of time cable 2 is overloaded"], resultsDict[case]['fraction of time cable 2 is blacked out'] = cable2
+        resultsDict[case]['maximum load on cable 3'], resultsDict[case]['fraction of time cable 3 is overloaded'], resultsDict[case]['fraction of time cable 3 is blacked out'] = cable3
+        resultsDict[case]['maximum load on cable 4'], resultsDict[case]['fraction of time cable 4 is overloaded'], resultsDict[case]['fraction of time cable 4 is blacked out'] = cable4
+        resultsDict[case]['maximum load on cable 5'], resultsDict[case]['fraction of time cable 5 is overloaded'], resultsDict[case]['fraction of time cable 5 is blacked out'] = cable5
+        resultsDict[case]['maximum load on cable 6'], resultsDict[case]['fraction of time cable 6 is overloaded'], resultsDict[case]['fraction of time cable 6 is blacked out'] = cable6
+        resultsDict[case]['maximum load on cable 7'], resultsDict[case]['fraction of time cable 7 is overloaded'], resultsDict[case]['fraction of time cable 7 is blacked out'] = cable7
+        resultsDict[case]['maximum load on cable 8'], resultsDict[case]['fraction of time cable 8 is overloaded'], resultsDict[case]['fraction of time cable 8 is blacked out'] = cable8
+        resultsDict[case]['percentage of arriving cars that are not served'], resultsDict[case]['average number of daily non-served cars'] =  findNonServiced(case)
 
     amountCases = len(cases)
     for param in params:
@@ -55,7 +64,7 @@ def findAllPairedConfidenceIntervals(cases, file = 'tables.txt', params = ["maxD
                 case1 = cases[i]
                 case2 = cases[j]
                 allConfidenceIntervals[i+1][j+1] = get_paired_confidence_interval(resultsDict[case1][param], resultsDict[case2][param])
-        writeTable(allConfidenceIntervals, file=file, header=f"Paired Confidence Intervals of {param} \n")
+        writeTable(allConfidenceIntervals, file=file, param=param)
 
 def s2(xs):
     average = sum(xs)/len(xs)
